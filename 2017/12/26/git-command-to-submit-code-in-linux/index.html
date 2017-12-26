@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017/12 | Mauger`s Blog</title>
+  <title>Mauger`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="####һ��Linux �� Git �ύ������������  �鿴������޸�״̬ �鿴������޸����� �ݴ���Ҫ�ύ�Ĵ��� �ύ�Ѿ��ݴ���ļ� ������ͬ����������  ####����Linux �� Git ���ò�������Step1. �鿴�����޸�״̬   git status     ��ɫ����ɫ���������ǹ����">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Mauger`s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2017/12/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/12/26/git-command-to-submit-code-in-linux/index.html">
 <meta property="og:site_name" content="Mauger`s Blog">
+<meta property="og:description" content="####һ��Linux �� Git �ύ������������  �鿴������޸�״̬ �鿴������޸����� �ݴ���Ҫ�ύ�Ĵ��� �ύ�Ѿ��ݴ���ļ� ������ͬ����������  ####����Linux �� Git ���ò�������Step1. �鿴�����޸�״̬   git status     ��ɫ����ɫ���������ǹ����">
+<meta property="og:updated_time" content="2017-12-26T10:55:13.059Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mauger`s Blog">
+<meta name="twitter:description" content="####һ��Linux �� Git �ύ������������  �鿴������޸�״̬ �鿴������޸����� �ݴ���Ҫ�ύ�Ĵ��� �ύ�Ѿ��ݴ���ļ� ������ͬ����������  ####����Linux �� Git ���ò�������Step1. �鿴�����޸�״̬   git status     ��ɫ����ɫ���������ǹ����">
   
     <link rel="alternative" href="/atom.xml" title="Mauger`s Blog" type="application/atom+xml">
   
@@ -157,91 +161,200 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-git-command-to-submit-code-in-linux" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>####һ��Linux �� Git �ύ������������</p>
+<ol>
+<li>�鿴������޸�״̬</li>
+<li>�鿴������޸�����</li>
+<li>�ݴ���Ҫ�ύ�Ĵ���</li>
+<li>�ύ�Ѿ��ݴ���ļ�</li>
+<li>������ͬ����������</li>
+</ol>
+<p>####����Linux �� Git ���ò�������<br><strong>Step1.</strong> �鿴�����޸�״̬ </p>
+<blockquote>
+<p><code>git status</code>  </p>
+</blockquote>
+<ul>
+<li>��ɫ����ɫ���������ǹ����ڵķ����޸ĵ�״̬��ʶ:</li>
+<li>modified �����ļ�����һ�汾��ȣ��й��޸�</li>
+<li>new  file  �����ļ��������ӵ�</li>
+<li>deleted   �����ļ���ɾ���ˣ��ύ�ɹ����ļ�����repository��ɾ��</li>
+<li>untracked file һ�㶼�������ӵ��ļ���  </li>
+</ul>
+<p><strong>Step2.</strong> �鿴������޸�����</p>
+<ul>
+<li><p>�����ǲ鿴 <code>.gitignore</code> �ļ��ı仯</p>
+<blockquote>
+<p><code>git diff &lt;filename&gt;</code></p>
+</blockquote>
+</li>
+<li><p>�����ǲ鿴��ʷ�޸ģ�<code>hashcode</code>���Դ�<code>Github</code>�ϵ�<code>commit</code>��¼�ϻ�ȡ</p>
+<blockquote>
+<p><code>git diff &lt;hashcode&gt; &lt;hashcode&gt; &lt;filename&gt;</code></p>
+</blockquote>
+</li>
+</ul>
+<p><strong>Step3.</strong> �ݴ���Ҫ�ύ�Ĵ���</p>
+<ul>
+<li><p>����һ����Ҫ�ϴ����ļ�</p>
+<blockquote>
+<p><code>git add &lt;filename&gt;</code></p>
+</blockquote>
+</li>
+<li><p>����������Ҫ�ϴ����ļ�</p>
+<blockquote>
+<p><code>git add --all</code></p>
+</blockquote>
+</li>
+<li><p>ɾ��һ������Ҫ�ϴ����ļ�</p>
+<blockquote>
+<p><code>git rm &lt;filename&gt;</code></p>
+</blockquote>
+</li>
+</ul>
+<p><strong>Step4.</strong> �ύ���ݴ���ļ��������ǽ��޸��ύ�����زֿ⣩</p>
+<ul>
+<li><p>�ύ���ݴ���ļ�</p>
+<blockquote>
+<p><code>git commit</code> </p>
+</blockquote>
+</li>
+<li><p>����©���ļ���ע������ʹ�� <code>amend</code> ����</p>
+<blockquote>
+<p><code>git commit --amend</code></p>
+</blockquote>
+</li>
+<li><p>�ύ���ݴ���ļ���ͬʱ����ע��</p>
+<blockquote>
+<p><code>git commit -m &lt;comment&gt;</code></p>
+</blockquote>
+</li>
+</ul>
+<p><strong>Step5.</strong> ����/ͬ����Զ�˷�����</p>
+<blockquote>
+<p><code>git push -u origin master</code></p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/26/markdown-syntax-and-editor-introduction/" class="archive-article-date">
-  	<time datetime="2017-12-26T11:04:14.574Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-26</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/12/26/git-command-to-submit-code-in-linux/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/26/git-command-to-submit-code-in-linux/" class="archive-article-date">
-  	<time datetime="2017-12-26T11:04:14.572Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-26</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/24/hello-world/" class="archive-article-date">
-  	<time datetime="2017-12-24T13:46:17.992Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-24</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/24/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2017/12/26/markdown-syntax-and-editor-introduction/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
   
+  
+    <a href="/2017/12/24/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        <div class="article-info info-on-right">
-          
-          
 
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -264,8 +377,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
