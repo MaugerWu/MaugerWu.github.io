@@ -8,16 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Mauger`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="####һ��Linux �� Git �ύ������������  �鿴������޸�״̬ �鿴������޸����� �ݴ���Ҫ�ύ�Ĵ��� �ύ�Ѿ��ݴ���ļ� ������ͬ����������  ####����Linux �� Git ���ò�������Step1. �鿴�����޸�״̬   git status     ��ɫ����ɫ���������ǹ����">
+  <meta name="description" content="####一、Linux 下 Git 提交代码的五个步骤  查看代码的修改状态 查看代码的修改内容 暂存需要提交的代码 提交已经暂存的文件 将代码同步到服务器  ####二、Linux 下 Git 常用操作命令Step1. 查看代码修改状态   git status     红色或绿色部分字体是工程内的发生修改的状态标识: modified 代表文件和上一版本相比，有过修改 new  file  代">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mauger`s Blog">
 <meta property="og:url" content="http://yoursite.com/2017/12/26/git-command-to-submit-code-in-linux/index.html">
 <meta property="og:site_name" content="Mauger`s Blog">
-<meta property="og:description" content="####һ��Linux �� Git �ύ������������  �鿴������޸�״̬ �鿴������޸����� �ݴ���Ҫ�ύ�Ĵ��� �ύ�Ѿ��ݴ���ļ� ������ͬ����������  ####����Linux �� Git ���ò�������Step1. �鿴�����޸�״̬   git status     ��ɫ����ɫ���������ǹ����">
-<meta property="og:updated_time" content="2017-12-26T10:55:13.059Z">
+<meta property="og:description" content="####一、Linux 下 Git 提交代码的五个步骤  查看代码的修改状态 查看代码的修改内容 暂存需要提交的代码 提交已经暂存的文件 将代码同步到服务器  ####二、Linux 下 Git 常用操作命令Step1. 查看代码修改状态   git status     红色或绿色部分字体是工程内的发生修改的状态标识: modified 代表文件和上一版本相比，有过修改 new  file  代">
+<meta property="og:updated_time" content="2017-12-27T03:35:48.254Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mauger`s Blog">
-<meta name="twitter:description" content="####һ��Linux �� Git �ύ������������  �鿴������޸�״̬ �鿴������޸����� �ݴ���Ҫ�ύ�Ĵ��� �ύ�Ѿ��ݴ���ļ� ������ͬ����������  ####����Linux �� Git ���ò�������Step1. �鿴�����޸�״̬   git status     ��ɫ����ɫ���������ǹ����">
+<meta name="twitter:description" content="####一、Linux 下 Git 提交代码的五个步骤  查看代码的修改状态 查看代码的修改内容 暂存需要提交的代码 提交已经暂存的文件 将代码同步到服务器  ####二、Linux 下 Git 常用操作命令Step1. 查看代码修改状态   git status     红色或绿色部分字体是工程内的发生修改的状态标识: modified 代表文件和上一版本相比，有过修改 new  file  代">
   
     <link rel="alternative" href="/atom.xml" title="Mauger`s Blog" type="application/atom+xml">
   
@@ -158,75 +158,75 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>####һ��Linux �� Git �ύ������������</p>
+        <p>####一、Linux 下 Git 提交代码的五个步骤</p>
 <ol>
-<li>�鿴������޸�״̬</li>
-<li>�鿴������޸�����</li>
-<li>�ݴ���Ҫ�ύ�Ĵ���</li>
-<li>�ύ�Ѿ��ݴ���ļ�</li>
-<li>������ͬ����������</li>
+<li>查看代码的修改状态</li>
+<li>查看代码的修改内容</li>
+<li>暂存需要提交的代码</li>
+<li>提交已经暂存的文件</li>
+<li>将代码同步到服务器</li>
 </ol>
-<p>####����Linux �� Git ���ò�������<br><strong>Step1.</strong> �鿴�����޸�״̬ </p>
+<p>####二、Linux 下 Git 常用操作命令<br><strong>Step1.</strong> 查看代码修改状态 </p>
 <blockquote>
 <p><code>git status</code>  </p>
 </blockquote>
 <ul>
-<li>��ɫ����ɫ���������ǹ����ڵķ����޸ĵ�״̬��ʶ:</li>
-<li>modified �����ļ�����һ�汾��ȣ��й��޸�</li>
-<li>new  file  �����ļ��������ӵ�</li>
-<li>deleted   �����ļ���ɾ���ˣ��ύ�ɹ����ļ�����repository��ɾ��</li>
-<li>untracked file һ�㶼�������ӵ��ļ���  </li>
+<li>红色或绿色部分字体是工程内的发生修改的状态标识:</li>
+<li>modified 代表文件和上一版本相比，有过修改</li>
+<li>new  file  代表文件是新增加的</li>
+<li>deleted   代表文件被删除了，提交成功后，文件将从repository中删除</li>
+<li>untracked file 一般都是新增加的文件夹  </li>
 </ul>
-<p><strong>Step2.</strong> �鿴������޸�����</p>
+<p><strong>Step2.</strong> 查看代码的修改内容</p>
 <ul>
-<li><p>�����ǲ鿴 <code>.gitignore</code> �ļ��ı仯</p>
+<li><p>这里是查看 <code>.gitignore</code> 文件的变化</p>
 <blockquote>
 <p><code>git diff &lt;filename&gt;</code></p>
 </blockquote>
 </li>
-<li><p>�����ǲ鿴��ʷ�޸ģ�<code>hashcode</code>���Դ�<code>Github</code>�ϵ�<code>commit</code>��¼�ϻ�ȡ</p>
+<li><p>这里是查看历史修改，<code>hashcode</code>可以从<code>Github</code>上的<code>commit</code>记录上获取</p>
 <blockquote>
 <p><code>git diff &lt;hashcode&gt; &lt;hashcode&gt; &lt;filename&gt;</code></p>
 </blockquote>
 </li>
 </ul>
-<p><strong>Step3.</strong> �ݴ���Ҫ�ύ�Ĵ���</p>
+<p><strong>Step3.</strong> 暂存需要提交的代码</p>
 <ul>
-<li><p>����һ����Ҫ�ϴ����ļ�</p>
+<li><p>增加一个需要上传的文件</p>
 <blockquote>
 <p><code>git add &lt;filename&gt;</code></p>
 </blockquote>
 </li>
-<li><p>����������Ҫ�ϴ����ļ�</p>
+<li><p>增加所有需要上传的文件</p>
 <blockquote>
 <p><code>git add --all</code></p>
 </blockquote>
 </li>
-<li><p>ɾ��һ������Ҫ�ϴ����ļ�</p>
+<li><p>删除一个不需要上传的文件</p>
 <blockquote>
 <p><code>git rm &lt;filename&gt;</code></p>
 </blockquote>
 </li>
 </ul>
-<p><strong>Step4.</strong> �ύ���ݴ���ļ��������ǽ��޸��ύ�����زֿ⣩</p>
+<p><strong>Step4.</strong> 提交已暂存的文件（仅仅是将修改提交到本地仓库）</p>
 <ul>
-<li><p>�ύ���ݴ���ļ�</p>
+<li><p>提交已暂存的文件</p>
 <blockquote>
 <p><code>git commit</code> </p>
 </blockquote>
 </li>
-<li><p>����©���ļ���ע������ʹ�� <code>amend</code> ����</p>
+<li><p>若发现漏提文件或注释有误，使用 <code>amend</code> 修正</p>
 <blockquote>
 <p><code>git commit --amend</code></p>
 </blockquote>
 </li>
-<li><p>�ύ���ݴ���ļ���ͬʱ����ע��</p>
+<li><p>提交已暂存的文件，同时进行注释</p>
 <blockquote>
 <p><code>git commit -m &lt;comment&gt;</code></p>
 </blockquote>
 </li>
 </ul>
-<p><strong>Step5.</strong> ����/ͬ����Զ�˷�����</p>
+<p><strong>Step5.</strong> 推送/同步到远端服务器</p>
 <blockquote>
 <p><code>git push -u origin master</code></p>
 </blockquote>
