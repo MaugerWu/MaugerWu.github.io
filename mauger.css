@@ -1,8 +1,6 @@
-// 自定义gitments样式
-.gitment-root-container {
-    padding-left: 30px;
-    padding-right: 30px;
-}
+/** 
+  * 自定义gitments样式 
+*/
 
 .gitment-comment-header {
     margin: 12px 15px;
