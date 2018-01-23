@@ -4,4 +4,6 @@ $(function() {
 	{
 		$('.article-entry .article-more-a').remove();
 	}
+	$(".gitment-editor-footer-tip").remove();
+	$('.gitment-container .gitment-footer-container').empty();
 });
