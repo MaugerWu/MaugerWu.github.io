@@ -6,4 +6,7 @@ $(function() {
 	}
 	$('.gitment-editor-footer-tip').empty();
 	$('.gitment-container .gitment-footer-container').empty();
+	
+	var obj = $('.header-menu').find("a")[3];
+	$(obj).attr("target", "_blank");
 });
