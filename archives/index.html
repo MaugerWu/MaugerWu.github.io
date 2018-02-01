@@ -91,8 +91,6 @@
 		        
 					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/mauger/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
-					<a class="weibo" target="_blank" href="http://weibo.com/mauger" title="weibo"><i class="icon-weibo"></i></a>
-		        
 					<a class="weixin" target="_blank" href="https://t1.picb.cc/uploads/2018/01/29/UmBRg.md.jpg" title="weixin"><i class="icon-weixin"></i></a>
 		        
 					<a class="mail" target="_blank" href="mailto:wumz993@gmail.com" title="mail"><i class="icon-mail"></i></a>
@@ -139,8 +137,6 @@
 						<a class="github" target="_blank" href="https://github.com/MaugerWu" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/mauger/activities" title="zhihu"><i class="icon-zhihu"></i></a>
-			        
-						<a class="weibo" target="_blank" href="http://weibo.com/mauger" title="weibo"><i class="icon-weibo"></i></a>
 			        
 						<a class="weixin" target="_blank" href="https://t1.picb.cc/uploads/2018/01/29/UmBRg.md.jpg" title="weixin"><i class="icon-weixin"></i></a>
 			        
@@ -527,14 +523,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">NBA</a>
               </li>
              
@@ -571,14 +559,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Notes</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Thinking</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
              
@@ -591,11 +571,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Notes</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Thinking</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Music</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Freetime</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
             
             <div class="clearfix"></div>
@@ -603,31 +599,33 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            缺失模块。<br/>
+			1、请确保node版本大于6.2<br/>
+			2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
-<pre style="font-size: 12px;" q-show="jsonFail">
-  jsonContent:
-    meta: false
-    pages: false
-    posts:
-      title: true
-      date: true
-      path: true
-      text: false
-      raw: false
-      content: false
-      slug: false
-      updated: false
-      comments: false
-      link: false
-      permalink: false
-      excerpt: false
-      categories: false
-      tags: true
-</pre>
+			<pre style="font-size: 12px;" q-show="jsonFail">
+			  jsonContent:
+				meta: false
+				pages: false
+				posts:
+				  title: true
+				  date: true
+				  path: true
+				  text: false
+				  raw: false
+				  content: false
+				  slug: false
+				  updated: false
+				  comments: false
+				  link: false
+				  permalink: false
+				  excerpt: false
+				  categories: false
+				  tags: true
+			</pre>
           </p>
           <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title"><i class=""></i><span q-text="title"></span></a>
+            <a q-attr="href:path|urlformat" class="search-title"><span q-text="title"></span></a>
             <p class="search-time">
               <i class="icon-calendar icon"></i>
               <span q-text="date|dateformat"></span>
@@ -647,51 +645,51 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="https://liushaofeng.com" target="_blank" class="search-title"><i class=""></i>锋少</a>
+              <a href="https://liushaofeng.com" target="_blank" class="search-title">锋少</a>
             </li>
           
             <li class="search-li">
-              <a href="https://www.yudeshui.club" target="_blank" class="search-title"><i class=""></i>鱼得水</a>
+              <a href="https://www.yudeshui.club" target="_blank" class="search-title">鱼得水</a>
             </li>
           
             <li class="search-li">
-              <a href="http://litten.me" target="_blank" class="search-title"><i class=""></i>Litten</a>
+              <a href="http://litten.me" target="_blank" class="search-title">Litten</a>
             </li>
           
             <li class="search-li">
-              <a href="http://luojh.me" target="_blank" class="search-title"><i class=""></i>Luojinghui</a>
+              <a href="http://luojh.me" target="_blank" class="search-title">Luojinghui</a>
             </li>
           
             <li class="search-li">
-              <a href="https://coding.net/u/Mauger" target="_blank" class="search-title"><i class=""></i>Coding</a>
+              <a href="https://coding.net/u/Mauger" target="_blank" class="search-title">Coding</a>
             </li>
           
             <li class="search-li">
-              <a href="https://gitee.com/mzwua" target="_blank" class="search-title"><i class=""></i>码云</a>
+              <a href="https://gitee.com/mzwua" target="_blank" class="search-title">码云</a>
             </li>
           
             <li class="search-li">
-              <a href="https://www.jianshu.com/u/f80b449c43dd" target="_blank" class="search-title"><i class=""></i>简书</a>
+              <a href="https://www.jianshu.com/u/f80b449c43dd" target="_blank" class="search-title">简书</a>
             </li>
           
             <li class="search-li">
-              <a href="http://www.cnblogs.com/wumz/p/8030244.html" target="_blank" class="search-title"><i class=""></i>博客园</a>
+              <a href="http://weibo.com/mauger" target="_blank" class="search-title">微博</a>
             </li>
           
             <li class="search-li">
-              <a href="https://www.facebook.com/maozheng.wu.3" target="_blank" class="search-title"><i class=""></i>Facebook</a>
+              <a href="https://www.facebook.com/maozheng.wu.3" target="_blank" class="search-title">Facebook</a>
             </li>
           
             <li class="search-li">
-              <a href="https://twitter.com/MaugerWu" target="_blank" class="search-title"><i class=""></i>Twitter</a>
+              <a href="https://twitter.com/MaugerWu" target="_blank" class="search-title">Twitter</a>
             </li>
           
             <li class="search-li">
-              <a href="https://www.picb.cc" target="_blank" class="search-title"><i class=""></i>PICB.CC</a>
+              <a href="https://www.picb.cc" target="_blank" class="search-title">PICB.CC</a>
             </li>
           
             <li class="search-li">
-              <a href="https://sso.qiniu.com/" target="_blank" class="search-title"><i class=""></i>七牛云</a>
+              <a href="https://sso.qiniu.com/" target="_blank" class="search-title">七牛云</a>
             </li>
           
         </ul>
