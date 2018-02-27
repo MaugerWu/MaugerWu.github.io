@@ -354,18 +354,19 @@ var _hmt = _hmt || [];
       	</div>
     </div>
   </div>
-	<script>
-		$(document).ready(function() {
-			var int = setInterval(fixCount, 100);
-			var busuanziSiteOffset = parseInt(100000);
-			function fixCount() {
-				if ($("#busuanzi_container_site_pv").css("display") != "none") {
-					clearInterval(int);
-					$("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + busuanziSiteOffset);
-				}
+  <script async src="/./busuanzi.pure.mini.js"></script>
+  <script>
+	$(document).ready(function() {
+		var int = setInterval(fixCount, 100);
+		var busuanziSiteOffset = parseInt(100000);
+		function fixCount() {
+			if ($("#busuanzi_container_site_pv").css("display") != "none") {
+				clearInterval(int);
+				$("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + busuanziSiteOffset);
 			}
-		});
-	</script>
+		}
+	});
+  </script>
 </footer>
     </div>
     <script>
@@ -474,15 +475,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Github</a>
+                <a href="javascript:void(0)" class="js-tag color2">Editor</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Blog</a>
+                <a href="javascript:void(0)" class="js-tag color1">Tools</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -494,15 +495,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Editor</a>
+                <a href="javascript:void(0)" class="js-tag color2">Github</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Tools</a>
+                <a href="javascript:void(0)" class="js-tag color5">Blog</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -685,11 +686,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
-  
-  <!-- busuanzi START -->
-  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  <!-- busuanzi END -->
-  
   <script src="/./jquery-1.9.1.min.js"></script>
   <script src="/./assets/js/mauger.js"></script>
 </body>
