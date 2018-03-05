@@ -1,8 +1,8 @@
-# blog
-Mauger`s Blog [https://maugerwu.github.io/](https://maugerwu.github.io/)
+# Mauger`s Blog
+ A simple personal blog, based on Hexo and Github Pages. [https://maugerwu.github.io/](https://maugerwu.github.io/)
 
-### blog theme
-[yilia](https://github.com/litten/hexo-theme-yilia)
+### Blog Themes
+[Yilia](https://github.com/litten/hexo-theme-yilia)
 
-### wiki
-[wiki](https://github.com/MaugerWu/MaugerWu.github.io/wiki/index)
+### Wiki
+[Wiki](https://github.com/MaugerWu/MaugerWu.github.io/wiki/index)
