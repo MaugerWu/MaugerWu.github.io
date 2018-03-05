@@ -1,3 +1,8 @@
 #blog
-个人博客本地配置备份，博客地址：[https://maugerwu.github.io](https://maugerwu.github.io) / [https://mauger.coding.me/](https://mauger.coding.me/)
+Mauger`s Blog [https://maugerwu.github.io/](https://maugerwu.github.io/)
 
+###blog theme
+[yilia](https://github.com/litten/hexo-theme-yilia)
+
+###wiki
+[wiki](https://github.com/MaugerWu/MaugerWu.github.io/wiki/index)
