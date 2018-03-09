@@ -4,5 +4,5 @@
 ### Blog Themes
 [Yilia](https://github.com/litten/hexo-theme-yilia)
 
-### Wiki
+### WIKI
 [Wiki](https://github.com/MaugerWu/MaugerWu.github.io/wiki/index)
