@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wumaozheng.com/instagram/ins.json</loc>
+    
+    <lastmod>2018-03-22T15:58:05.911Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wumaozheng.com/2018/mybatis3.4-technology-insider.html</loc>
     
     <lastmod>2018-03-14T19:29:41.742Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>http://wumaozheng.com/2018/sitemap-seo.html</loc>
     
     <lastmod>2018-03-01T05:48:39.788Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wumaozheng.com/instagram/ins.json</loc>
-    
-    <lastmod>2018-02-26T15:13:30.108Z</lastmod>
     
   </url>
   
