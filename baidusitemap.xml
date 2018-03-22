@@ -3,6 +3,7 @@
 
 
     
+    
   <url>
     <loc>http://wumaozheng.com/2018/mybatis3.4-technology-insider.html</loc>
     <lastmod>2018-03-14T19:29:41.742Z</lastmod>
@@ -198,7 +199,6 @@
     </url>
 
     
-    
   <url>
     <loc>http://wumaozheng.com/2017/markdown-introduction.html</loc>
     <lastmod>2018-02-24T07:36:57.124Z</lastmod>
@@ -254,9 +254,9 @@
         
         <tag>Hexo</tag>
          
-        <tag>Blog</tag>
-         
         <tag>Github</tag>
+         
+        <tag>Blog</tag>
          
          
            
