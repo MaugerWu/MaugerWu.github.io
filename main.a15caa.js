@@ -615,10 +615,10 @@
 	        __onerror__: global.onerror
 	    };*/
 
-	    typeof console !== "undefined" && console.error && setTimeout(function() {
-	        var err = ((location.hash || "").match(/([#&])BJ_ERROR=([^&$]+)/) || [])[2];
-	        err && console.error("BJ_ERROR", decodeURIComponent(err).replace(/(:\d+:\d+)\s*/g, "$1\n"));
-	    }, 0);
+	    //typeof console !== "undefined" && console.error && setTimeout(function() {
+	    //    var err = ((location.hash || "").match(/([#&])BJ_ERROR=([^&$]+)/) || [])[2];
+	    //    err && console.error("BJ_ERROR", decodeURIComponent(err).replace(/(:\d+:\d+)\s*/g, "$1\n"));
+	    //}, 0);
 
 	    /**return report;
 
