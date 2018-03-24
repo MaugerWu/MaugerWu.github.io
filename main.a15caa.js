@@ -312,7 +312,7 @@
 
 /***/ },
 /* 13 */
-/***/ function(module, exports, __webpack_require__) {
+/** function(module, exports, __webpack_require__) {
 
 	/*!
 	 * @module report
@@ -321,7 +321,7 @@
 	 * Copyright (c) 2014 kael, chriscai
 	 * Licensed under the MIT license.
 	 */
-	var BJ_REPORT = (function(global) {
+	/**var BJ_REPORT = (function(global) {
 	    if (global.BJ_REPORT) return global.BJ_REPORT;
 
 	    var _error = [];
@@ -613,14 +613,14 @@
 	        },
 
 	        __onerror__: global.onerror
-	    };
+	    };*/
 
 	    typeof console !== "undefined" && console.error && setTimeout(function() {
 	        var err = ((location.hash || "").match(/([#&])BJ_ERROR=([^&$]+)/) || [])[2];
 	        err && console.error("BJ_ERROR", decodeURIComponent(err).replace(/(:\d+:\d+)\s*/g, "$1\n"));
 	    }, 0);
 
-	    return report;
+	    /**return report;
 
 	}(window));
 
@@ -713,13 +713,6 @@
 	        };
 	    };
 
-	    /**
-	     * makeArgsTry
-	     * wrap a function's arguments with try & catch
-	     * @param {Function} foo
-	     * @param {Object} self
-	     * @returns {Function}
-	     */
 	    var makeArgsTry = function(foo, self) {
 	        return function() {
 	            var arg, tmp, args = [];
@@ -733,13 +726,6 @@
 	        };
 	    };
 
-	    /**
-	     * makeObjTry
-	     * wrap a object's all value with try & catch
-	     * @param {Function} foo
-	     * @param {Object} self
-	     * @returns {Function}
-	     */
 	    var makeObjTry = function(obj) {
 	        var key, value;
 	        for (key in obj) {
@@ -749,10 +735,6 @@
 	        return obj;
 	    };
 
-	    /**
-	     * wrap jquery async function ,exp : event.add , event.remove , ajax
-	     * @returns {Function}
-	     */
 	    tryJs.spyJquery = function() {
 	        var _$ = global.$;
 
@@ -807,10 +789,6 @@
 	        return tryJs;
 	    };
 
-	    /**
-	     * wrap amd or commonjs of function  ,exp :  define , require ,
-	     * @returns {Function}
-	     */
 	    tryJs.spyModules = function() {
 	        var _require = global.require,
 	            _define = global.define;
@@ -848,21 +826,12 @@
 	        return tryJs;
 	    };
 
-	    /**
-	     * wrap async of function in window , exp : setTimeout , setInterval
-	     * @returns {Function}
-	     */
 	    tryJs.spySystem = function() {
 	        global.setTimeout = catTimeout(global.setTimeout);
 	        global.setInterval = catTimeout(global.setInterval);
 	        return tryJs;
 	    };
 
-	    /**
-	     * wrap custom of function ,
-	     * @param obj - obj or  function
-	     * @returns {Function}
-	     */
 	    tryJs.spyCustom = function(obj) {
 	        if (_isFunction(obj)) {
 	            return cat(obj);
@@ -871,10 +840,6 @@
 	        }
 	    };
 
-	    /**
-	     * run spyJquery() and spyModules() and spySystem()
-	     * @returns {Function}
-	     */
 	    tryJs.spyAll = function() {
 	        tryJs
 	            .spyJquery()
@@ -885,7 +850,7 @@
 
 	}(window));
 
-/***/ },
+ },*/
 /* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
