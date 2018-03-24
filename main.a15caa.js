@@ -66,10 +66,10 @@
 	// 样式
 
 	// 上报
-	(0, _util.addLoadEvent)(function () {
+	/**(0, _util.addLoadEvent)(function () {
 		_share2.default.init();
 		_viewer2.default.init();
-	});
+	});*/
 	// 图片查看器
 
 /***/ },
@@ -103,7 +103,7 @@
 		if (r != null) return unescape(r[2]);return null;
 	}
 	// 统计用，开发者不需要理会
-	if (window.BJ_REPORT) {
+	/**if (window.BJ_REPORT) {
 		BJ_REPORT.init({
 			id: 1
 		});
@@ -146,7 +146,7 @@
 
 	module.exports = {
 		init: function init() {}
-	};
+	};*/
 
 /***/ },
 /* 12 */
