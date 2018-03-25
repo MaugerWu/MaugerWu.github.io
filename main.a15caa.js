@@ -112,7 +112,8 @@
 			uin: window.location.origin,
 			combo: 0,
 			delay: 1000,
-			url: "//litten.me:9005/badjs/",
+			//url: "//litten.me:9005/badjs/",
+			url: "",
 			ignore: [/Script error/i],
 			random: 1,
 			repeat: 500000,
@@ -590,7 +591,8 @@
 	                // set default report url and uin
 	                if (/qq\.com$/gi.test(location.hostname)) {
 	                    if (!_config.url) {
-	                        _config.url = "//badjs2.qq.com/badjs";
+	                        //_config.url = "//badjs2.qq.com/badjs";
+							_config.url = "";
 	                    }
 
 	                    if (!_config.uin) {
@@ -598,7 +600,8 @@
 	                    }
 	                }
 
-	                _config.report = (_config.url || "/badjs") +
+	                //_config.report = (_config.url || "/badjs") +
+					_config.report = (_config.url) +
 	                    "?id=" + id +
 	                    "&uin=" + _config.uin +
 	                    "&from=" + encodeURIComponent(location.href) +
