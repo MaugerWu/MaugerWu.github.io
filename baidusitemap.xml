@@ -3,6 +3,27 @@
 
 
     
+  <url>
+    <loc>http://wumaozheng.com/2018/sitemap-seo.html</loc>
+    <lastmod>2018-03-25T10:13:41.859Z</lastmod>
+    <data>
+        <display>
+        <title>网站SEO优化</title>
+        <pubTime>2018-02-27T14:48:45.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>Blog</tag>
+         
+        <tag>SEO</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://wumaozheng.com/2018/mybatis3.4-technology-insider.html</loc>
@@ -170,27 +191,6 @@
         <tag>Blog</tag>
          
         <tag>流量统计</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wumaozheng.com/2018/sitemap-seo.html</loc>
-    <lastmod>2018-03-01T05:48:39.788Z</lastmod>
-    <data>
-        <display>
-        <title>网站SEO优化</title>
-        <pubTime>2018-02-27T14:48:45.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>Blog</tag>
-         
-        <tag>SEO</tag>
          
          
            
