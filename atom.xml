@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wumaozheng.com/"/>
-  <updated>2018-03-14T19:19:05.042Z</updated>
+  <updated>2018-04-18T14:05:00.245Z</updated>
   <id>http://wumaozheng.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>设计模式总览</title>
+    <link href="http://wumaozheng.com/2018/Design-Pattern-Introduction.html"/>
+    <id>http://wumaozheng.com/2018/Design-Pattern-Introduction.html</id>
+    <published>2018-04-17T12:33:05.000Z</published>
+    <updated>2018-04-18T14:05:00.245Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://www.picb.cc/image/2rispT" alt="Design Pattern"></p><p>&emsp;&emsp;设计模式（Design Pattern）是一套被反复使用、多数人知晓的、经过分类编目的、代码设计经验的总结。使用设计模式是为了更好的代码<code>可重用性</code>、<code>可读性</code>、<code>可靠性</code>和<code>可维护性</code>。</p><a id="more"></a><h3 id="一、设计模式3大分类"><a href="#一、设计模式3大分类" class="headerlink" title="一、设计模式3大分类"></a>一、设计模式3大分类</h3><h4 id="emsp-1-创建型模式（5种）"><a href="#emsp-1-创建型模式（5种）" class="headerlink" title="&emsp;1. 创建型模式（5种）"></a>&emsp;1. 创建型模式（5种）</h4><pre><code>- 单例模式（Singleton Pattern）- 工厂方法模式（Factory Method Pattern）- 抽象工厂模式（Abstract Factory Pattern）- 建造者模式（Builder Pattern）- 原型模式（Prototype Pattern）</code></pre><h4 id="emsp-2-结构型模式（7种）"><a href="#emsp-2-结构型模式（7种）" class="headerlink" title="&emsp;2.  结构型模式（7种）"></a>&emsp;2.  结构型模式（7种）</h4><pre><code>- 适配器模式（Adapter Pattern）- 装饰者模式（Decorator Pattern）- 代理模式（Proxy Pattern）- 外观模式（Facade Pattern）- 桥接模式（Bridge Pattern）- 组合模式（Composite Pattern）- 享元模式（Flyweight Pattern）  </code></pre><h4 id="emsp-3-行为型模式（11种）"><a href="#emsp-3-行为型模式（11种）" class="headerlink" title="&emsp;3.  行为型模式（11种）"></a>&emsp;3.  行为型模式（11种）</h4><pre><code>- 策略模式（Strategy Pattern）- 模板方法模式（Template Method Pattern）- 观察者模式（Observer Pattern）- 迭代器模式（Iterator Pattern）- 责任链模式（Chain Of Responsibility Pattern）- 命令模式（Command Pattern）- 备忘录模式（Memento Pattern）- 状态模式（Status Pattern）- 访问者模式（Visitor Pattern）- 中介者模式（Mediator Pattern）- 解释器模式（Interpreter Pattern）</code></pre><h3 id="二、设计模式6大原则"><a href="#二、设计模式6大原则" class="headerlink" title="二、设计模式6大原则"></a>二、设计模式6大原则</h3><h4 id="emsp-1-单一职责原则（Single-Responsibility-Principle-SRP）"><a href="#emsp-1-单一职责原则（Single-Responsibility-Principle-SRP）" class="headerlink" title="&emsp;1. 单一职责原则（Single Responsibility Principle, SRP）"></a>&emsp;1. 单一职责原则（Single Responsibility Principle, SRP）</h4><blockquote><p>就一个类而言，应该只有一个引起它变化的原因。</p><ul><li>降低类的复杂度，一个类只负责一项职责；</li><li>提高类的可读性和可维护性；</li><li>降低变更引起的风险。</li></ul></blockquote><h4 id="emsp-2-里氏替换原则（Liskov-Substitution-Principle-LSP）"><a href="#emsp-2-里氏替换原则（Liskov-Substitution-Principle-LSP）" class="headerlink" title="&emsp;2. 里氏替换原则（Liskov Substitution Principle, LSP）"></a>&emsp;2. 里氏替换原则（Liskov Substitution Principle, LSP）</h4><blockquote><p>所有引用基类（父类）的地方必须能透明地使用其子类的对象。</p><ul><li>里氏替换原则中，子类对父类的方法尽量不要重写和重载。因为父类代表了定义好的结构，通过这个规范的接口与外界交互，子类不应该随便破坏它。</li><li>任何基类可以出现的地方，子类一定可以出现。里氏替换原则是继承复用的基石，只有当衍生类可以替换基类，软件单位的功能不受到影响时，基类才能真正被复用，而衍生类也能够在基类的基础上增加新的行为。</li></ul></blockquote><h4 id="emsp-3-依赖倒转原则（Dependence-Inversion-Principle-DIP）"><a href="#emsp-3-依赖倒转原则（Dependence-Inversion-Principle-DIP）" class="headerlink" title="&emsp;3. 依赖倒转原则（Dependence Inversion Principle, DIP）"></a>&emsp;3. 依赖倒转原则（Dependence Inversion Principle, DIP）</h4><blockquote><p>抽象不应该依赖于细节，细节应当依赖于抽象。换言之，要针对接口编程，而不是针对实现编程。</p><ul><li>在实现依赖倒转原则时，我们需要针对抽象层编程，而将具体类的对象通过依赖注入（DependencyInjection, DI）的方式注入到其他对象中，依赖注入是指当一个对象要与其他对象发生依赖关系时，通过抽象来注入所依赖的对象。</li><li>常用的注入方式有三种，分别是：<code>构造注入</code>，<code>设值注入（Setter注入）</code>和<code>接口注入</code>。构造注入是指通过构造函数来传入具体类的对象，设值注入是指通过 Setter 方法来传入具体类的对象，而接口注入是指通过在接口中声明的业务方法来传入具体类的对象。这些方法在定义时使用的是抽象类型，在运行时再传入具体类型的对象，由子类对象来覆盖父类对象。</li></ul></blockquote><h4 id="emsp-4-接口隔离原则（Interface-Segregation-Principle-ISP）"><a href="#emsp-4-接口隔离原则（Interface-Segregation-Principle-ISP）" class="headerlink" title="&emsp;4. 接口隔离原则（Interface Segregation Principle, ISP）"></a>&emsp;4. 接口隔离原则（Interface Segregation Principle, ISP）</h4><blockquote><p>使用多个专门的接口，而不使用单一的总接口，即客户端不应该依赖那些它不需要的接口。</p><ul><li>每个接口中不存在子类用不到却必须实现的方法，若存在，就要将接口拆分。使用多个隔离的接口，比使用单个接口（多个接口方法集合到一个的接口）要好。</li></ul></blockquote><h4 id="emsp-5-迪米特法则（Demeter-Principle-DP"><a href="#emsp-5-迪米特法则（Demeter-Principle-DP" class="headerlink" title="&emsp;5. 迪米特法则（Demeter Principle, DP)"></a>&emsp;5. 迪米特法则（Demeter Principle, DP)</h4><blockquote><p>一个软件实体应当尽可能少地与其他实体发生相互作用。</p><ul><li>迪米特法则又称为最少知识原则（Least Knowledge Principle, LKP）。一个类对自己依赖的类知道的越少越好。无论被依赖的类多么复杂，都应该将逻辑封装在方法的内部，通过 public 方法提供给外部。这样当被依赖的类变化时，才能最小的影响该类。</li></ul></blockquote><h4 id="emsp-6-开闭原则（Composite-Reuse-Principle-CRP）"><a href="#emsp-6-开闭原则（Composite-Reuse-Principle-CRP）" class="headerlink" title="&emsp;6. 开闭原则（Composite Reuse Principle, CRP）"></a>&emsp;6. 开闭原则（Composite Reuse Principle, CRP）</h4><blockquote><p>一个软件实体如类、模块和函数应该对扩展开放，对修改关闭。</p><ul><li>开闭原则是面向对象的可复用设计的第一块基石，它是最重要的面向对象设计原则。在开闭原则的定义中，软件实体可以指一个软件模块、一个由多个类组成的局部结构或一个独立的类。</li></ul></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://www.picb.cc/image/2rispT&quot; alt=&quot;Design Pattern&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;设计模式（Design Pattern）是一套被反复使用、多数人知晓的、经过分类编目的、代码设计经验的总结。使用设计模式是为了更好的代码&lt;code&gt;可重用性&lt;/code&gt;、&lt;code&gt;可读性&lt;/code&gt;、&lt;code&gt;可靠性&lt;/code&gt;和&lt;code&gt;可维护性&lt;/code&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://wumaozheng.com/tags/Java/"/>
+    
+      <category term="设计模式" scheme="http://wumaozheng.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>Music-For-NBA</title>
@@ -76,7 +99,7 @@
     <link href="http://wumaozheng.com/2018/LeBron-James-20180228.html"/>
     <id>http://wumaozheng.com/2018/LeBron-James-20180228.html</id>
     <published>2018-02-28T00:25:40.000Z</published>
-    <updated>2018-03-14T18:55:36.129Z</updated>
+    <updated>2018-04-18T13:56:05.061Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://t1.picb.cc/uploads/2018/03/01/YRBz0.md.jpg" alt="LeBron·James" title="LeBron·James"></p><p>&emsp;&emsp;北京时间2018年02月28日，<a href="http://nba.stats.qq.com/team/?id=cavaliers" target="_blank" rel="noopener">克利夫兰-骑士</a>（Cleveland Cavaliers）坐镇主场迎战 <a href="http://nba.stats.qq.com/team/?id=nets" target="_blank" rel="noopener">布鲁克林-篮网</a>（Brooklyn Nets），这场比赛被命名为 <a href="http://sports.qq.com/a/20180228/011679.htm" target="_blank" rel="noopener">“腾讯之夜”</a>，最终骑士129-123险胜对手。詹姆斯此役出战39分钟，25投13中得到31分12篮板11助攻拿到三双，生涯助攻数突破8000次，成为历史上首位拿到30000分+8000篮板+8000次助攻的球员。</p><a id="more"></a><p><img src="https://t1.picb.cc/uploads/2018/03/01/YRpoF.jpg" alt=""></p><p>&emsp;&emsp;勒布朗砍下31分12篮板11助攻的三双，达成了二月场均三双（27分10.5篮板10.5助攻）的成就。<br><img src="https://t1.picb.cc/uploads/2018/03/01/YRRWd.md.jpg" alt=""></p><p>&emsp;&emsp;他还凭借这次月场均三双，超越了<a href="https://baike.baidu.com/item/%E5%A8%81%E5%B0%94%E7%89%B9%C2%B7%E5%BC%A0%E4%BC%AF%E4%BC%A6/533368?fromtitle=%E5%BC%A0%E4%BC%AF%E4%BC%A6&amp;fromid=7130104" target="_blank" rel="noopener">威尔特-张伯伦</a>，成为史上年龄最大的能够达成月场均三双的球员。<br><img src="https://t1.picb.cc/uploads/2018/03/01/YRUSv.md.jpg" alt="James-vs-Chamnerlain" title="James-vs-Chamnerlain"></p><p>&emsp;&emsp;勒布朗·詹姆斯本赛季已经拿到12次三双，上赛季的13次三双已经是他生涯的最高纪录，本赛季他要创造新的纪录也不是什么问题。<br><img src="https://t1.picb.cc/uploads/2018/03/01/YRScr.md.jpg" alt=""></p><p><img src="https://t1.picb.cc/uploads/2018/03/01/YRxxa.md.jpg" alt=""></p><p>&emsp;&emsp;生涯助攻数达到8000里程碑。当比赛结束后，速贷球馆（骑士主场馆）现场球迷也不断呼喊着“MVP”来庆祝他这一成就。<br><img src="https://t1.picb.cc/uploads/2018/03/01/YRPi1.md.jpg" alt="James-8000次助攻-2018-02-28" title="James-8000次助攻"></p><p><img src="https://t1.picb.cc/uploads/2018/03/01/YRXQJ.md.jpg" alt="詹老汉的第8000次助攻，30000+8000+8000历史首人！" title="詹老汉的第8000次助攻"></p><p>&emsp;&emsp;赛后詹姆斯更新Instagram写到：“这真是太不真实了！深知自己从联盟中的菜鸟打起，到现在完成了联盟此前从未有人做到的壮举，我一直梦想着成为这其中的一部分。WOW！！”<br><img src="https://t1.picb.cc/uploads/2018/03/01/YR9tu.md.jpg" alt="这真是太不真实了！" title="KingJames-Instagram"></p><p>&emsp;&emsp;33岁的詹姆斯依旧在这个球场上展现着他让人恐怖的能力以及他的全面，而这其中更让人不可思议的是他竟然还在进步。当同龄人已经步入“养老”的行列的时候詹姆斯却还在创造着自己的一个又一个纪录，不愧为“天选之子”—詹皇，希望詹老汉一直健康的打下去，我们期待着你的 <a href="">40000PTS+10000REB+10000AST</a>，见证奇迹！<br><img src="https://t1.picb.cc/uploads/2018/03/01/YRLrD.jpg" alt=""></p><p>&emsp;&emsp;本场首发球员：</p><ul><li>布鲁克林-篮网：丹吉洛-拉塞尔、丁威迪、克拉布、卡罗尔、贾莱特-阿伦</li><li>克利夫兰-骑士：勒布朗-詹姆斯、乔治-希尔、JR-史密斯、奥斯曼、特里斯坦-汤普森</li></ul>]]></content>
     
@@ -89,12 +112,6 @@
     
     
       <category term="NBA" scheme="http://wumaozheng.com/tags/NBA/"/>
-    
-      <category term="勒布朗·詹姆斯" scheme="http://wumaozheng.com/tags/%E5%8B%92%E5%B8%83%E6%9C%97%C2%B7%E8%A9%B9%E5%A7%86%E6%96%AF/"/>
-    
-      <category term="克利夫兰-骑士" scheme="http://wumaozheng.com/tags/%E5%85%8B%E5%88%A9%E5%A4%AB%E5%85%B0-%E9%AA%91%E5%A3%AB/"/>
-    
-      <category term="布鲁克林-篮网" scheme="http://wumaozheng.com/tags/%E5%B8%83%E9%B2%81%E5%85%8B%E6%9E%97-%E7%AF%AE%E7%BD%91/"/>
     
   </entry>
   
@@ -153,7 +170,7 @@
     <link href="http://wumaozheng.com/2018/LeBron-James-20180219.html"/>
     <id>http://wumaozheng.com/2018/LeBron-James-20180219.html</id>
     <published>2018-02-19T01:00:00.000Z</published>
-    <updated>2018-03-14T19:28:24.211Z</updated>
+    <updated>2018-04-18T13:56:20.903Z</updated>
     
     <content type="html"><![CDATA[<iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=y0025dgkdvx&tiny=0&auto=0" allowfullscreen></iframe><p>&emsp;&emsp;北京时间2018年02月19日，2018 NBA全明星正赛在 <a href="https://baike.baidu.com/item/%E6%96%AF%E5%8F%B0%E6%99%AE%E6%96%AF%E7%90%83%E9%A6%86/6503751?fr=aladdin" target="_blank" rel="noopener">洛杉矶斯台普斯中心</a> 举办，勒布朗-詹姆斯队以 <code>148-145</code> 逆转斯蒂芬-库里队。詹姆斯全场狂砍<code>29分10篮板8助攻</code>，其中得分和篮板均是全队最高，当选本届全明星赛MVP，这是他的第三个AMVP（全明星最有价值球员）。<a href="http://sports.qq.com/kbsweb/game.htm?mid=100000:1471476&amp;replay=1" target="_blank" rel="noopener">【视频回放】</a></p><a id="more"></a><p><img src="https://t1.picb.cc/uploads/2018/03/15/22xPhF.md.jpg" alt="勒布朗-詹姆斯队 VS 斯蒂芬-库里队" title="James Team VS Curry Team"></p><p><img src="https://t1.picb.cc/uploads/2018/03/15/22x9A0.md.jpg" alt="NBA2018全明星赛 - 勒布朗·詹姆斯斩获AMVP" title="詹姆斯荣获AMVP"></p><p>&emsp;&emsp;在本场比赛中，詹姆斯砍下29分10篮板8助攻，第3次获得全明星MVP，比肩“大O”奥斯卡·罗伯特森和乔丹，仅次于科比·布莱恩特和鲍勃·佩蒂特（同为4次），杜兰特得到19分6篮板5助攻3抢断1盖帽。库里贡献11分6篮板5助攻，德罗赞砍下21分6篮板2抢断，利拉德贡献21分。</p><p><img src="https://t1.picb.cc/uploads/2018/03/15/22xLF1.md.jpg" alt="东部詹姆斯队阵容" title="詹姆斯队"></p><h5 id="詹姆斯队-东部-首发："><a href="#詹姆斯队-东部-首发：" class="headerlink" title="詹姆斯队(东部)首发："></a>詹姆斯队(东部)首发：</h5><ul><li><a href="http://nba.stats.qq.com/player/?id=3704" target="_blank" rel="noopener">勒布朗·詹姆斯(詹皇)</a>（队长）</li><li><a href="http://nba.stats.qq.com/player/?id=4244" target="_blank" rel="noopener">凯文·杜兰特(KD)</a></li><li><a href="http://nba.stats.qq.com/player/?id=4840" target="_blank" rel="noopener">凯里·欧文(德鲁大叔)</a></li><li><a href="http://nba.stats.qq.com/player/?id=5007" target="_blank" rel="noopener">安东尼·戴维斯(浓眉哥)</a></li><li><a href="http://nba.stats.qq.com/player/?id=4390" target="_blank" rel="noopener">拉塞尔·威斯布鲁克(韦少)</a></li></ul><h5 id="詹姆斯队-东部-替补："><a href="#詹姆斯队-东部-替补：" class="headerlink" title="詹姆斯队(东部)替补："></a>詹姆斯队(东部)替补：</h5><ul><li><a href="http://nba.stats.qq.com/player/?id=4725" target="_blank" rel="noopener">保罗·乔治(泡椒)</a></li><li><a href="http://nba.stats.qq.com/player/?id=5153" target="_blank" rel="noopener">维克多·奥拉迪波</a></li><li><a href="http://nba.stats.qq.com/player/?id=4152" target="_blank" rel="noopener">凯尔·洛瑞</a></li><li><a href="http://nba.stats.qq.com/player/?id=5009" target="_blank" rel="noopener">布拉德利·比尔</a></li><li><a href="http://nba.stats.qq.com/player/?id=4890" target="_blank" rel="noopener">肯巴·沃克</a></li><li><a href="http://nba.stats.qq.com/player/?id=4507" target="_blank" rel="noopener">戈兰·德拉季奇</a></li><li><a href="http://nba.stats.qq.com/player/?id=5015" target="_blank" rel="noopener">安德鲁·德拉蒙德(庄神)</a></li><li><a href="http://nba.stats.qq.com/player/?id=4130" target="_blank" rel="noopener">拉马库斯·阿尔德里奇</a></li><li><a href="http://nba.stats.qq.com/player/?id=4391" target="_blank" rel="noopener">凯文·乐福</a>（受伤缺席，由 <a href="http://nba.stats.qq.com/player/?id=4507" target="_blank" rel="noopener">戈兰·德拉季奇</a> 顶替）</li><li><a href="http://nba.stats.qq.com/player/?id=4716" target="_blank" rel="noopener">约翰·沃尔</a>（受伤缺席，由 <a href="http://nba.stats.qq.com/player/?id=5015" target="_blank" rel="noopener">安德鲁·德拉蒙德(庄神)</a> 顶替）</li><li><a href="http://nba.stats.qq.com/player/?id=5544" target="_blank" rel="noopener">克里斯塔普斯·波尔津吉斯(波神)</a>（受伤缺席，由 <a href="http://nba.stats.qq.com/player/?id=4890" target="_blank" rel="noopener">肯巴·沃克</a> 顶替）</li><li><a href="http://nba.stats.qq.com/team/?type=player&amp;id=4720" target="_blank" rel="noopener">德马库斯·考辛斯(考神)</a>（受伤缺席，由 <a href="http://nba.stats.qq.com/player/?id=4725" target="_blank" rel="noopener">保罗·乔治(泡椒)</a> 顶替）</li></ul><p><img src="https://t1.picb.cc/uploads/2018/03/15/22xTfJ.md.jpg" alt="西部库里队阵容" title="库里队"></p><h5 id="库里队-西部-首发："><a href="#库里队-西部-首发：" class="headerlink" title="库里队(西部)首发："></a>库里队(西部)首发：</h5><ul><li><a href="http://nba.stats.qq.com/player/?id=4614" target="_blank" rel="noopener">德玛尔·德罗赞</a></li><li><a href="http://nba.stats.qq.com/player/?id=5294" target="_blank" rel="noopener">乔尔·恩比德(大帝)</a></li><li><a href="http://nba.stats.qq.com/player/?id=5185" target="_blank" rel="noopener">扬尼斯·阿德托昆博(字母哥)</a></li><li><a href="http://nba.stats.qq.com/player/?id=4563" target="_blank" rel="noopener">詹姆斯·哈登(登哥)</a></li><li><a href="http://nba.stats.qq.com/player/?id=4612" target="_blank" rel="noopener">斯蒂芬·库里(萌神)</a>（队长）</li></ul><h5 id="库里队-西部-替补："><a href="#库里队-西部-替补：" class="headerlink" title="库里队(西部)替补："></a>库里队(西部)替补：</h5><ul><li><a href="http://nba.stats.qq.com/team/?type=player&amp;id=5012" target="_blank" rel="noopener">达米安·利拉德</a></li><li><a href="http://nba.stats.qq.com/team/?type=player&amp;id=5546" target="_blank" rel="noopener">卡尔·安东尼·唐斯</a></li><li><a href="http://nba.stats.qq.com/player/?id=4892" target="_blank" rel="noopener">克莱·汤普森(汤神)</a></li><li><a href="http://nba.stats.qq.com/player/?id=4245" target="_blank" rel="noopener">艾尔·霍福德</a></li><li><a href="http://nba.stats.qq.com/player/?id=4152" target="_blank" rel="noopener">凯尔·洛瑞</a></li><li><a href="http://nba.stats.qq.com/player/?id=5069" target="_blank" rel="noopener">德雷蒙德·格林(追梦)</a></li><li><a href="http://nba.stats.qq.com/player/?id=4912" target="_blank" rel="noopener">吉米·巴特勒</a></li></ul><p><img src="https://t1.picb.cc/uploads/2018/03/15/22xRLr.md.jpg" alt="詹皇战斧劈扣，势不可挡！" title="詹皇战斧劈扣"></p><h5 id="emsp-emsp-加油老詹，长路漫漫，唯皇做伴！"><a href="#emsp-emsp-加油老詹，长路漫漫，唯皇做伴！" class="headerlink" title="&emsp;&emsp;加油老詹，长路漫漫，唯皇做伴！"></a>&emsp;&emsp;加油老詹，长路漫漫，唯皇做伴！</h5>]]></content>
     
@@ -168,10 +185,6 @@
     
       <category term="NBA" scheme="http://wumaozheng.com/tags/NBA/"/>
     
-      <category term="勒布朗·詹姆斯" scheme="http://wumaozheng.com/tags/%E5%8B%92%E5%B8%83%E6%9C%97%C2%B7%E8%A9%B9%E5%A7%86%E6%96%AF/"/>
-    
-      <category term="斯蒂芬·库里" scheme="http://wumaozheng.com/tags/%E6%96%AF%E8%92%82%E8%8A%AC%C2%B7%E5%BA%93%E9%87%8C/"/>
-    
   </entry>
   
   <entry>
@@ -179,7 +192,7 @@
     <link href="http://wumaozheng.com/2018/LeBron-James-20180209.html"/>
     <id>http://wumaozheng.com/2018/LeBron-James-20180209.html</id>
     <published>2018-02-08T06:37:25.000Z</published>
-    <updated>2018-03-14T18:54:40.892Z</updated>
+    <updated>2018-04-18T13:55:42.143Z</updated>
     
     <content type="html"><![CDATA[<iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=q0025zrmhkw&tiny=0&auto=0" allowfullscreen></iframe><p>&emsp; &emsp; 北京时间2018年02月08日，NBA常规赛继续进行，骑士在主场迎战森林狼。凭借勒布朗·詹姆斯的压哨绝杀拿到三双37＋10＋15，骑士苦战加时赛以140-138击败森林狼，报了此前在客场负于对手的一箭之仇，骑士结束两连败。<a href="http://kbs.sports.qq.com/kbsweb/game.htm?mid=100000:1471356&amp;replay=1" target="_blank" rel="noopener">【NBA集锦】</a></p><a id="more"></a><h5 id="双方本场首发球员："><a href="#双方本场首发球员：" class="headerlink" title="双方本场首发球员："></a>双方本场首发球员：</h5><ul><li>克利夫兰-骑士：勒布朗·詹姆斯、克劳德、JR·史密斯、小托马斯、特里斯坦-汤普森</li><li>明尼苏达-森林狼：巴特勒、唐斯、维金斯、蒂格、吉布森</li></ul><h5 id="双方本场替补球员："><a href="#双方本场替补球员：" class="headerlink" title="双方本场替补球员："></a>双方本场替补球员：</h5><ul><li>克利夫兰-骑士：科沃尔、杰夫·格林、奥斯曼、弗莱、罗斯</li><li>明尼苏达-森林狼：克劳福德、吉昂、别利察、琼斯</li></ul>]]></content>
     
@@ -193,12 +206,6 @@
     
     
       <category term="NBA" scheme="http://wumaozheng.com/tags/NBA/"/>
-    
-      <category term="勒布朗·詹姆斯" scheme="http://wumaozheng.com/tags/%E5%8B%92%E5%B8%83%E6%9C%97%C2%B7%E8%A9%B9%E5%A7%86%E6%96%AF/"/>
-    
-      <category term="克利夫兰-骑士" scheme="http://wumaozheng.com/tags/%E5%85%8B%E5%88%A9%E5%A4%AB%E5%85%B0-%E9%AA%91%E5%A3%AB/"/>
-    
-      <category term="明尼苏达-森林狼" scheme="http://wumaozheng.com/tags/%E6%98%8E%E5%B0%BC%E8%8B%8F%E8%BE%BE-%E6%A3%AE%E6%9E%97%E7%8B%BC/"/>
     
   </entry>
   
@@ -251,7 +258,7 @@
     <link href="http://wumaozheng.com/2018/LeBron-James-20180124.html"/>
     <id>http://wumaozheng.com/2018/LeBron-James-20180124.html</id>
     <published>2018-01-24T14:45:45.000Z</published>
-    <updated>2018-03-14T18:55:25.238Z</updated>
+    <updated>2018-04-18T13:55:55.888Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://t1.picb.cc/uploads/2018/02/24/Kv6eL.md.jpg" alt="LeBron·James" title="LeBron·James"></p><p>&emsp;&emsp;北京时间2018年01月24日，<a href="http://nba.stats.qq.com/team/?id=cavaliers" target="_blank" rel="noopener">克利夫兰-骑士</a>（Cleveland Cavaliers）客场挑战<a href="http://nba.stats.qq.com/team/?id=spurs" target="_blank" rel="noopener">圣安东尼奥-马刺</a>（San Antonio Spurs）。此前詹姆斯距离3万分大关还有7分，在今天的比赛中，詹姆斯第一节没有很强的进攻欲望，最后几分钟叫了个暂停之后，詹姆斯加强了个人单打进攻，但是两罚不中，三分打铁，一度以为3万分还要等个几分钟。但在第一节的最后一攻，詹姆斯面对丹尼-格林的防守，强行命中了一记中投。这球之后，詹姆斯正式跨入3万分俱乐部，也成为了历史上最年轻的3万分先生，达成30,000分里程碑。<a id="more"></a></p><p><img src="https://t1.picb.cc/uploads/2018/01/26/LQRFM.gif" alt="King James center"></p><p>&emsp;&emsp;第一节的最后一攻。</p><p><img src="https://t1.picb.cc/uploads/2018/01/26/LQTVt.jpg" alt="詹姆斯强行跳投命中"></p><p>&emsp;&emsp;强行跳投命中，来到30,001分。</p><p><img src="https://t1.picb.cc/uploads/2018/01/26/Lxghv.jpg" alt="实力詹的30000分"></p><p>&emsp;&emsp;2003年10月30日，詹姆斯初登NBA舞台，在全世界的瞩目下，用一记跳投拿到了生涯首分，时隔5200天，他拿到了生涯第30000分，数据见证了詹姆斯的成长之路，但伟大却无法被量化。</p><p><img src="https://t1.picb.cc/uploads/2018/01/25/LQjKN.jpg" alt="詹韦" title="詹姆斯&amp;韦德"></p><p>&emsp;&emsp;不是得分手的勒布朗·詹姆斯，却展现着不可思议的得分能力，更何况詹韦又重聚在一起了。三万分到来时，詹姆斯立马和德怀恩·韦德（Dwyane Wade）拥抱在一起，他们的情义远远大于篮球。</p><p><img src="https://t1.picb.cc/uploads/2018/01/26/LxVeD.jpg" alt="詹皇"></p><p>&emsp;&emsp;截至2018年1月24日，勒布朗·詹姆斯总共获得3个总冠军，3次FMVP（Finals Most Valuable Player 总决赛最有价值球员）。分别是：</p><ul><li>2012年，詹姆斯得到NBA个人生涯的第3座常规赛MVP，第1个总冠军和 FMVP。</li><li>2013年，詹姆斯获得第4个常规赛MVP、第2个NBA总冠军和第2个 FMVP，实现两连冠。</li><li>2016年，詹姆斯带领骑士逆转战胜卫冕冠军勇士获得队史首个总冠军和个人第3个 FMVP。</li></ul><p><img src="https://t1.picb.cc/uploads/2018/01/26/Lxyba.jpg" alt="3万分先生"></p><p>&emsp;&emsp;克利夫兰骑士 - 勒布朗·詹姆斯。</p><p>&emsp;&emsp;让我们一起去见证NBA历史上最年轻30,000分先生的诞生…</p><p><img src="https://t1.picb.cc/uploads/2018/01/26/Lx2Ku.jpg" alt="KingJames"></p><p>&emsp;&emsp;若有和我同样喜欢勒布朗·詹姆斯（LeBron James）和科比·布莱恩特（Kobe Bryant）的詹密、科密朋友们，在这里向大家推荐一档我个人比较喜欢的知乎专栏：</p><ul><li><a href="https://zhuanlan.zhihu.com/c_131346426" target="_blank" rel="noopener">一才的篮球</a> —— 篮球的道路上，不变的是热爱。</li></ul>]]></content>
     
@@ -265,14 +272,6 @@
     
       <category term="NBA" scheme="http://wumaozheng.com/tags/NBA/"/>
     
-      <category term="勒布朗·詹姆斯" scheme="http://wumaozheng.com/tags/%E5%8B%92%E5%B8%83%E6%9C%97%C2%B7%E8%A9%B9%E5%A7%86%E6%96%AF/"/>
-    
-      <category term="克利夫兰-骑士" scheme="http://wumaozheng.com/tags/%E5%85%8B%E5%88%A9%E5%A4%AB%E5%85%B0-%E9%AA%91%E5%A3%AB/"/>
-    
-      <category term="德维恩·韦德" scheme="http://wumaozheng.com/tags/%E5%BE%B7%E7%BB%B4%E6%81%A9%C2%B7%E9%9F%A6%E5%BE%B7/"/>
-    
-      <category term="圣安东里奥-马刺" scheme="http://wumaozheng.com/tags/%E5%9C%A3%E5%AE%89%E4%B8%9C%E9%87%8C%E5%A5%A5-%E9%A9%AC%E5%88%BA/"/>
-    
   </entry>
   
   <entry>
@@ -280,7 +279,7 @@
     <link href="http://wumaozheng.com/2018/lost-and-confused.html"/>
     <id>http://wumaozheng.com/2018/lost-and-confused.html</id>
     <published>2018-01-22T15:43:15.000Z</published>
-    <updated>2018-03-04T07:20:49.057Z</updated>
+    <updated>2018-04-18T13:55:15.723Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://t1.picb.cc/uploads/2018/02/24/Khz1M.md.jpg" alt="Steve Jobs" title="乔布斯"></p><p>&emsp;&emsp;Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking. Don’t let the noise of other’s opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow<br>already know what you truly want to become. Everything else is secondary. —— Steve Jobs</p><a id="more"></a><blockquote><p>&emsp;&emsp;你的时间是有限的，所以不要把它浪费在别人的生活中。 不要被教条所束缚 - 这与他人思维的结果是一致的。 不要让别人的意见的噪音淹没你自己的内心的声音。 最重要的是，有勇气跟随你的内心和直觉。 他们以某种方式已经知道你真正想成为什么。 其他一切都是次要的。—— 史蒂夫·乔布斯</p></blockquote><p>附上视频链接：<a href="http://open.163.com/movie/2006/8/3/8/M7BC8JMHJ_M7BC8PA38.html" title="乔布斯-斯坦福大学演讲" target="_blank" rel="noopener">乔布斯-斯坦福大学演讲</a></p>]]></content>
     
@@ -295,8 +294,6 @@
       <category term="Notes" scheme="http://wumaozheng.com/tags/Notes/"/>
     
       <category term="Thinking" scheme="http://wumaozheng.com/tags/Thinking/"/>
-    
-      <category term="史蒂夫·乔布斯" scheme="http://wumaozheng.com/tags/%E5%8F%B2%E8%92%82%E5%A4%AB%C2%B7%E4%B9%94%E5%B8%83%E6%96%AF/"/>
     
   </entry>
   
@@ -373,9 +370,9 @@
     
       <category term="Hexo" scheme="http://wumaozheng.com/tags/Hexo/"/>
     
-      <category term="Github" scheme="http://wumaozheng.com/tags/Github/"/>
-    
       <category term="Blog" scheme="http://wumaozheng.com/tags/Blog/"/>
+    
+      <category term="Github" scheme="http://wumaozheng.com/tags/Github/"/>
     
   </entry>
   
