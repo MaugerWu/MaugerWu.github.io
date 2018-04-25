@@ -4,8 +4,67 @@
 
     
   <url>
+    <loc>http://wumaozheng.com/2018/clone.html</loc>
+    <lastmod>2018-04-25T19:40:47.050Z</lastmod>
+    <data>
+        <display>
+        <title>Java 中的 clone() 方法</title>
+        <pubTime>2018-04-25T15:23:05.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>clone</tag>
+         
+        <tag>数据类型</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wumaozheng.com/2017/git-in-linux.html</loc>
+    <lastmod>2018-04-25T19:13:01.654Z</lastmod>
+    <data>
+        <display>
+        <title>使用Git命令提交代码</title>
+        <pubTime>2017-12-26T04:07:00.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wumaozheng.com/2017/markdown-introduction.html</loc>
+    <lastmod>2018-04-25T19:12:04.700Z</lastmod>
+    <data>
+        <display>
+        <title>Markdown基础语法及编辑器简介</title>
+        <pubTime>2017-12-26T04:57:00.000Z</pubTime>
+        
+        <tag>Markdown</tag>
+         
+        <tag>Editor</tag>
+         
+        <tag>Tools</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wumaozheng.com/2018/Design-Pattern-Introduction.html</loc>
-    <lastmod>2018-04-18T15:14:03.825Z</lastmod>
+    <lastmod>2018-04-18T16:09:16.276Z</lastmod>
     <data>
         <display>
         <title>23种设计模式总览</title>
@@ -192,27 +251,6 @@
     </url>
 
     
-  <url>
-    <loc>http://wumaozheng.com/2017/markdown-introduction.html</loc>
-    <lastmod>2018-02-24T07:36:57.124Z</lastmod>
-    <data>
-        <display>
-        <title>Markdown基础语法及编辑器简介</title>
-        <pubTime>2017-12-26T04:57:00.000Z</pubTime>
-        
-        <tag>Markdown</tag>
-         
-        <tag>Editor</tag>
-         
-        <tag>Tools</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
     
     
   <url>
@@ -269,25 +307,6 @@
         <tag>Music</tag>
          
         <tag>Freetime</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wumaozheng.com/2017/git-in-linux.html</loc>
-    <lastmod>2018-01-27T07:00:04.469Z</lastmod>
-    <data>
-        <display>
-        <title>Linux下使用Git命令提交代码</title>
-        <pubTime>2017-12-26T04:07:00.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Git</tag>
          
          
            

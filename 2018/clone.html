@@ -6,18 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://wumaozheng.com">
-  <title>Archives | Mauger`s Blog</title>
+  <title>Java 中的 clone() 方法 | Mauger`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="The harder you work, the luckier you will be.">
-<meta name="keywords" content="java,python,mysql,blog,javascript,js,jquery,ajax,json,html,html5,css,css3,github,coding,Developer,Programmer,Coder,程序猿,编程,代码,开源,IT,互联网,网站,博客,詹姆斯,篮球">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mauger`s Blog">
-<meta property="og:url" content="http://wumaozheng.com/archives/page/3/index.html">
+  <meta name="description" content="&amp;emsp;&amp;emsp;Object 类的 clone 是 protected 的，不能直接调用，可以被子类调用。Object 类的 clone 会知道对象的大小，为它分配足够的内存空间，并将旧对象的内容复制到新的对象中。但是，Object.clone() 执行其动作之前必须先检查 class 是否实现了 Cloneable 接口。">
+<meta name="keywords" content="Java,clone,数据类型">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java 中的 clone() 方法">
+<meta property="og:url" content="http://wumaozheng.com/2018/clone.html">
 <meta property="og:site_name" content="Mauger`s Blog">
-<meta property="og:description" content="The harder you work, the luckier you will be.">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;Object 类的 clone 是 protected 的，不能直接调用，可以被子类调用。Object 类的 clone 会知道对象的大小，为它分配足够的内存空间，并将旧对象的内容复制到新的对象中。但是，Object.clone() 执行其动作之前必须先检查 class 是否实现了 Cloneable 接口。">
+<meta property="og:image" content="https://t1.picb.cc/uploads/2018/04/26/2MFweL.md.jpg">
+<meta property="og:updated_time" content="2018-04-25T19:40:47.050Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mauger`s Blog">
-<meta name="twitter:description" content="The harder you work, the luckier you will be.">
+<meta name="twitter:title" content="Java 中的 clone() 方法">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;Object 类的 clone 是 protected 的，不能直接调用，可以被子类调用。Object 类的 clone 会知道对象的大小，为它分配足够的内存空间，并将旧对象的内容复制到新的对象中。但是，Object.clone() 执行其动作之前必须先检查 class 是否实现了 Cloneable 接口。">
+<meta name="twitter:image" content="https://t1.picb.cc/uploads/2018/04/26/2MFweL.md.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Mauger`s Blog" type="application/atom+xml">
   
@@ -186,241 +189,327 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-clone" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/music-gdsnaqgs.html" class="archive-article-date">
-  	<time datetime="2018-01-27T15:45:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-27</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/music-gdsnaqgs.html">Music-广东十年爱情故事</a>
+    <h1 class="article-title" itemprop="name">
+      Java 中的 clone() 方法
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/clone.html" class="archive-article-date">
+  	<time datetime="2018-04-25T15:23:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="https://t1.picb.cc/uploads/2018/04/26/2MFweL.md.jpg" alt="" title="JVM 内存"></p>
+<p>&emsp;&emsp;Object 类的 clone 是 protected 的，不能直接调用，可以被子类调用。Object 类的 clone 会知道对象的大小，为它分配足够的内存空间，并将旧对象的内容复制到新的对象中。但是，Object.clone() 执行其动作之前必须先检查 class 是否实现了 Cloneable 接口。</p>
+<a id="more"></a>
+<p>&emsp;&emsp;Cloneable 接口是一个标记接口，也就是没有什么内容，定义如下：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> java.lang;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Cloneable</span> </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;只有实现了 Cloneable 接口，才可以在该类的实例上调用 clone() 方法， 否则会抛出 CloneNotSupportedException。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">native</span> Object <span class="title">clone</span><span class="params">()</span> <span class="keyword">throws</span> CloneNotSupportedException</span>;</span><br></pre></td></tr></table></figure></p>
+<h3 id="一、引用拷贝"><a href="#一、引用拷贝" class="headerlink" title="一、引用拷贝"></a>一、引用拷贝</h3><p>&emsp;&emsp;创建一个指向对象的引用变量的拷贝。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Apple</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">int</span> num = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">public</span> StringBuilder name = <span class="keyword">new</span> StringBuilder(<span class="string">"Apple"</span>);</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addNum</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.num = num + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">this</span>.name = name.append(num);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">       <span class="keyword">return</span> <span class="string">"name="</span> + name + <span class="string">", num="</span> + num;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * main</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> args</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">		Apple apple1 = <span class="keyword">new</span> Apple();</span><br><span class="line">		System.out.println(<span class="string">"apple1: "</span> + apple1);</span><br><span class="line"></span><br><span class="line">		Apple apple2 = apple1;</span><br><span class="line">		apple2.addNum();</span><br><span class="line">		System.out.println(<span class="string">"apple1: "</span> + apple1);</span><br><span class="line">		System.out.println(<span class="string">"apple2: "</span> + apple2);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>执行上述代码后控制台打印结果为：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">apple1: name=Apple, num=<span class="number">1</span></span><br><span class="line">apple1: name=Apple2, num=<span class="number">2</span></span><br><span class="line">apple2: name=Apple2, num=<span class="number">2</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="二、对象拷贝"><a href="#二、对象拷贝" class="headerlink" title="二、对象拷贝"></a>二、对象拷贝</h3><h4 id="1-浅拷贝："><a href="#1-浅拷贝：" class="headerlink" title="1. 浅拷贝："></a>1. 浅拷贝：</h4><p>&emsp;&emsp;被复制对象的所有变量都含有与原来的对象相同的值，而所有的对其他对象的引用仍然指向原来的对象。即对象的浅拷贝会对“主”对象进行拷贝， 但不会复制主对象里面的对象。”里面的对象“会在原来的对象和它的副本之间共享。<br>&emsp;&emsp;简而言之，浅拷贝仅仅复制所考虑的对象，而不复制它所引用的对象。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Apple1</span> <span class="keyword">implements</span> <span class="title">Cloneable</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">int</span> num = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">public</span> StringBuilder name = <span class="keyword">new</span> StringBuilder(<span class="string">"Apple"</span>);</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addNum</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.num = num +<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">this</span>.name = name.append(num);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">       <span class="keyword">return</span> <span class="string">"name="</span> + name + <span class="string">", num="</span> + num;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 浅拷贝</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Apple1 <span class="title">clone</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">try</span></span><br><span class="line">        &#123;</span><br><span class="line">        	Apple1 cloned = (Apple1) <span class="keyword">super</span>.clone();</span><br><span class="line">            <span class="keyword">return</span> cloned;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (CloneNotSupportedException ex)</span><br><span class="line">        &#123;</span><br><span class="line">            ex.printStackTrace();</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * main</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> args</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">    	Apple1 apple1 = <span class="keyword">new</span> Apple1();</span><br><span class="line">		System.out.println(<span class="string">"apple1: "</span> + apple1);</span><br><span class="line"></span><br><span class="line">		Apple1 apple2 = apple1.clone();</span><br><span class="line">		apple2.addNum();</span><br><span class="line">		System.out.println(<span class="string">"apple1: "</span> + apple1);</span><br><span class="line">		System.out.println(<span class="string">"apple2: "</span> + apple2);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>执行上述代码后控制台打印结果为：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">apple1: name=Apple, num=<span class="number">1</span></span><br><span class="line">apple1: name=Apple2, num=<span class="number">1</span></span><br><span class="line">apple2: name=Apple2, num=<span class="number">2</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="2-深拷贝："><a href="#2-深拷贝：" class="headerlink" title="2. 深拷贝："></a>2. 深拷贝：</h4><p>&emsp;&emsp;深拷贝是一个整个独立的对象拷贝，深拷贝会拷贝所有的属性，并拷贝属性指向的动态分配的内存。当对象和它所引用的对象一起拷贝时即发生深拷贝。 深拷贝相比于浅拷贝速度较慢并且花销较大。<br>&emsp;&emsp;简而言之，深拷贝把要复制的对象所引用的对象都复制了一遍。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Apple2</span> <span class="keyword">implements</span> <span class="title">Cloneable</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">int</span> num = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">public</span> StringBuilder name = <span class="keyword">new</span> StringBuilder(<span class="string">"Apple"</span>);</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addNum</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.num = num +<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">this</span>.name = name.append(num);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">       <span class="keyword">return</span> <span class="string">"name="</span> + name + <span class="string">", num="</span> + num;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 深拷贝</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Apple2 <span class="title">clone</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">try</span></span><br><span class="line">        &#123;</span><br><span class="line">        	Apple2 cloned = (Apple2) <span class="keyword">super</span>.clone();</span><br><span class="line">        	cloned.name = <span class="keyword">new</span> StringBuilder(name);</span><br><span class="line">            <span class="keyword">return</span> cloned;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (CloneNotSupportedException ex)</span><br><span class="line">        &#123;</span><br><span class="line">            ex.printStackTrace();</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * main</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> args</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">    	Apple2 apple1 = <span class="keyword">new</span> Apple2();</span><br><span class="line">		System.out.println(<span class="string">"apple1: "</span> + apple1);</span><br><span class="line"></span><br><span class="line">		Apple2 apple2 = apple1.clone();</span><br><span class="line">		apple2.addNum();</span><br><span class="line">		System.out.println(<span class="string">"apple1: "</span> + apple1);</span><br><span class="line">		System.out.println(<span class="string">"apple2: "</span> + apple2);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>执行上述代码后控制台打印结果为：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">apple1: name=Apple, num=<span class="number">1</span></span><br><span class="line">apple1: name=Apple, num=<span class="number">1</span></span><br><span class="line">apple2: name=Apple2, num=<span class="number">2</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="3-深拷贝与浅拷贝的区别："><a href="#3-深拷贝与浅拷贝的区别：" class="headerlink" title="3. 深拷贝与浅拷贝的区别："></a>3. 深拷贝与浅拷贝的区别：</h4><ul>
+<li>深拷贝和浅拷贝之间的区别在于是否复制了子对象。</li>
+<li>深拷贝与浅拷贝问题中，会发生深拷贝的有 Java 中的 8 中基本类型以及他们的封装类型，另外还有 <code>String</code> 类型。其余的都是浅拷贝。</li>
+</ul>
+<h3 id="三、Java-基本数据类型"><a href="#三、Java-基本数据类型" class="headerlink" title="三、Java 基本数据类型"></a>三、Java 基本数据类型</h3><p>&emsp;&emsp;Java 是一种强类型语言。这就意味着必须为没一个变量声明一种类型。在 Java 中，一共有 8 中基本数据类型，其中有 4 种整型、2 种浮点型、1 种表示 Unicode 编码的字符单元的字符类型 char 和 1 种用于表示真值的 boolean 类型。</p>
+<h4 id="1-Java-中的-8-种基本类型及其封装类型："><a href="#1-Java-中的-8-种基本类型及其封装类型：" class="headerlink" title="1. Java 中的 8 种基本类型及其封装类型："></a>1. Java 中的 8 种基本类型及其封装类型：</h4><ul>
+<li>字符型：char（Character）</li>
+<li>数值型：</li>
+</ul>
+<ol>
+<li>整数型：byte（Byte）、short（Short）、int（Integer）、long（Long）</li>
+<li>浮点型：float（Float）、double（Double）</li>
+</ol>
+<ul>
+<li>布尔型：boolean（Boolean）</li>
+</ul>
+<h4 id="2-整型"><a href="#2-整型" class="headerlink" title="2. 整型"></a>2. 整型</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">类&emsp;型</th>
+<th style="text-align:center">存储需求</th>
+<th style="text-align:center">取值范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">byte</td>
+<td style="text-align:center">1 字节</td>
+<td style="text-align:center">-128 ~ 127</td>
+</tr>
+<tr>
+<td style="text-align:center">short</td>
+<td style="text-align:center">2 字节</td>
+<td style="text-align:center">-32768 ~ 32767</td>
+</tr>
+<tr>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4 字节</td>
+<td style="text-align:center">-2 147 483 648 ~ 2 147 483 647（正好超过 20 亿）</td>
+</tr>
+<tr>
+<td style="text-align:center">long</td>
+<td style="text-align:center">8 字节</td>
+<td style="text-align:center">-9 233 372 036 854 775 808 ~ 9 233 372 036 854 775 807</td>
+</tr>
+</tbody>
+</table>
+<p>&emsp;&emsp;整数用于表示没有小数部分的值，它允许是<code>负数</code>。在通常情况下，int 类型最常用。长整形数值有一个后缀 L（例如：4000000000L）。在 Java 中，整型的范围与运行 Java 代码的机器无关，这就解决了软件从一个平台移植到另一个平台，或者在同一平台中的不同操作系统之间进行移植给程序员带来的诸多问题。与此相反，C 和 C++ 程序需要针对不同的处理器选择最为有效的整型。</p>
+<h4 id="3-浮点类型"><a href="#3-浮点类型" class="headerlink" title="3. 浮点类型"></a>3. 浮点类型</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">类&emsp;型</th>
+<th style="text-align:center">存储需求</th>
+<th style="text-align:center">取值范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">float</td>
+<td style="text-align:center">4 字节</td>
+<td style="text-align:center">大约 $\pm$3.402 823 47E + 38F（有效位数为 6~7 位）</td>
+</tr>
+<tr>
+<td style="text-align:center">double</td>
+<td style="text-align:center">8 字节</td>
+<td style="text-align:center">大约 $\pm$1.797 693 134 862 315 70E + 308（有效位数为 15 位）</td>
+</tr>
+</tbody>
+</table>
+<p>&emsp;&emsp;浮点类型用于表示有小数部分的数值。double 表示这种类型的数值精度是 float 类型的两倍（称其为双精度数值）。绝大多部分应用程序都采用 double 类型。float 类型的数值有一个后缀 F（例如：3.14F），没有后缀 F 的浮点数值（例如：3.14）默认为 double 类型，或者添加后缀 D（例如：3.14D）。</p>
+<ul>
+<li>正无穷大 Double.POSITIVE_INFINITY</li>
+<li>负无穷大 Double.NEGATIVE_INFINITY</li>
+<li>NaN &emsp;&emsp;Double.NaN（不是一个数字）</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (Double.isNaN(x)) <span class="comment">// check whether x is "not a number"</span></span><br></pre></td></tr></table></figure>
+<h4 id="4-char-类型"><a href="#4-char-类型" class="headerlink" title="4. char 类型"></a>4. char 类型</h4><p>&emsp;&emsp;char 类型用于表示单个字符，通常用来表示字符常量。例如：’A’ 是编码为 65 所对应的字符常量。与 “A” 不同，”A” 是一个包含字符 A 的字符串。Unicode 编码单元可以表示为十六进制值，其范围从 \u0000 到 \Uffff。<a href="https://blog.csdn.net/fedawn/article/details/7307993" target="_blank" rel="noopener">（0-9a-zA-Z）</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">转义序列</th>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">Unicode 值</th>
+<th></th>
+<th style="text-align:center">转义序列</th>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">Unicode 值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">\b</td>
+<td style="text-align:center">退格</td>
+<td style="text-align:center">\u0008</td>
+<td></td>
+<td style="text-align:center">\”</td>
+<td style="text-align:center">双引号</td>
+<td style="text-align:center">\u0022</td>
+</tr>
+<tr>
+<td style="text-align:center">\t</td>
+<td style="text-align:center">制表</td>
+<td style="text-align:center">\u0009</td>
+<td></td>
+<td style="text-align:center">\’</td>
+<td style="text-align:center">单引号</td>
+<td style="text-align:center">\u0027</td>
+</tr>
+<tr>
+<td style="text-align:center">\n</td>
+<td style="text-align:center">换行</td>
+<td style="text-align:center">\u000a</td>
+</tr>
+<tr>
+<td style="text-align:center">\r</td>
+<td style="text-align:center">回车</td>
+<td style="text-align:center">\u000d</td>
+</tr>
+</tbody>
+</table>
+<h4 id="5-boolean-类型"><a href="#5-boolean-类型" class="headerlink" title="5. boolean 类型"></a>5. boolean 类型</h4><p>&emsp;&emsp;boolean（布尔）类型有两个值：false 和 true，用来判定逻辑条件。整型值和布尔值之间不能进行相互转换。<br>&emsp;&emsp;在 C++ 中，数值或指针可以代替 boolean 值，值 0 相当于布尔值 false，非 0 值相当于布尔值 true，在 Java 中则不是这样。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+				  <div style="text-align: center; color: #fff; font-size: 16px; margin-top: 15px; margin-bottom: -25px;">长按图片识别二维码</div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Music</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Freetime</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/LeBron-James-20180124.html" class="archive-article-date">
-  	<time datetime="2018-01-24T14:45:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/LeBron-James-20180124.html">NBA历史上最年轻的30,000分先生</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">NBA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/lost-and-confused.html" class="archive-article-date">
-  	<time datetime="2018-01-22T15:43:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/lost-and-confused.html">When you`re lost and confused</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Notes</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">clone</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Thinking</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数据类型</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://wumaozheng.com/2018/clone.html" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/Design-Pattern-Introduction.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">23种设计模式总览</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/markdown-introduction.html" class="archive-article-date">
-  	<time datetime="2017-12-26T04:57:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-26</time>
-</a>
-        </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/markdown-introduction.html">Markdown基础语法及编辑器简介</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Markdown</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Editor</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Tools</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/git-in-linux.html" class="archive-article-date">
-  	<time datetime="2017-12-26T04:07:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/git-in-linux.html">使用Git命令提交代码</a>
-    </h1>
+  <div id="SOHUCS" sid="clone" ></div> 
+<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: "cyttWRyDV",
+        conf: "prod_30da0921e05d75bd9987b94218e31005"
+    });
+</script>
+</script>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/page/2/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><a class="page-number" href="/archives/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/archives/page/4/">4</a><a class="extend next" rel="next" href="/archives/page/4/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -479,8 +568,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

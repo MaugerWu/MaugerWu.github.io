@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wumaozheng.com/2018/clone.html</loc>
+    
+    <lastmod>2018-04-25T19:40:47.050Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wumaozheng.com/2017/git-in-linux.html</loc>
+    
+    <lastmod>2018-04-25T19:13:01.654Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wumaozheng.com/2017/markdown-introduction.html</loc>
+    
+    <lastmod>2018-04-25T19:12:04.700Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wumaozheng.com/2018/Design-Pattern-Introduction.html</loc>
     
-    <lastmod>2018-04-18T15:14:03.825Z</lastmod>
+    <lastmod>2018-04-18T16:09:16.276Z</lastmod>
     
   </url>
   
@@ -79,13 +100,6 @@
   </url>
   
   <url>
-    <loc>http://wumaozheng.com/2017/markdown-introduction.html</loc>
-    
-    <lastmod>2018-02-24T07:36:57.124Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://wumaozheng.com/instagram/index.html</loc>
     
     <lastmod>2018-02-01T09:15:21.385Z</lastmod>
@@ -117,13 +131,6 @@
     <loc>http://wumaozheng.com/2018/music-gdsnaqgs.html</loc>
     
     <lastmod>2018-01-29T05:55:20.989Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wumaozheng.com/2017/git-in-linux.html</loc>
-    
-    <lastmod>2018-01-27T07:00:04.469Z</lastmod>
     
   </url>
   
