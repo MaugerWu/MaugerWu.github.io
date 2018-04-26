@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wumaozheng.com/2018/Design-Pattern-Introduction.html</loc>
+    
+    <lastmod>2018-04-26T05:32:40.606Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wumaozheng.com/2018/clone.html</loc>
     
-    <lastmod>2018-04-25T19:40:47.050Z</lastmod>
+    <lastmod>2018-04-26T03:09:30.189Z</lastmod>
     
   </url>
   
@@ -19,13 +26,6 @@
     <loc>http://wumaozheng.com/2017/markdown-introduction.html</loc>
     
     <lastmod>2018-04-25T19:12:04.700Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wumaozheng.com/2018/Design-Pattern-Introduction.html</loc>
-    
-    <lastmod>2018-04-18T16:09:16.276Z</lastmod>
     
   </url>
   
