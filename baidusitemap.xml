@@ -4,8 +4,27 @@
 
     
   <url>
+    <loc>http://wumaozheng.com/2018/Design-Pattern-Introduction.html</loc>
+    <lastmod>2018-04-26T05:32:40.606Z</lastmod>
+    <data>
+        <display>
+        <title>23种设计模式总览</title>
+        <pubTime>2018-04-17T12:33:05.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>设计模式</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wumaozheng.com/2018/clone.html</loc>
-    <lastmod>2018-04-25T19:40:47.050Z</lastmod>
+    <lastmod>2018-04-26T03:09:30.189Z</lastmod>
     <data>
         <display>
         <title>Java 中的 clone() 方法</title>
@@ -54,25 +73,6 @@
         <tag>Editor</tag>
          
         <tag>Tools</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wumaozheng.com/2018/Design-Pattern-Introduction.html</loc>
-    <lastmod>2018-04-18T16:09:16.276Z</lastmod>
-    <data>
-        <display>
-        <title>23种设计模式总览</title>
-        <pubTime>2018-04-17T12:33:05.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>设计模式</tag>
          
          
            
