@@ -15,12 +15,12 @@
 <meta property="og:url" content="http://wumaozheng.com/2018/Design-Pattern-Introduction.html">
 <meta property="og:site_name" content="Mauger`s Blog">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;设计模式（Design Pattern）是一套被反复使用、多数人知晓的、经过分类编目的、代码设计经验的总结。使用设计模式是为了更好的代码可重用性、可读性、可靠性和可维护性。">
-<meta property="og:image" content="https://t1.picb.cc/uploads/2018/04/26/2MxVJ7.md.png">
-<meta property="og:updated_time" content="2018-04-26T05:32:40.606Z">
+<meta property="og:image" content="https://thumbnail10.baidupcs.com/thumbnail/c431313812f910cd2673ba064600c4ed?fid=490203064-250528-38806022970898&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-1fM7WvWvEcUARqZQwZc%2fe1TTcZg%3d&expires=8h&chkbd=0&chkv=0&dp-logid=2759578326925529738&dp-callid=0&time=1525014000&size=c10000_u10000&quality=90&vuk=490203064&ft=image">
+<meta property="og:updated_time" content="2018-04-29T15:45:26.774Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="23种设计模式总览">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;设计模式（Design Pattern）是一套被反复使用、多数人知晓的、经过分类编目的、代码设计经验的总结。使用设计模式是为了更好的代码可重用性、可读性、可靠性和可维护性。">
-<meta name="twitter:image" content="https://t1.picb.cc/uploads/2018/04/26/2MxVJ7.md.png">
+<meta name="twitter:image" content="https://thumbnail10.baidupcs.com/thumbnail/c431313812f910cd2673ba064600c4ed?fid=490203064-250528-38806022970898&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-1fM7WvWvEcUARqZQwZc%2fe1TTcZg%3d&expires=8h&chkbd=0&chkv=0&dp-logid=2759578326925529738&dp-callid=0&time=1525014000&size=c10000_u10000&quality=90&vuk=490203064&ft=image">
   
     <link rel="alternative" href="/atom.xml" title="Mauger`s Blog" type="application/atom+xml">
   
@@ -209,7 +209,8 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://t1.picb.cc/uploads/2018/04/26/2MxVJ7.md.png" alt="Design Pattern" title="Design Pattern"></p>
+        <!-- ![Design Pattern](https://t1.picb.cc/uploads/2018/04/18/2rispT.jpg "Design Pattern") -->
+<p><img src="https://thumbnail10.baidupcs.com/thumbnail/c431313812f910cd2673ba064600c4ed?fid=490203064-250528-38806022970898&amp;rt=pr&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-1fM7WvWvEcUARqZQwZc%2fe1TTcZg%3d&amp;expires=8h&amp;chkbd=0&amp;chkv=0&amp;dp-logid=2759578326925529738&amp;dp-callid=0&amp;time=1525014000&amp;size=c10000_u10000&amp;quality=90&amp;vuk=490203064&amp;ft=image" alt="" title="设计模式"></p>
 <p>&emsp;&emsp;设计模式（Design Pattern）是一套被反复使用、多数人知晓的、经过分类编目的、代码设计经验的总结。使用设计模式是为了更好的代码<code>可重用性</code>、<code>可读性</code>、<code>可靠性</code>和<code>可维护性</code>。</p>
 <a id="more"></a>
 <h3 id="一、设计模式3大分类"><a href="#一、设计模式3大分类" class="headerlink" title="一、设计模式3大分类"></a>一、设计模式3大分类</h3><p>&emsp;<strong>1. 创建型模式（5种）</strong></p>
@@ -244,31 +245,31 @@ var _hmt = _hmt || [];
 <li>中介者模式（Mediator Pattern）</li>
 <li>解释器模式（Interpreter Pattern）</li>
 </ul>
-<h3 id="二、设计模式6大原则"><a href="#二、设计模式6大原则" class="headerlink" title="二、设计模式6大原则"></a>二、设计模式6大原则</h3><p>&emsp;<strong>1. 单一职责原则（Single Responsibility Principle, SRP）</strong><br><code>就一个类而言，应该只有一个引起它变化的原因。</code></p>
+<h3 id="二、设计模式6大原则"><a href="#二、设计模式6大原则" class="headerlink" title="二、设计模式6大原则"></a>二、设计模式6大原则</h3><p>&emsp;<strong>1. 单一职责原则（Single Responsibility Principle, SRP）</strong><br>&emsp;&emsp;<code>就一个类而言，应该只有一个引起它变化的原因。</code></p>
 <ul>
 <li>降低类的复杂度，一个类只负责一项职责；</li>
 <li>提高类的可读性和可维护性；</li>
 <li>降低变更引起的风险。</li>
 </ul>
-<p>&emsp;<strong>2. 里氏替换原则（Liskov Substitution Principle, LSP）</strong><br><code>所有引用基类（父类）的地方必须能透明地使用其子类的对象。</code></p>
+<p>&emsp;<strong>2. 里氏替换原则（Liskov Substitution Principle, LSP）</strong><br>&emsp;&emsp;<code>所有引用基类（父类）的地方必须能透明地使用其子类的对象。</code></p>
 <ul>
 <li>里氏替换原则中，子类对父类的方法尽量不要重写和重载。因为父类代表了定义好的结构，通过这个规范的接口与外界交互，子类不应该随便破坏它。</li>
 <li>任何基类可以出现的地方，子类一定可以出现。里氏替换原则是继承复用的基石，只有当衍生类可以替换基类，软件单位的功能不受到影响时，基类才能真正被复用，而衍生类也能够在基类的基础上增加新的行为。</li>
 </ul>
-<p>&emsp;<strong>3. 依赖倒转原则（Dependence Inversion Principle, DIP）</strong><br><code>抽象不应该依赖于细节，细节应当依赖于抽象。换言之，要针对接口编程，而不是针对实现编程。</code></p>
+<p>&emsp;<strong>3. 依赖倒转原则（Dependence Inversion Principle, DIP）</strong><br>&emsp;&emsp;<code>抽象不应该依赖于细节，细节应当依赖于抽象。换言之，要针对接口编程，而不是针对实现编程。</code></p>
 <ul>
 <li>在实现依赖倒转原则时，我们需要针对抽象层编程，而将具体类的对象通过依赖注入（DependencyInjection, DI）的方式注入到其他对象中，依赖注入是指当一个对象要与其他对象发生依赖关系时，通过抽象来注入所依赖的对象。</li>
 <li>常用的注入方式有三种，分别是：<code>构造注入</code>，<code>设值注入（Setter注入）</code>和<code>接口注入</code>。构造注入是指通过构造函数来传入具体类的对象，设值注入是指通过 Setter 方法来传入具体类的对象，而接口注入是指通过在接口中声明的业务方法来传入具体类的对象。这些方法在定义时使用的是抽象类型，在运行时再传入具体类型的对象，由子类对象来覆盖父类对象。</li>
 </ul>
-<p>&emsp;<strong>4. 接口隔离原则（Interface Segregation Principle, ISP）</strong><br><code>使用多个专门的接口，而不使用单一的总接口，即客户端不应该依赖那些它不需要的接口。</code></p>
+<p>&emsp;<strong>4. 接口隔离原则（Interface Segregation Principle, ISP）</strong><br>&emsp;&emsp;<code>使用多个专门的接口，而不使用单一的总接口，即客户端不应该依赖那些它不需要的接口。</code></p>
 <ul>
 <li>每个接口中不存在子类用不到却必须实现的方法，若存在，就要将接口拆分。使用多个隔离的接口，比使用单个接口（多个接口方法集合到一个的接口）要好。</li>
 </ul>
-<p>&emsp;<strong>5. 迪米特法则（Demeter Principle, DP)</strong><br><code>一个软件实体应当尽可能少地与其他实体发生相互作用。</code></p>
+<p>&emsp;<strong>5. 迪米特法则（Demeter Principle, DP)</strong><br>&emsp;&emsp;<code>一个软件实体应当尽可能少地与其他实体发生相互作用。</code></p>
 <ul>
 <li>迪米特法则又称为最少知识原则（Least Knowledge Principle, LKP）。一个类对自己依赖的类知道的越少越好。无论被依赖的类多么复杂，都应该将逻辑封装在方法的内部，通过 public 方法提供给外部。这样当被依赖的类变化时，才能最小的影响该类。</li>
 </ul>
-<p>&emsp;<strong>6. 开闭原则（Composite Reuse Principle, CRP）</strong><br><code>一个软件实体如类、模块和函数应该对扩展开放，对修改关闭。</code></p>
+<p>&emsp;<strong>6. 开闭原则（Composite Reuse Principle, CRP）</strong><br>&emsp;&emsp;<code>一个软件实体如类、模块和函数应该对扩展开放，对修改关闭。</code></p>
 <ul>
 <li>开闭原则是面向对象的可复用设计的第一块基石，它是最重要的面向对象设计原则。在开闭原则的定义中，软件实体可以指一个软件模块、一个由多个类组成的局部结构或一个独立的类。</li>
 </ul>
@@ -613,31 +614,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Github</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SEO</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Q/A</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Notes</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Thinking</a>
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -650,6 +631,26 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Tools</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SEO</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Notes</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Thinking</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Q/A</a>
               </li>
             
             <div class="clearfix"></div>
