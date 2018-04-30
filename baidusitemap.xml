@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://wumaozheng.com/2018/Design-Pattern-Introduction.html</loc>
-    <lastmod>2018-04-26T05:32:40.606Z</lastmod>
+    <lastmod>2018-04-29T15:45:26.774Z</lastmod>
     <data>
         <display>
         <title>23种设计模式总览</title>
@@ -24,7 +24,7 @@
     
   <url>
     <loc>http://wumaozheng.com/2018/clone.html</loc>
-    <lastmod>2018-04-26T03:09:30.189Z</lastmod>
+    <lastmod>2018-04-29T15:45:07.974Z</lastmod>
     <data>
         <display>
         <title>Java 中的 clone() 方法</title>
@@ -35,6 +35,25 @@
         <tag>clone</tag>
          
         <tag>数据类型</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wumaozheng.com/2018/mybatis3.4-technology-insider.html</loc>
+    <lastmod>2018-04-26T15:48:55.083Z</lastmod>
+    <data>
+        <display>
+        <title>Mybatis3.4-知识小结</title>
+        <pubTime>2018-03-05T06:58:45.000Z</pubTime>
+        
+        <tag>Mybatis</tag>
+         
+        <tag>Q/A</tag>
          
          
            
@@ -189,25 +208,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>http://wumaozheng.com/2018/mybatis3.4-technology-insider.html</loc>
-    <lastmod>2018-03-14T19:29:41.742Z</lastmod>
-    <data>
-        <display>
-        <title>Mybatis3.4-知识小结</title>
-        <pubTime>2018-03-05T06:58:45.000Z</pubTime>
-        
-        <tag>Mybatis</tag>
-         
-        <tag>Q/A</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://wumaozheng.com/2018/Music-For-NBA.html</loc>
