@@ -4,8 +4,27 @@
 
     
   <url>
+    <loc>http://wumaozheng.com/2018/Singleton-Pattern.html</loc>
+    <lastmod>2018-05-09T18:03:31.848Z</lastmod>
+    <data>
+        <display>
+        <title>深入 Java 单例模式</title>
+        <pubTime>2018-04-18T12:58:05.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>设计模式</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wumaozheng.com/2018/Design-Pattern-Introduction.html</loc>
-    <lastmod>2018-04-30T15:45:00.986Z</lastmod>
+    <lastmod>2018-05-09T17:08:50.276Z</lastmod>
     <data>
         <display>
         <title>23种设计模式总览</title>
