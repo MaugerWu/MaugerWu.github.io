@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Mauger`s Blog">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;在 GoF 的23种设计模式中，单例模式是比较简单的一种。然而，有时候越是简单的东西越容易出现问题。下面就单例设计模式详细的探讨一下。 &amp;emsp;&amp;emsp;所谓单例模式，简单来说，就是在整个应用中保证只有一个类的实例存在。就像是 Java Web 中的 application，也就是提供了一个全局变量，用处相当广泛，比如：保存全局数据，实现全局性的操作等。">
 <meta property="og:image" content="https://t1.picb.cc/uploads/2018/05/10/2h6EI6.jpg">
-<meta property="og:updated_time" content="2018-05-09T18:03:31.848Z">
+<meta property="og:updated_time" content="2018-05-12T10:21:14.584Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深入 Java 单例模式">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;在 GoF 的23种设计模式中，单例模式是比较简单的一种。然而，有时候越是简单的东西越容易出现问题。下面就单例设计模式详细的探讨一下。 &amp;emsp;&amp;emsp;所谓单例模式，简单来说，就是在整个应用中保证只有一个类的实例存在。就像是 Java Web 中的 application，也就是提供了一个全局变量，用处相当广泛，比如：保存全局数据，实现全局性的操作等。">
@@ -396,6 +396,19 @@ var _hmt = _hmt || [];
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-最简单的实现"><span class="toc-number">1.</span> <span class="toc-text"><a href="#1-&#x6700;&#x7B80;&#x5355;&#x7684;&#x5B9E;&#x73B0;" class="headerlink" title="1. &#x6700;&#x7B80;&#x5355;&#x7684;&#x5B9E;&#x73B0;"></a>1. &#x6700;&#x7B80;&#x5355;&#x7684;&#x5B9E;&#x73B0;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-性能优化-—-Lazy-Loaded"><span class="toc-number">2.</span> <span class="toc-text"><a href="#2-&#x6027;&#x80FD;&#x4F18;&#x5316;-&#x2014;-Lazy-Loaded" class="headerlink" title="2. &#x6027;&#x80FD;&#x4F18;&#x5316; &#x2014; Lazy Loaded"></a>2. &#x6027;&#x80FD;&#x4F18;&#x5316; &#x2014; Lazy Loaded</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-同步"><span class="toc-number">3.</span> <span class="toc-text"><a href="#3-&#x540C;&#x6B65;" class="headerlink" title="3. &#x540C;&#x6B65;"></a>3. &#x540C;&#x6B65;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-性能问题"><span class="toc-number">4.</span> <span class="toc-text"><a href="#4-&#x6027;&#x80FD;&#x95EE;&#x9898;" class="headerlink" title="4. &#x6027;&#x80FD;&#x95EE;&#x9898;"></a>4. &#x6027;&#x80FD;&#x95EE;&#x9898;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-从源头检查"><span class="toc-number">5.</span> <span class="toc-text"><a href="#5-&#x4ECE;&#x6E90;&#x5934;&#x68C0;&#x67E5;" class="headerlink" title="5. &#x4ECE;&#x6E90;&#x5934;&#x68C0;&#x67E5;"></a>5. &#x4ECE;&#x6E90;&#x5934;&#x68C0;&#x67E5;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-解决方案"><span class="toc-number">6.</span> <span class="toc-text"><a href="#6-&#x89E3;&#x51B3;&#x65B9;&#x6848;" class="headerlink" title="6. &#x89E3;&#x51B3;&#x65B9;&#x6848;"></a>6. &#x89E3;&#x51B3;&#x65B9;&#x6848;</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -482,7 +495,7 @@ var _hmt = _hmt || [];
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
-		toc_hide_index: true,
+		toc_hide_index: false,
 		root: "/",
 		innerArchive: true,
 		showTags: true
@@ -559,14 +572,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Music</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Freetime</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
@@ -587,11 +592,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+                <a href="javascript:void(0)" class="js-tag color2">Github</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Github</a>
+                <a href="javascript:void(0)" class="js-tag color1">Music</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Freetime</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -603,15 +612,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Editor</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Tools</a>
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -624,6 +625,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">SEO</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Editor</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Tools</a>
               </li>
             
             <div class="clearfix"></div>

@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Mauger`s Blog">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;Object 类的 clone 是 protected 的，不能直接调用，可以被子类调用。Object 类的 clone 会知道对象的大小，为它分配足够的内存空间，并将旧对象的内容复制到新的对象中。但是，Object.clone() 执行其动作之前必须先检查 class 是否实现了 Cloneable 接口。">
 <meta property="og:image" content="https://t1.picb.cc/uploads/2018/04/26/2MRpaD.md.jpg">
-<meta property="og:updated_time" content="2018-04-30T15:44:42.920Z">
+<meta property="og:updated_time" content="2018-05-12T10:21:47.391Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java 中的 clone() 方法">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;Object 类的 clone 是 protected 的，不能直接调用，可以被子类调用。Object 类的 clone 会知道对象的大小，为它分配足够的内存空间，并将旧对象的内容复制到新的对象中。但是，Object.clone() 执行其动作之前必须先检查 class 是否实现了 Cloneable 接口。">
@@ -459,6 +459,15 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
+    <a href="/2018/music-Legends-Never-Die.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Legends Never Die
+        
+      </div>
+    </a>
+  
   
     <a href="/2018/Singleton-Pattern.html" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">深入 Java 单例模式</div>
@@ -480,6 +489,19 @@ var _hmt = _hmt || [];
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、引用拷贝"><span class="toc-number">1.</span> <span class="toc-text"><a href="#&#x4E00;&#x3001;&#x5F15;&#x7528;&#x62F7;&#x8D1D;" class="headerlink" title="&#x4E00;&#x3001;&#x5F15;&#x7528;&#x62F7;&#x8D1D;"></a>&#x4E00;&#x3001;&#x5F15;&#x7528;&#x62F7;&#x8D1D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、对象拷贝"><span class="toc-number">2.</span> <span class="toc-text"><a href="#&#x4E8C;&#x3001;&#x5BF9;&#x8C61;&#x62F7;&#x8D1D;" class="headerlink" title="&#x4E8C;&#x3001;&#x5BF9;&#x8C61;&#x62F7;&#x8D1D;"></a>&#x4E8C;&#x3001;&#x5BF9;&#x8C61;&#x62F7;&#x8D1D;</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-浅拷贝："><span class="toc-number">2.1.</span> <span class="toc-text"><a href="#1-&#x6D45;&#x62F7;&#x8D1D;&#xFF1A;" class="headerlink" title="1. &#x6D45;&#x62F7;&#x8D1D;&#xFF1A;"></a>1. &#x6D45;&#x62F7;&#x8D1D;&#xFF1A;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-深拷贝："><span class="toc-number">2.2.</span> <span class="toc-text"><a href="#2-&#x6DF1;&#x62F7;&#x8D1D;&#xFF1A;" class="headerlink" title="2. &#x6DF1;&#x62F7;&#x8D1D;&#xFF1A;"></a>2. &#x6DF1;&#x62F7;&#x8D1D;&#xFF1A;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-深拷贝与浅拷贝的区别："><span class="toc-number">2.3.</span> <span class="toc-text"><a href="#3-&#x6DF1;&#x62F7;&#x8D1D;&#x4E0E;&#x6D45;&#x62F7;&#x8D1D;&#x7684;&#x533A;&#x522B;&#xFF1A;" class="headerlink" title="3. &#x6DF1;&#x62F7;&#x8D1D;&#x4E0E;&#x6D45;&#x62F7;&#x8D1D;&#x7684;&#x533A;&#x522B;&#xFF1A;"></a>3. &#x6DF1;&#x62F7;&#x8D1D;&#x4E0E;&#x6D45;&#x62F7;&#x8D1D;&#x7684;&#x533A;&#x522B;&#xFF1A;</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、Java-基本数据类型"><span class="toc-number">3.</span> <span class="toc-text"><a href="#&#x4E09;&#x3001;Java-&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;" class="headerlink" title="&#x4E09;&#x3001;Java &#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;"></a>&#x4E09;&#x3001;Java &#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-Java-中的-8-种基本类型及其封装类型："><span class="toc-number">3.1.</span> <span class="toc-text"><a href="#1-Java-&#x4E2D;&#x7684;-8-&#x79CD;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x53CA;&#x5176;&#x5C01;&#x88C5;&#x7C7B;&#x578B;&#xFF1A;" class="headerlink" title="1. Java &#x4E2D;&#x7684; 8 &#x79CD;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x53CA;&#x5176;&#x5C01;&#x88C5;&#x7C7B;&#x578B;&#xFF1A;"></a>1. Java &#x4E2D;&#x7684; 8 &#x79CD;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x53CA;&#x5176;&#x5C01;&#x88C5;&#x7C7B;&#x578B;&#xFF1A;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-整型"><span class="toc-number">3.2.</span> <span class="toc-text"><a href="#2-&#x6574;&#x578B;" class="headerlink" title="2. &#x6574;&#x578B;"></a>2. &#x6574;&#x578B;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-浮点类型"><span class="toc-number">3.3.</span> <span class="toc-text"><a href="#3-&#x6D6E;&#x70B9;&#x7C7B;&#x578B;" class="headerlink" title="3. &#x6D6E;&#x70B9;&#x7C7B;&#x578B;"></a>3. &#x6D6E;&#x70B9;&#x7C7B;&#x578B;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-char-类型"><span class="toc-number">3.4.</span> <span class="toc-text"><a href="#4-char-&#x7C7B;&#x578B;" class="headerlink" title="4. char &#x7C7B;&#x578B;"></a>4. char &#x7C7B;&#x578B;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-boolean-类型"><span class="toc-number">3.5.</span> <span class="toc-text"><a href="#5-boolean-&#x7C7B;&#x578B;" class="headerlink" title="5. boolean &#x7C7B;&#x578B;"></a>5. boolean &#x7C7B;&#x578B;</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
@@ -567,7 +589,7 @@ var _hmt = _hmt || [];
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
-		toc_hide_index: true,
+		toc_hide_index: false,
 		root: "/",
 		innerArchive: true,
 		showTags: true
@@ -644,14 +666,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Music</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Freetime</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
@@ -672,11 +686,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+                <a href="javascript:void(0)" class="js-tag color2">Github</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Github</a>
+                <a href="javascript:void(0)" class="js-tag color1">Music</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Freetime</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -688,15 +706,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Editor</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Tools</a>
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -709,6 +719,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">SEO</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Editor</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Tools</a>
               </li>
             
             <div class="clearfix"></div>
