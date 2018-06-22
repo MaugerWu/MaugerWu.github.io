@@ -4,8 +4,69 @@
 
     
   <url>
+    <loc>http://wumaozheng.com/2018/music-Legends-Never-Die.html</loc>
+    <lastmod>2018-06-22T15:13:38.158Z</lastmod>
+    <data>
+        <display>
+        <title>Legends Never Die</title>
+        <pubTime>2018-06-22T15:08:25.000Z</pubTime>
+        
+        <tag>Music</tag>
+         
+        <tag>Freetime</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wumaozheng.com/2018/Music-For-NBA.html</loc>
+    <lastmod>2018-05-15T14:46:08.743Z</lastmod>
+    <data>
+        <display>
+        <title>Music-For-NBA</title>
+        <pubTime>2018-03-14T08:15:25.000Z</pubTime>
+        
+        <tag>NBA</tag>
+         
+        <tag>Music</tag>
+         
+        <tag>Freetime</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wumaozheng.com/2018/clone.html</loc>
+    <lastmod>2018-05-12T10:21:47.391Z</lastmod>
+    <data>
+        <display>
+        <title>Java 中的 clone() 方法</title>
+        <pubTime>2018-04-25T15:23:05.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>clone</tag>
+         
+        <tag>数据类型</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wumaozheng.com/2018/Singleton-Pattern.html</loc>
-    <lastmod>2018-05-09T18:03:31.848Z</lastmod>
+    <lastmod>2018-05-12T10:21:14.584Z</lastmod>
     <data>
         <display>
         <title>深入 Java 单例模式</title>
@@ -33,27 +94,6 @@
         <tag>Java</tag>
          
         <tag>设计模式</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wumaozheng.com/2018/clone.html</loc>
-    <lastmod>2018-04-30T15:44:42.920Z</lastmod>
-    <data>
-        <display>
-        <title>Java 中的 clone() 方法</title>
-        <pubTime>2018-04-25T15:23:05.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>clone</tag>
-         
-        <tag>数据类型</tag>
          
          
            
@@ -227,27 +267,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>http://wumaozheng.com/2018/Music-For-NBA.html</loc>
-    <lastmod>2018-03-14T19:19:05.042Z</lastmod>
-    <data>
-        <display>
-        <title>Music-For-NBA</title>
-        <pubTime>2018-03-14T08:15:25.000Z</pubTime>
-        
-        <tag>NBA</tag>
-         
-        <tag>Music</tag>
-         
-        <tag>Freetime</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://wumaozheng.com/2018/baidu-analysis.html</loc>
