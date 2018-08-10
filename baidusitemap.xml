@@ -4,14 +4,35 @@
 
     
   <url>
+    <loc>http://wumaozheng.com/2018/clone.html</loc>
+    <lastmod>2018-07-25T01:21:22.719Z</lastmod>
+    <data>
+        <display>
+        <title>Java 中的 clone() 方法</title>
+        <pubTime>2018-04-25T15:23:05.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>Clone</tag>
+         
+        <tag>DataType</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wumaozheng.com/2018/JavaEE-Specification.html</loc>
-    <lastmod>2018-07-24T15:28:44.235Z</lastmod>
+    <lastmod>2018-07-25T01:18:54.106Z</lastmod>
     <data>
         <display>
         <title>JavaEE 规范</title>
         <pubTime>2018-07-24T15:01:05.000Z</pubTime>
         
-        <tag>JavaEE规范</tag>
+        <tag>JavaEE</tag>
          
          
            
@@ -52,27 +73,6 @@
         <tag>Music</tag>
          
         <tag>Freetime</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wumaozheng.com/2018/clone.html</loc>
-    <lastmod>2018-05-12T10:21:47.391Z</lastmod>
-    <data>
-        <display>
-        <title>Java 中的 clone() 方法</title>
-        <pubTime>2018-04-25T15:23:05.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>clone</tag>
-         
-        <tag>数据类型</tag>
          
          
            
