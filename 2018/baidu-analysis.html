@@ -15,12 +15,12 @@
 <meta property="og:url" content="http://wumaozheng.com/2018/baidu-analysis.html">
 <meta property="og:site_name" content="Mauger`s Blog">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;前段时间搭建了自己的博客网站 Mauger`s Blog，于是开始在上面写一些随笔，记录自己在平时开发过程中踩到的坑和总结的一些小知识点。同时也希望能与同行朋友们一起交流讨论，那么到底有没有人访问过我的博客呢？">
-<meta property="og:image" content="https://t1.picb.cc/uploads/2018/02/27/YVRAt.jpg">
-<meta property="og:updated_time" content="2018-03-03T08:06:43.846Z">
+<meta property="og:image" content="https://image.wumaozheng.com/blog/article/analysis.jpg">
+<meta property="og:updated_time" content="2018-09-18T12:46:57.098Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网站流量统计分析">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;前段时间搭建了自己的博客网站 Mauger`s Blog，于是开始在上面写一些随笔，记录自己在平时开发过程中踩到的坑和总结的一些小知识点。同时也希望能与同行朋友们一起交流讨论，那么到底有没有人访问过我的博客呢？">
-<meta name="twitter:image" content="https://t1.picb.cc/uploads/2018/02/27/YVRAt.jpg">
+<meta name="twitter:image" content="https://image.wumaozheng.com/blog/article/analysis.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Mauger`s Blog" type="application/atom+xml">
   
@@ -58,11 +58,11 @@ var _hmt = _hmt || [];
     <div class="left-col" q-class="show:isShow">
       
 <!-- <div class="overlay" style="background: #4d4d4d"></div> -->
-<div class="overlay"><img src="./img/article_imgs/basketball.jpeg"></div>
+<div class="overlay"><img src="https://image.wumaozheng.com/blog/home/background.jpeg"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="https://avatars3.githubusercontent.com/u/34430497?s=200&amp;v=4" class="js-avatar">
+			<img src="https://image.wumaozheng.com/blog/avatar/eve-wall-e.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a class="font-color" href="/">Mauger</a></h1>
@@ -128,7 +128,7 @@ var _hmt = _hmt || [];
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="https://avatars3.githubusercontent.com/u/34430497?s=200&amp;v=4" class="js-avatar">
+				<img src="https://image.wumaozheng.com/blog/avatar/eve-wall-e.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Mauger</h1>
@@ -209,7 +209,7 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://t1.picb.cc/uploads/2018/02/27/YVRAt.jpg" alt="Statistics&amp;Analysis" title="Website Traffic Statistics And Analysis"></p>
+        <p><img src="https://image.wumaozheng.com/blog/article/analysis.jpg" alt="Statistics&amp;Analysis" title="Website Traffic Statistics And Analysis"></p>
 <p>&emsp;&emsp;前段时间搭建了自己的博客网站 <a href="http://wumaozheng.com/">Mauger`s Blog</a>，于是开始在上面写一些随笔，记录自己在平时开发过程中踩到的坑和总结的一些小知识点。同时也希望能与同行朋友们一起交流讨论，那么到底有没有人访问过我的博客呢？</p>
 <a id="more"></a>
 <h3 id="一、统计网站访问量"><a href="#一、统计网站访问量" class="headerlink" title="一、统计网站访问量"></a>一、统计网站访问量</h3><h4 id="1-代码获取"><a href="#1-代码获取" class="headerlink" title="1. 代码获取"></a>1. 代码获取</h4><p>&emsp;&emsp;带着疑问我找到了 <a href="https://tongji.baidu.com/web/25190285/homepage/index" target="_blank" rel="noopener">百度统计</a>、<a href="http://www.cnzz.com/o_index.php" target="_blank" rel="noopener">CNZZ</a> 和 <a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">不蒜子</a>，最终我结合<code>百度统计</code>和<code>不蒜子</code>一同使用。使用百度统计是因为其功能强大全面、使用方便，但是不能实时地在博客网站中展示；使用不蒜子是因为其能够在博客中实时地去展示、使用方便，能够统计文章阅读量、总的访客人数和总的访问次数，且可以自定义样式。<br>&emsp;&emsp;首先需要 <a href="https://u.baidu.com/ucweb/?module=Reguser&amp;controller=reg&amp;action=index&amp;appid=12&amp;nexturl=https%3A%2F%2Ftongji.baidu.com%2Fweb%2Fwelcome%2Flogin%3FloginDialog%3D1" target="_blank" rel="noopener">注册站长账号</a>，接着添加自己购买的网站域名，点击 <a href="https://tongji.baidu.com/sc-web/25190285/home/site/getjs?siteId=11721708" target="_blank" rel="noopener">代码获取</a> 后可以看到如下代码：</p>
@@ -555,14 +555,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Music</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Freetime</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
@@ -575,15 +567,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Clone</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">DataType</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -608,6 +600,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Tools</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Music</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Freetime</a>
               </li>
              
               <li class="article-tag-list-item">

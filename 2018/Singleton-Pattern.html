@@ -15,12 +15,12 @@
 <meta property="og:url" content="http://wumaozheng.com/2018/Singleton-Pattern.html">
 <meta property="og:site_name" content="Mauger`s Blog">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;在 GoF 的23种设计模式中，单例模式是比较简单的一种。然而，有时候越是简单的东西越容易出现问题。下面就单例设计模式详细的探讨一下。 &amp;emsp;&amp;emsp;所谓单例模式，简单来说，就是在整个应用中保证只有一个类的实例存在。就像是 Java Web 中的 application，也就是提供了一个全局变量，用处相当广泛，比如：保存全局数据，实现全局性的操作等。">
-<meta property="og:image" content="https://t1.picb.cc/uploads/2018/05/10/2h6EI6.jpg">
-<meta property="og:updated_time" content="2018-05-12T10:21:14.584Z">
+<meta property="og:image" content="https://image.wumaozheng.com/blog/article/singleton.jpg">
+<meta property="og:updated_time" content="2018-09-18T12:26:11.187Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深入 Java 单例模式">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;在 GoF 的23种设计模式中，单例模式是比较简单的一种。然而，有时候越是简单的东西越容易出现问题。下面就单例设计模式详细的探讨一下。 &amp;emsp;&amp;emsp;所谓单例模式，简单来说，就是在整个应用中保证只有一个类的实例存在。就像是 Java Web 中的 application，也就是提供了一个全局变量，用处相当广泛，比如：保存全局数据，实现全局性的操作等。">
-<meta name="twitter:image" content="https://t1.picb.cc/uploads/2018/05/10/2h6EI6.jpg">
+<meta name="twitter:image" content="https://image.wumaozheng.com/blog/article/singleton.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Mauger`s Blog" type="application/atom+xml">
   
@@ -58,11 +58,11 @@ var _hmt = _hmt || [];
     <div class="left-col" q-class="show:isShow">
       
 <!-- <div class="overlay" style="background: #4d4d4d"></div> -->
-<div class="overlay"><img src="./img/article_imgs/basketball.jpeg"></div>
+<div class="overlay"><img src="https://image.wumaozheng.com/blog/home/background.jpeg"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="https://avatars3.githubusercontent.com/u/34430497?s=200&amp;v=4" class="js-avatar">
+			<img src="https://image.wumaozheng.com/blog/avatar/eve-wall-e.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a class="font-color" href="/">Mauger</a></h1>
@@ -128,7 +128,7 @@ var _hmt = _hmt || [];
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="https://avatars3.githubusercontent.com/u/34430497?s=200&amp;v=4" class="js-avatar">
+				<img src="https://image.wumaozheng.com/blog/avatar/eve-wall-e.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Mauger</h1>
@@ -209,7 +209,7 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://t1.picb.cc/uploads/2018/05/10/2h6EI6.jpg" alt=""></p>
+        <p><img src="https://image.wumaozheng.com/blog/article/singleton.jpg" alt=""></p>
 <p>&emsp;&emsp;在 <a href="https://baike.baidu.com/item/GoF/6406151" target="_blank" rel="noopener">GoF</a> 的23种设计模式中，单例模式是比较简单的一种。然而，有时候越是简单的东西越容易出现问题。下面就单例设计模式详细的探讨一下。</p>
 <p>&emsp;&emsp;所谓单例模式，简单来说，就是在整个应用中保证只有一个类的实例存在。就像是 Java Web 中的 application，也就是提供了一个全局变量，用处相当广泛，比如：保存全局数据，实现全局性的操作等。</p>
 <a id="more"></a>
@@ -576,14 +576,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Music</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Freetime</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
@@ -596,15 +588,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Clone</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">DataType</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -629,6 +621,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Tools</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Music</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Freetime</a>
               </li>
              
               <li class="article-tag-list-item">

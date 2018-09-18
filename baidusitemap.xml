@@ -4,8 +4,253 @@
 
     
   <url>
+    <loc>http://wumaozheng.com/2017/markdown-introduction.html</loc>
+    <lastmod>2018-09-18T13:13:49.434Z</lastmod>
+    <data>
+        <display>
+        <title>Markdown基础语法及编辑器简介</title>
+        <pubTime>2017-12-26T04:57:00.000Z</pubTime>
+        
+        <tag>Markdown</tag>
+         
+        <tag>Editor</tag>
+         
+        <tag>Tools</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wumaozheng.com/2017/hello-world.html</loc>
+    <lastmod>2018-09-18T13:13:02.622Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2017-12-24T03:38:05.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>Blog</tag>
+         
+        <tag>Github</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wumaozheng.com/2017/git-in-linux.html</loc>
+    <lastmod>2018-09-18T13:12:34.235Z</lastmod>
+    <data>
+        <display>
+        <title>使用Git命令提交代码</title>
+        <pubTime>2017-12-26T04:07:00.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wumaozheng.com/2018/LeBron-James-20180124.html</loc>
+    <lastmod>2018-09-18T13:02:40.911Z</lastmod>
+    <data>
+        <display>
+        <title>NBA历史上最年轻的30,000分先生</title>
+        <pubTime>2018-01-24T14:45:45.000Z</pubTime>
+        
+        <tag>NBA</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wumaozheng.com/2018/lost-and-confused.html</loc>
+    <lastmod>2018-09-18T13:00:06.564Z</lastmod>
+    <data>
+        <display>
+        <title>When you`re lost and confused</title>
+        <pubTime>2018-01-22T15:43:15.000Z</pubTime>
+        
+        <tag>Notes</tag>
+         
+        <tag>Thinking</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wumaozheng.com/2018/LeBron-James-20180219.html</loc>
+    <lastmod>2018-09-18T12:51:55.833Z</lastmod>
+    <data>
+        <display>
+        <title>NBA2018全明星赛</title>
+        <pubTime>2018-02-19T01:00:00.000Z</pubTime>
+        
+        <tag>NBA</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wumaozheng.com/2018/baidu-analysis.html</loc>
+    <lastmod>2018-09-18T12:46:57.098Z</lastmod>
+    <data>
+        <display>
+        <title>网站流量统计分析</title>
+        <pubTime>2018-02-25T15:35:15.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>Blog</tag>
+         
+        <tag>流量统计</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wumaozheng.com/2018/sitemap-seo.html</loc>
+    <lastmod>2018-09-18T12:46:31.659Z</lastmod>
+    <data>
+        <display>
+        <title>网站SEO优化</title>
+        <pubTime>2018-02-27T14:48:45.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>Blog</tag>
+         
+        <tag>SEO</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wumaozheng.com/2018/LeBron-James-20180228.html</loc>
+    <lastmod>2018-09-18T12:43:28.188Z</lastmod>
+    <data>
+        <display>
+        <title>历史首人—詹姆斯30K+8K+8K里程碑</title>
+        <pubTime>2018-02-28T00:25:40.000Z</pubTime>
+        
+        <tag>NBA</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wumaozheng.com/2018/mybatis3.4-technology-insider.html</loc>
+    <lastmod>2018-09-18T12:38:32.277Z</lastmod>
+    <data>
+        <display>
+        <title>Mybatis3.4-知识小结</title>
+        <pubTime>2018-03-05T06:58:45.000Z</pubTime>
+        
+        <tag>Mybatis</tag>
+         
+        <tag>Q/A</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wumaozheng.com/2018/Singleton-Pattern.html</loc>
+    <lastmod>2018-09-18T12:26:11.187Z</lastmod>
+    <data>
+        <display>
+        <title>深入 Java 单例模式</title>
+        <pubTime>2018-04-18T12:58:05.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>设计模式</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wumaozheng.com/2018/Design-Pattern-Introduction.html</loc>
+    <lastmod>2018-09-18T12:25:47.462Z</lastmod>
+    <data>
+        <display>
+        <title>23种设计模式总览</title>
+        <pubTime>2018-04-17T12:33:05.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>设计模式</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wumaozheng.com/2018/JavaEE-Specification.html</loc>
+    <lastmod>2018-09-18T12:23:25.249Z</lastmod>
+    <data>
+        <display>
+        <title>JavaEE 规范</title>
+        <pubTime>2018-07-24T15:01:05.000Z</pubTime>
+        
+        <tag>JavaEE</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wumaozheng.com/2018/clone.html</loc>
-    <lastmod>2018-07-25T01:21:22.719Z</lastmod>
+    <lastmod>2018-09-18T12:22:46.526Z</lastmod>
     <data>
         <display>
         <title>Java 中的 clone() 方法</title>
@@ -25,25 +270,8 @@
 
     
   <url>
-    <loc>http://wumaozheng.com/2018/JavaEE-Specification.html</loc>
-    <lastmod>2018-07-25T01:18:54.106Z</lastmod>
-    <data>
-        <display>
-        <title>JavaEE 规范</title>
-        <pubTime>2018-07-24T15:01:05.000Z</pubTime>
-        
-        <tag>JavaEE</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wumaozheng.com/2018/music-Legends-Never-Die.html</loc>
-    <lastmod>2018-06-22T15:13:38.158Z</lastmod>
+    <lastmod>2018-09-18T08:30:43.769Z</lastmod>
     <data>
         <display>
         <title>Legends Never Die</title>
@@ -82,152 +310,6 @@
 
     
   <url>
-    <loc>http://wumaozheng.com/2018/Singleton-Pattern.html</loc>
-    <lastmod>2018-05-12T10:21:14.584Z</lastmod>
-    <data>
-        <display>
-        <title>深入 Java 单例模式</title>
-        <pubTime>2018-04-18T12:58:05.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>设计模式</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wumaozheng.com/2018/Design-Pattern-Introduction.html</loc>
-    <lastmod>2018-05-09T17:08:50.276Z</lastmod>
-    <data>
-        <display>
-        <title>23种设计模式总览</title>
-        <pubTime>2018-04-17T12:33:05.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>设计模式</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wumaozheng.com/2018/mybatis3.4-technology-insider.html</loc>
-    <lastmod>2018-04-26T15:48:55.083Z</lastmod>
-    <data>
-        <display>
-        <title>Mybatis3.4-知识小结</title>
-        <pubTime>2018-03-05T06:58:45.000Z</pubTime>
-        
-        <tag>Mybatis</tag>
-         
-        <tag>Q/A</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wumaozheng.com/2017/git-in-linux.html</loc>
-    <lastmod>2018-04-25T19:13:01.654Z</lastmod>
-    <data>
-        <display>
-        <title>使用Git命令提交代码</title>
-        <pubTime>2017-12-26T04:07:00.000Z</pubTime>
-        
-        <tag>Git</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wumaozheng.com/2017/markdown-introduction.html</loc>
-    <lastmod>2018-04-25T19:12:04.700Z</lastmod>
-    <data>
-        <display>
-        <title>Markdown基础语法及编辑器简介</title>
-        <pubTime>2017-12-26T04:57:00.000Z</pubTime>
-        
-        <tag>Markdown</tag>
-         
-        <tag>Editor</tag>
-         
-        <tag>Tools</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wumaozheng.com/2018/LeBron-James-20180219.html</loc>
-    <lastmod>2018-04-18T13:56:20.903Z</lastmod>
-    <data>
-        <display>
-        <title>NBA2018全明星赛</title>
-        <pubTime>2018-02-19T01:00:00.000Z</pubTime>
-        
-        <tag>NBA</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wumaozheng.com/2018/LeBron-James-20180228.html</loc>
-    <lastmod>2018-04-18T13:56:05.061Z</lastmod>
-    <data>
-        <display>
-        <title>历史首人—詹姆斯30K+8K+8K里程碑</title>
-        <pubTime>2018-02-28T00:25:40.000Z</pubTime>
-        
-        <tag>NBA</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wumaozheng.com/2018/LeBron-James-20180124.html</loc>
-    <lastmod>2018-04-18T13:55:55.888Z</lastmod>
-    <data>
-        <display>
-        <title>NBA历史上最年轻的30,000分先生</title>
-        <pubTime>2018-01-24T14:45:45.000Z</pubTime>
-        
-        <tag>NBA</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wumaozheng.com/2018/LeBron-James-20180209.html</loc>
     <lastmod>2018-04-18T13:55:42.143Z</lastmod>
     <data>
@@ -244,67 +326,6 @@
     </url>
 
     
-  <url>
-    <loc>http://wumaozheng.com/2018/lost-and-confused.html</loc>
-    <lastmod>2018-04-18T13:55:15.723Z</lastmod>
-    <data>
-        <display>
-        <title>When you`re lost and confused</title>
-        <pubTime>2018-01-22T15:43:15.000Z</pubTime>
-        
-        <tag>Notes</tag>
-         
-        <tag>Thinking</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wumaozheng.com/2018/sitemap-seo.html</loc>
-    <lastmod>2018-03-25T10:13:41.859Z</lastmod>
-    <data>
-        <display>
-        <title>网站SEO优化</title>
-        <pubTime>2018-02-27T14:48:45.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>Blog</tag>
-         
-        <tag>SEO</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>http://wumaozheng.com/2018/baidu-analysis.html</loc>
-    <lastmod>2018-03-03T08:06:43.846Z</lastmod>
-    <data>
-        <display>
-        <title>网站流量统计分析</title>
-        <pubTime>2018-02-25T15:35:15.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>Blog</tag>
-         
-        <tag>流量统计</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
     
     
     
@@ -329,27 +350,6 @@
     
     
     
-    
-  <url>
-    <loc>http://wumaozheng.com/2017/hello-world.html</loc>
-    <lastmod>2018-01-29T06:03:05.502Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-12-24T03:38:05.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>Blog</tag>
-         
-        <tag>Github</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://wumaozheng.com/2018/music-gdsnaqgs.html</loc>
