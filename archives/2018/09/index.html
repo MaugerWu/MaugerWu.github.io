@@ -6,21 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://wumaozheng.com">
-  <title>使用Git命令提交代码 | Mauger`s Blog</title>
+  <title>Archives: 2018/9 | Mauger`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="使用Git提交代码的五个步骤 查看代码的修改状态 查看代码的修改内容 暂存需要提交的代码 提交已经暂存的文件 将代码同步到服务器">
-<meta name="keywords" content="Git">
-<meta property="og:type" content="article">
-<meta property="og:title" content="使用Git命令提交代码">
-<meta property="og:url" content="http://wumaozheng.com/2017/git-in-linux.html">
+  <meta name="description" content="The harder you work, the luckier you will be.">
+<meta name="keywords" content="Java,Python,MySQL,blog,Javascript,JS,jQuery,Ajax,Json,HTML,HTML5,CSS,CSS3,Github,Coding,Developer,Programmer,Coder,程序猿,编程,代码,开源,IT,互联网,网站,博客,詹姆斯,篮球">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mauger`s Blog">
+<meta property="og:url" content="http://wumaozheng.com/archives/2018/09/index.html">
 <meta property="og:site_name" content="Mauger`s Blog">
-<meta property="og:description" content="使用Git提交代码的五个步骤 查看代码的修改状态 查看代码的修改内容 暂存需要提交的代码 提交已经暂存的文件 将代码同步到服务器">
-<meta property="og:image" content="https://image.wumaozheng.com/blog/article/Git.jpg">
-<meta property="og:updated_time" content="2018-09-18T13:12:34.235Z">
+<meta property="og:description" content="The harder you work, the luckier you will be.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用Git命令提交代码">
-<meta name="twitter:description" content="使用Git提交代码的五个步骤 查看代码的修改状态 查看代码的修改内容 暂存需要提交的代码 提交已经暂存的文件 将代码同步到服务器">
-<meta name="twitter:image" content="https://image.wumaozheng.com/blog/article/Git.jpg">
+<meta name="twitter:title" content="Mauger`s Blog">
+<meta name="twitter:description" content="The harder you work, the luckier you will be.">
   
     <link rel="alternative" href="/atom.xml" title="Mauger`s Blog" type="application/atom+xml">
   
@@ -189,269 +186,68 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-git-in-linux" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      使用Git命令提交代码
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/windows-word-commands.html" class="archive-article-date">
+  	<time datetime="2018-09-28T15:08:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-28</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/windows-word-commands.html">Winsows&amp;Word常用快捷键</a>
     </h1>
   
 
-        
-        <a href="/2017/git-in-linux.html" class="archive-article-date">
-  	<time datetime="2017-12-26T04:07:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="https://image.wumaozheng.com/blog/article/Git.jpg" alt="Linux" title="Linux"></p>
-<h3 id="使用Git提交代码的五个步骤"><a href="#使用Git提交代码的五个步骤" class="headerlink" title="使用Git提交代码的五个步骤"></a>使用Git提交代码的五个步骤</h3><ol>
-<li>查看代码的修改状态</li>
-<li>查看代码的修改内容</li>
-<li>暂存需要提交的代码</li>
-<li>提交已经暂存的文件</li>
-<li>将代码同步到服务器</li>
-</ol>
-<a id="more"></a>
-<h3 id="使用Git操作命令"><a href="#使用Git操作命令" class="headerlink" title="使用Git操作命令"></a>使用Git操作命令</h3><p><strong>Step1.</strong> 查看代码修改状态 </p>
-<blockquote>
-<p><code>git status</code>  </p>
-</blockquote>
-<ul>
-<li>红色或绿色部分字体是工程内的发生修改的状态标识:</li>
-<li>modified 代表文件和上一版本相比，有过修改</li>
-<li>new  file  代表文件是新增加的</li>
-<li>deleted   代表文件被删除了，提交成功后，文件将从repository中删除</li>
-<li>untracked file 一般都是新增加的文件夹  </li>
-</ul>
-<p><strong>Step2.</strong> 查看代码的修改内容</p>
-<ul>
-<li><p>这里是查看 <code>.gitignore</code> 文件的变化</p>
-<blockquote>
-<p><code>git diff &lt;filename&gt;</code></p>
-</blockquote>
-</li>
-<li><p>这里是查看历史修改，<code>hashcode</code>可以从<code>Github</code>上的<code>commit</code>记录上获取</p>
-<blockquote>
-<p><code>git diff &lt;hashcode&gt; &lt;hashcode&gt; &lt;filename&gt;</code></p>
-</blockquote>
-</li>
-</ul>
-<p><strong>Step3.</strong> 暂存需要提交的代码</p>
-<ul>
-<li><p>增加一个需要上传的文件</p>
-<blockquote>
-<p><code>git add &lt;filename&gt;</code></p>
-</blockquote>
-</li>
-<li><p>增加所有需要上传的文件</p>
-<blockquote>
-<p><code>git add --all</code></p>
-</blockquote>
-</li>
-<li><p>删除一个不需要上传的文件</p>
-<blockquote>
-<p><code>git rm &lt;filename&gt;</code></p>
-</blockquote>
-</li>
-</ul>
-<p><strong>Step4.</strong> 提交已暂存的文件（仅仅是将修改提交到本地仓库）</p>
-<ul>
-<li><p>提交已暂存的文件</p>
-<blockquote>
-<p><code>git commit</code> </p>
-</blockquote>
-</li>
-<li><p>若发现漏提文件或注释有误，使用 <code>amend</code> 修正</p>
-<blockquote>
-<p><code>git commit --amend</code></p>
-</blockquote>
-</li>
-<li><p>提交已暂存的文件，同时进行注释</p>
-<blockquote>
-<p><code>git commit -m &lt;comment&gt;</code></p>
-</blockquote>
-</li>
-</ul>
-<p><strong>Step5.</strong> 推送/同步到远端服务器</p>
-<blockquote>
-<p><code>git push -u origin master</code></p>
-</blockquote>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/alipay.jpg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/weixin.jpg">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-				  <div style="text-align: center; color: #fff; font-size: 16px; margin-top: 15px; margin-bottom: -25px;">长按图片识别二维码</div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Windows</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Word</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">快捷键</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://wumaozheng.com/2017/git-in-linux.html" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2017/markdown-introduction.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Markdown基础语法及编辑器简介
-        
-      </div>
-    </a>
   
   
-    <a href="/2017/hello-world.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-  <div id="SOHUCS" sid="git-in-linux" ></div> 
-<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
-<script type="text/javascript">
-    window.changyan.api.config({
-        appid: "cyttWRyDV",
-        conf: "prod_30da0921e05d75bd9987b94218e31005"
-    });
-</script>
-</script>
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -509,8 +305,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
