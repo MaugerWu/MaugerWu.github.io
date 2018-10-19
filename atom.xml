@@ -5,9 +5,9 @@
   <subtitle>越努力，越幸运！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://wumaozheng.com/"/>
+  <link href="https://wumaozheng.com/"/>
   <updated>2018-10-15T19:13:38.189Z</updated>
-  <id>http://wumaozheng.com/</id>
+  <id>https://wumaozheng.com/</id>
   
   <author>
     <name>Mauger</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Winsows&amp;Word常用快捷键</title>
-    <link href="http://wumaozheng.com/2018/windows-word-commands.html"/>
-    <id>http://wumaozheng.com/2018/windows-word-commands.html</id>
+    <link href="https://wumaozheng.com/2018/windows-word-commands.html"/>
+    <id>https://wumaozheng.com/2018/windows-word-commands.html</id>
     <published>2018-09-28T15:08:00.000Z</published>
     <updated>2018-10-15T19:13:38.189Z</updated>
     
@@ -33,18 +33,18 @@
     </summary>
     
     
-      <category term="Windows" scheme="http://wumaozheng.com/tags/Windows/"/>
+      <category term="Windows" scheme="https://wumaozheng.com/tags/Windows/"/>
     
-      <category term="Word" scheme="http://wumaozheng.com/tags/Word/"/>
+      <category term="Word" scheme="https://wumaozheng.com/tags/Word/"/>
     
-      <category term="快捷键" scheme="http://wumaozheng.com/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+      <category term="快捷键" scheme="https://wumaozheng.com/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     
   </entry>
   
   <entry>
     <title>JavaEE 规范</title>
-    <link href="http://wumaozheng.com/2018/JavaEE-Specification.html"/>
-    <id>http://wumaozheng.com/2018/JavaEE-Specification.html</id>
+    <link href="https://wumaozheng.com/2018/JavaEE-Specification.html"/>
+    <id>https://wumaozheng.com/2018/JavaEE-Specification.html</id>
     <published>2018-07-24T15:01:05.000Z</published>
     <updated>2018-09-18T12:23:25.249Z</updated>
     
@@ -60,14 +60,14 @@
     </summary>
     
     
-      <category term="JavaEE" scheme="http://wumaozheng.com/tags/JavaEE/"/>
+      <category term="JavaEE" scheme="https://wumaozheng.com/tags/JavaEE/"/>
     
   </entry>
   
   <entry>
     <title>Legends Never Die</title>
-    <link href="http://wumaozheng.com/2018/music-Legends-Never-Die.html"/>
-    <id>http://wumaozheng.com/2018/music-Legends-Never-Die.html</id>
+    <link href="https://wumaozheng.com/2018/music-Legends-Never-Die.html"/>
+    <id>https://wumaozheng.com/2018/music-Legends-Never-Die.html</id>
     <published>2018-06-22T15:08:25.000Z</published>
     <updated>2018-10-15T18:48:19.078Z</updated>
     
@@ -80,16 +80,16 @@
     </summary>
     
     
-      <category term="Music" scheme="http://wumaozheng.com/tags/Music/"/>
+      <category term="Music" scheme="https://wumaozheng.com/tags/Music/"/>
     
-      <category term="Freetime" scheme="http://wumaozheng.com/tags/Freetime/"/>
+      <category term="Freetime" scheme="https://wumaozheng.com/tags/Freetime/"/>
     
   </entry>
   
   <entry>
     <title>Java 中的 clone() 方法</title>
-    <link href="http://wumaozheng.com/2018/clone.html"/>
-    <id>http://wumaozheng.com/2018/clone.html</id>
+    <link href="https://wumaozheng.com/2018/clone.html"/>
+    <id>https://wumaozheng.com/2018/clone.html</id>
     <published>2018-04-25T15:23:05.000Z</published>
     <updated>2018-09-18T12:22:46.526Z</updated>
     
@@ -103,18 +103,18 @@
     </summary>
     
     
-      <category term="Java" scheme="http://wumaozheng.com/tags/Java/"/>
+      <category term="Java" scheme="https://wumaozheng.com/tags/Java/"/>
     
-      <category term="Clone" scheme="http://wumaozheng.com/tags/Clone/"/>
+      <category term="Clone" scheme="https://wumaozheng.com/tags/Clone/"/>
     
-      <category term="DataType" scheme="http://wumaozheng.com/tags/DataType/"/>
+      <category term="DataType" scheme="https://wumaozheng.com/tags/DataType/"/>
     
   </entry>
   
   <entry>
     <title>深入 Java 单例模式</title>
-    <link href="http://wumaozheng.com/2018/Singleton-Pattern.html"/>
-    <id>http://wumaozheng.com/2018/Singleton-Pattern.html</id>
+    <link href="https://wumaozheng.com/2018/Singleton-Pattern.html"/>
+    <id>https://wumaozheng.com/2018/Singleton-Pattern.html</id>
     <published>2018-04-18T12:58:05.000Z</published>
     <updated>2018-09-18T12:26:11.187Z</updated>
     
@@ -129,16 +129,16 @@
     </summary>
     
     
-      <category term="Java" scheme="http://wumaozheng.com/tags/Java/"/>
+      <category term="Java" scheme="https://wumaozheng.com/tags/Java/"/>
     
-      <category term="设计模式" scheme="http://wumaozheng.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+      <category term="设计模式" scheme="https://wumaozheng.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>23种设计模式总览</title>
-    <link href="http://wumaozheng.com/2018/Design-Pattern-Introduction.html"/>
-    <id>http://wumaozheng.com/2018/Design-Pattern-Introduction.html</id>
+    <link href="https://wumaozheng.com/2018/Design-Pattern-Introduction.html"/>
+    <id>https://wumaozheng.com/2018/Design-Pattern-Introduction.html</id>
     <published>2018-04-17T12:33:05.000Z</published>
     <updated>2018-09-18T12:25:47.462Z</updated>
     
@@ -152,16 +152,16 @@
     </summary>
     
     
-      <category term="Java" scheme="http://wumaozheng.com/tags/Java/"/>
+      <category term="Java" scheme="https://wumaozheng.com/tags/Java/"/>
     
-      <category term="设计模式" scheme="http://wumaozheng.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+      <category term="设计模式" scheme="https://wumaozheng.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>Music-For-NBA</title>
-    <link href="http://wumaozheng.com/2018/Music-For-NBA.html"/>
-    <id>http://wumaozheng.com/2018/Music-For-NBA.html</id>
+    <link href="https://wumaozheng.com/2018/Music-For-NBA.html"/>
+    <id>https://wumaozheng.com/2018/Music-For-NBA.html</id>
     <published>2018-03-14T08:15:25.000Z</published>
     <updated>2018-05-15T14:46:08.743Z</updated>
     
@@ -182,18 +182,18 @@
     </summary>
     
     
-      <category term="NBA" scheme="http://wumaozheng.com/tags/NBA/"/>
+      <category term="NBA" scheme="https://wumaozheng.com/tags/NBA/"/>
     
-      <category term="Music" scheme="http://wumaozheng.com/tags/Music/"/>
+      <category term="Music" scheme="https://wumaozheng.com/tags/Music/"/>
     
-      <category term="Freetime" scheme="http://wumaozheng.com/tags/Freetime/"/>
+      <category term="Freetime" scheme="https://wumaozheng.com/tags/Freetime/"/>
     
   </entry>
   
   <entry>
     <title>Mybatis3.4-知识小结</title>
-    <link href="http://wumaozheng.com/2018/mybatis3.4-technology-insider.html"/>
-    <id>http://wumaozheng.com/2018/mybatis3.4-technology-insider.html</id>
+    <link href="https://wumaozheng.com/2018/mybatis3.4-technology-insider.html"/>
+    <id>https://wumaozheng.com/2018/mybatis3.4-technology-insider.html</id>
     <published>2018-03-05T06:58:45.000Z</published>
     <updated>2018-09-18T12:38:32.277Z</updated>
     
@@ -207,16 +207,16 @@
     </summary>
     
     
-      <category term="Mybatis" scheme="http://wumaozheng.com/tags/Mybatis/"/>
+      <category term="Mybatis" scheme="https://wumaozheng.com/tags/Mybatis/"/>
     
-      <category term="Q/A" scheme="http://wumaozheng.com/tags/Q-A/"/>
+      <category term="Q/A" scheme="https://wumaozheng.com/tags/Q-A/"/>
     
   </entry>
   
   <entry>
     <title>历史首人—詹姆斯30K+8K+8K里程碑</title>
-    <link href="http://wumaozheng.com/2018/LeBron-James-20180228.html"/>
-    <id>http://wumaozheng.com/2018/LeBron-James-20180228.html</id>
+    <link href="https://wumaozheng.com/2018/LeBron-James-20180228.html"/>
+    <id>https://wumaozheng.com/2018/LeBron-James-20180228.html</id>
     <published>2018-02-28T00:25:40.000Z</published>
     <updated>2018-09-18T12:43:28.188Z</updated>
     
@@ -230,14 +230,14 @@
     </summary>
     
     
-      <category term="NBA" scheme="http://wumaozheng.com/tags/NBA/"/>
+      <category term="NBA" scheme="https://wumaozheng.com/tags/NBA/"/>
     
   </entry>
   
   <entry>
     <title>网站SEO优化</title>
-    <link href="http://wumaozheng.com/2018/sitemap-seo.html"/>
-    <id>http://wumaozheng.com/2018/sitemap-seo.html</id>
+    <link href="https://wumaozheng.com/2018/sitemap-seo.html"/>
+    <id>https://wumaozheng.com/2018/sitemap-seo.html</id>
     <published>2018-02-27T14:48:45.000Z</published>
     <updated>2018-09-18T12:46:31.659Z</updated>
     
@@ -251,18 +251,18 @@
     </summary>
     
     
-      <category term="Hexo" scheme="http://wumaozheng.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://wumaozheng.com/tags/Hexo/"/>
     
-      <category term="Blog" scheme="http://wumaozheng.com/tags/Blog/"/>
+      <category term="Blog" scheme="https://wumaozheng.com/tags/Blog/"/>
     
-      <category term="SEO" scheme="http://wumaozheng.com/tags/SEO/"/>
+      <category term="SEO" scheme="https://wumaozheng.com/tags/SEO/"/>
     
   </entry>
   
   <entry>
     <title>网站流量统计分析</title>
-    <link href="http://wumaozheng.com/2018/baidu-analysis.html"/>
-    <id>http://wumaozheng.com/2018/baidu-analysis.html</id>
+    <link href="https://wumaozheng.com/2018/baidu-analysis.html"/>
+    <id>https://wumaozheng.com/2018/baidu-analysis.html</id>
     <published>2018-02-25T15:35:15.000Z</published>
     <updated>2018-09-18T12:46:57.098Z</updated>
     
@@ -276,18 +276,18 @@
     </summary>
     
     
-      <category term="Hexo" scheme="http://wumaozheng.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://wumaozheng.com/tags/Hexo/"/>
     
-      <category term="Blog" scheme="http://wumaozheng.com/tags/Blog/"/>
+      <category term="Blog" scheme="https://wumaozheng.com/tags/Blog/"/>
     
-      <category term="流量统计" scheme="http://wumaozheng.com/tags/%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1/"/>
+      <category term="流量统计" scheme="https://wumaozheng.com/tags/%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1/"/>
     
   </entry>
   
   <entry>
     <title>NBA2018全明星赛</title>
-    <link href="http://wumaozheng.com/2018/LeBron-James-20180219.html"/>
-    <id>http://wumaozheng.com/2018/LeBron-James-20180219.html</id>
+    <link href="https://wumaozheng.com/2018/LeBron-James-20180219.html"/>
+    <id>https://wumaozheng.com/2018/LeBron-James-20180219.html</id>
     <published>2018-02-19T01:00:00.000Z</published>
     <updated>2018-09-18T12:51:55.833Z</updated>
     
@@ -302,14 +302,14 @@
     </summary>
     
     
-      <category term="NBA" scheme="http://wumaozheng.com/tags/NBA/"/>
+      <category term="NBA" scheme="https://wumaozheng.com/tags/NBA/"/>
     
   </entry>
   
   <entry>
     <title>詹皇三双后仰绝杀森林狼</title>
-    <link href="http://wumaozheng.com/2018/LeBron-James-20180209.html"/>
-    <id>http://wumaozheng.com/2018/LeBron-James-20180209.html</id>
+    <link href="https://wumaozheng.com/2018/LeBron-James-20180209.html"/>
+    <id>https://wumaozheng.com/2018/LeBron-James-20180209.html</id>
     <published>2018-02-08T06:37:25.000Z</published>
     <updated>2018-04-18T13:55:42.143Z</updated>
     
@@ -324,14 +324,14 @@
     </summary>
     
     
-      <category term="NBA" scheme="http://wumaozheng.com/tags/NBA/"/>
+      <category term="NBA" scheme="https://wumaozheng.com/tags/NBA/"/>
     
   </entry>
   
   <entry>
     <title>Music-成都</title>
-    <link href="http://wumaozheng.com/2018/music-chengdu.html"/>
-    <id>http://wumaozheng.com/2018/music-chengdu.html</id>
+    <link href="https://wumaozheng.com/2018/music-chengdu.html"/>
+    <id>https://wumaozheng.com/2018/music-chengdu.html</id>
     <published>2018-01-29T15:30:25.000Z</published>
     <updated>2018-01-30T02:36:22.190Z</updated>
     
@@ -344,16 +344,16 @@
     </summary>
     
     
-      <category term="Music" scheme="http://wumaozheng.com/tags/Music/"/>
+      <category term="Music" scheme="https://wumaozheng.com/tags/Music/"/>
     
-      <category term="Freetime" scheme="http://wumaozheng.com/tags/Freetime/"/>
+      <category term="Freetime" scheme="https://wumaozheng.com/tags/Freetime/"/>
     
   </entry>
   
   <entry>
     <title>Music-广东十年爱情故事</title>
-    <link href="http://wumaozheng.com/2018/music-gdsnaqgs.html"/>
-    <id>http://wumaozheng.com/2018/music-gdsnaqgs.html</id>
+    <link href="https://wumaozheng.com/2018/music-gdsnaqgs.html"/>
+    <id>https://wumaozheng.com/2018/music-gdsnaqgs.html</id>
     <published>2018-01-27T15:45:25.000Z</published>
     <updated>2018-01-29T05:55:20.989Z</updated>
     
@@ -366,16 +366,16 @@
     </summary>
     
     
-      <category term="Music" scheme="http://wumaozheng.com/tags/Music/"/>
+      <category term="Music" scheme="https://wumaozheng.com/tags/Music/"/>
     
-      <category term="Freetime" scheme="http://wumaozheng.com/tags/Freetime/"/>
+      <category term="Freetime" scheme="https://wumaozheng.com/tags/Freetime/"/>
     
   </entry>
   
   <entry>
     <title>NBA历史上最年轻的30,000分先生</title>
-    <link href="http://wumaozheng.com/2018/LeBron-James-20180124.html"/>
-    <id>http://wumaozheng.com/2018/LeBron-James-20180124.html</id>
+    <link href="https://wumaozheng.com/2018/LeBron-James-20180124.html"/>
+    <id>https://wumaozheng.com/2018/LeBron-James-20180124.html</id>
     <published>2018-01-24T14:45:45.000Z</published>
     <updated>2018-09-18T13:02:40.911Z</updated>
     
@@ -389,14 +389,14 @@
     </summary>
     
     
-      <category term="NBA" scheme="http://wumaozheng.com/tags/NBA/"/>
+      <category term="NBA" scheme="https://wumaozheng.com/tags/NBA/"/>
     
   </entry>
   
   <entry>
     <title>When you`re lost and confused</title>
-    <link href="http://wumaozheng.com/2018/lost-and-confused.html"/>
-    <id>http://wumaozheng.com/2018/lost-and-confused.html</id>
+    <link href="https://wumaozheng.com/2018/lost-and-confused.html"/>
+    <id>https://wumaozheng.com/2018/lost-and-confused.html</id>
     <published>2018-01-22T15:43:15.000Z</published>
     <updated>2018-09-18T13:00:06.564Z</updated>
     
@@ -410,16 +410,16 @@
     </summary>
     
     
-      <category term="Notes" scheme="http://wumaozheng.com/tags/Notes/"/>
+      <category term="Notes" scheme="https://wumaozheng.com/tags/Notes/"/>
     
-      <category term="Thinking" scheme="http://wumaozheng.com/tags/Thinking/"/>
+      <category term="Thinking" scheme="https://wumaozheng.com/tags/Thinking/"/>
     
   </entry>
   
   <entry>
     <title>Markdown基础语法及编辑器简介</title>
-    <link href="http://wumaozheng.com/2017/markdown-introduction.html"/>
-    <id>http://wumaozheng.com/2017/markdown-introduction.html</id>
+    <link href="https://wumaozheng.com/2017/markdown-introduction.html"/>
+    <id>https://wumaozheng.com/2017/markdown-introduction.html</id>
     <published>2017-12-26T04:57:00.000Z</published>
     <updated>2018-09-18T13:13:49.434Z</updated>
     
@@ -433,18 +433,18 @@
     </summary>
     
     
-      <category term="Markdown" scheme="http://wumaozheng.com/tags/Markdown/"/>
+      <category term="Markdown" scheme="https://wumaozheng.com/tags/Markdown/"/>
     
-      <category term="Editor" scheme="http://wumaozheng.com/tags/Editor/"/>
+      <category term="Editor" scheme="https://wumaozheng.com/tags/Editor/"/>
     
-      <category term="Tools" scheme="http://wumaozheng.com/tags/Tools/"/>
+      <category term="Tools" scheme="https://wumaozheng.com/tags/Tools/"/>
     
   </entry>
   
   <entry>
     <title>使用Git命令提交代码</title>
-    <link href="http://wumaozheng.com/2017/git-in-linux.html"/>
-    <id>http://wumaozheng.com/2017/git-in-linux.html</id>
+    <link href="https://wumaozheng.com/2017/git-in-linux.html"/>
+    <id>https://wumaozheng.com/2017/git-in-linux.html</id>
     <published>2017-12-26T04:07:00.000Z</published>
     <updated>2018-09-18T13:12:34.235Z</updated>
     
@@ -464,14 +464,14 @@
     </summary>
     
     
-      <category term="Git" scheme="http://wumaozheng.com/tags/Git/"/>
+      <category term="Git" scheme="https://wumaozheng.com/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://wumaozheng.com/2017/hello-world.html"/>
-    <id>http://wumaozheng.com/2017/hello-world.html</id>
+    <link href="https://wumaozheng.com/2017/hello-world.html"/>
+    <id>https://wumaozheng.com/2017/hello-world.html</id>
     <published>2017-12-24T03:38:05.000Z</published>
     <updated>2018-09-18T13:13:02.622Z</updated>
     
@@ -485,11 +485,11 @@
     </summary>
     
     
-      <category term="Hexo" scheme="http://wumaozheng.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://wumaozheng.com/tags/Hexo/"/>
     
-      <category term="Blog" scheme="http://wumaozheng.com/tags/Blog/"/>
+      <category term="Blog" scheme="https://wumaozheng.com/tags/Blog/"/>
     
-      <category term="Github" scheme="http://wumaozheng.com/tags/Github/"/>
+      <category term="Github" scheme="https://wumaozheng.com/tags/Github/"/>
     
   </entry>
   
