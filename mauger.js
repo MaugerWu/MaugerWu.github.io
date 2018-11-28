@@ -10,5 +10,5 @@ $(function() {
 	var obj=$(".header-menu").find("a")[3];
 	$(obj).attr("target","_blank")
 	
-	$('.article-entry ul').attr("style", "margin-top: -15px; margin-left: 20px;")
+	$('.article-entry ul').attr("style", "margin-left: 20px;")
 });
