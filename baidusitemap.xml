@@ -4,6 +4,115 @@
 
     
   <url>
+    <loc>https://wumaozheng.com/2018/ubuntu16.04-install-mysql.html</loc>
+    <lastmod>2018-11-28T14:47:11.676Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04安装MySQL</title>
+        <pubTime>2018-11-17T18:08:00.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Ubuntu</tag>
+         
+        <tag>MySQL</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wumaozheng.com/2018/ubuntu16.04-install-jdk8-tomcat7.html</loc>
+    <lastmod>2018-11-28T14:41:44.123Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04安装JDK与Tomcat</title>
+        <pubTime>2018-11-15T12:08:00.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Ubuntu</tag>
+         
+        <tag>JDK</tag>
+         
+        <tag>Tomcat</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wumaozheng.com/2018/WinSCP.html</loc>
+    <lastmod>2018-11-28T14:01:34.650Z</lastmod>
+    <data>
+        <display>
+        <title>WinSCP简介与安装使用</title>
+        <pubTime>2018-10-27T17:08:00.000Z</pubTime>
+        
+        <tag>Windows</tag>
+         
+        <tag>SSH</tag>
+         
+        <tag>WinSCP</tag>
+         
+        <tag>Tools</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wumaozheng.com/2018/ubuntu16.04-install-maven.html</loc>
+    <lastmod>2018-11-28T06:19:37.562Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04安装Maven</title>
+        <pubTime>2018-11-25T13:08:00.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Ubuntu</tag>
+         
+        <tag>Maven</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wumaozheng.com/2017/markdown-introduction.html</loc>
+    <lastmod>2018-11-15T20:03:10.985Z</lastmod>
+    <data>
+        <display>
+        <title>Markdown基础语法及编辑器简介</title>
+        <pubTime>2017-12-26T04:57:00.000Z</pubTime>
+        
+        <tag>Tools</tag>
+         
+        <tag>Markdown</tag>
+         
+        <tag>Editor</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://wumaozheng.com/2018/windows-word-commands.html</loc>
     <lastmod>2018-10-15T19:13:38.189Z</lastmod>
     <data>
@@ -36,27 +145,6 @@
         <tag>Music</tag>
          
         <tag>Freetime</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wumaozheng.com/2017/markdown-introduction.html</loc>
-    <lastmod>2018-09-18T13:13:49.434Z</lastmod>
-    <data>
-        <display>
-        <title>Markdown基础语法及编辑器简介</title>
-        <pubTime>2017-12-26T04:57:00.000Z</pubTime>
-        
-        <tag>Markdown</tag>
-         
-        <tag>Editor</tag>
-         
-        <tag>Tools</tag>
          
          
            
