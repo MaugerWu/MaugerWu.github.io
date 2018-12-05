@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://wumaozheng.com/2018/ubuntu16.04-install-mysql.html</loc>
-    <lastmod>2018-11-28T14:47:11.676Z</lastmod>
+    <lastmod>2018-12-05T16:57:00.877Z</lastmod>
     <data>
         <display>
         <title>Ubuntu16.04安装MySQL</title>
@@ -25,8 +25,29 @@
 
     
   <url>
+    <loc>https://wumaozheng.com/2018/ubuntu16.04-install-maven.html</loc>
+    <lastmod>2018-12-05T16:54:03.482Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04安装Maven</title>
+        <pubTime>2018-11-25T13:08:00.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Ubuntu</tag>
+         
+        <tag>Maven</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://wumaozheng.com/2018/ubuntu16.04-install-jdk8-tomcat7.html</loc>
-    <lastmod>2018-11-28T14:41:44.123Z</lastmod>
+    <lastmod>2018-12-05T16:53:31.568Z</lastmod>
     <data>
         <display>
         <title>Ubuntu16.04安装JDK与Tomcat</title>
@@ -36,7 +57,28 @@
          
         <tag>Ubuntu</tag>
          
+        <tag>Tomcat</tag>
+         
         <tag>JDK</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wumaozheng.com/2018/ubuntu16.04-config-80port.html</loc>
+    <lastmod>2018-12-05T16:53:26.073Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04配置Tomcat访问80端口</title>
+        <pubTime>2018-11-16T15:08:00.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Ubuntu</tag>
          
         <tag>Tomcat</tag>
          
@@ -62,27 +104,6 @@
         <tag>WinSCP</tag>
          
         <tag>Tools</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wumaozheng.com/2018/ubuntu16.04-install-maven.html</loc>
-    <lastmod>2018-11-28T06:19:37.562Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04安装Maven</title>
-        <pubTime>2018-11-25T13:08:00.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Ubuntu</tag>
-         
-        <tag>Maven</tag>
          
          
            

@@ -367,6 +367,96 @@ var _hmt = _hmt || [];
 
 
   
+    <article id="post-ubuntu16.04-config-80port" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/ubuntu16.04-config-80port.html">Ubuntu16.04配置Tomcat访问80端口</a>
+    </h1>
+  
+
+        
+        <a href="/2018/ubuntu16.04-config-80port.html" class="archive-article-date">
+  	<time datetime="2018-11-16T15:08:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&emsp;&emsp;本篇教程在示例步骤中使用了以下版本的软件。操作时，请您以实际软件版本为准。</p>
+<ul>
+<li>操作系统：<code>Ubuntu 16.04.3 LTS</code></li>
+<li>JDK 版本：<code>JDK 1.8.0_65</code></li>
+<li>Tomcat 版本：<code>Apache Tomcat 7.0.47</code></li>
+</ul>
+<p>&emsp;&emsp;阿里云服务器 ECS Ubuntu 16.04 环境下部署 Tomcat 服务，发现 80 端口无法被监听，导致无法通过外网进行正常访问。在 Ubuntu 上对非 <code>root</code> 用户只能使用 <code>1024</code> 及以上端口，即 <code>0~1023</code> 对非 root 用户为禁用状态。需要使用 <code>iptables</code> 的转发功能，把 80 端口（外部访问端口）消息转发给 8080 端口（目标端口）。 本文所述操作预期达成效果：Web 访问服务地址不需要加端口号（即 <code>80</code> 端口）可正常访问相关应用程序。</p>
+        
+          <a class="article-more-a" href="/2018/ubuntu16.04-config-80port.html#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Ubuntu</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Tomcat</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/ubuntu16.04-config-80port.html">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-ubuntu16.04-install-jdk8-tomcat7" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -416,11 +506,11 @@ var _hmt = _hmt || [];
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">JDK</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Tomcat</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Tomcat</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">JDK</a>
         		</li>
       		
 		</ul>
@@ -519,91 +609,6 @@ var _hmt = _hmt || [];
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/WinSCP.html">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-windows-word-commands" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/windows-word-commands.html">Winsows&amp;Word常用快捷键</a>
-    </h1>
-  
-
-        
-        <a href="/2018/windows-word-commands.html" class="archive-article-date">
-  	<time datetime="2018-09-28T15:08:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="https://image.wumaozheng.com/blog/article/shortcut-key.jpg" alt="" title="Windows"></p>
-<p>&emsp;&emsp;快捷键（shortcut keys），又叫快速键或热键，指通过某些特定的按键、按键顺序或按键组合来完成一个操作，很多快捷键往往与如 Ctrl 键、Shift 键、Alt 键、Fn 键以及 Windows 平台下的 Windows 键等配合使用。利用快捷键可以代替鼠标做一些工作，可以利用键盘快捷键打开、关闭和导航“开始”菜单、桌面、菜单、对话框以及网页，Word里面也可以用到快捷键。</p>
-        
-          <a class="article-more-a" href="/2018/windows-word-commands.html#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Windows</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Word</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">快捷键</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/windows-word-commands.html">展开全文 >></a>
         </p>
       
 
@@ -869,11 +874,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
               </li>
              
               <li class="article-tag-list-item">

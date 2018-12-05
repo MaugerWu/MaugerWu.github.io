@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://wumaozheng.com/2018/ubuntu16.04-install-mysql.html">
 <meta property="og:site_name" content="Mauger`s Blog">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;本篇教程在示例步骤中使用了以下版本的软件。操作时，请您以实际软件版本为准。  操作系统：Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-105-generic x86_64) MySQL 版本：MySQL 5.7.24-0ubuntu0.16.04.1 (Ubuntu) MySQL 可视化工具：Navicat for MySQL 10.1.7-ent">
-<meta property="og:updated_time" content="2018-11-28T14:47:11.676Z">
+<meta property="og:updated_time" content="2018-12-05T16:57:00.877Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu16.04安装MySQL">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;本篇教程在示例步骤中使用了以下版本的软件。操作时，请您以实际软件版本为准。  操作系统：Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-105-generic x86_64) MySQL 版本：MySQL 5.7.24-0ubuntu0.16.04.1 (Ubuntu) MySQL 可视化工具：Navicat for MySQL 10.1.7-ent">
@@ -292,7 +292,7 @@ var _hmt = _hmt || [];
 </li>
 <li>远程连接 MySQL 测试，这里偷懒使用了 Windows 的命令行工具<a href="#point3">（参见附录3）</a></li>
 </ol>
-<h3 id="四-参考链接"><a href="#四-参考链接" class="headerlink" title="四. 参考链接"></a>四. 参考链接</h3><ul>
+<h3 id="四、文章参考"><a href="#四、文章参考" class="headerlink" title="四、文章参考"></a>四、文章参考</h3><ul>
 <li><a href="https://www.linuxidc.com/Linux/2017-06/144805.htm" target="_blank" rel="noopener">Ubuntu 16.04 安装 MySQL 及问题解决</a></li>
 <li><a href="https://blog.csdn.net/nancy50/article/details/81080693" target="_blank" rel="noopener">Ubuntu 16.04 LTS 下安装配置 MySQL</a></li>
 </ul>
@@ -447,8 +447,8 @@ var _hmt = _hmt || [];
     </a>
   
   
-    <a href="/2018/ubuntu16.04-install-jdk8-tomcat7.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Ubuntu16.04安装JDK与Tomcat</div>
+    <a href="/2018/ubuntu16.04-config-80port.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Ubuntu16.04配置Tomcat访问80端口</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -475,7 +475,7 @@ var _hmt = _hmt || [];
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、MySQL-下载与安装"><span class="toc-number">1.</span> <span class="toc-text"><a href="#&#x4E00;&#x3001;MySQL-&#x4E0B;&#x8F7D;&#x4E0E;&#x5B89;&#x88C5;" class="headerlink" title="&#x4E00;&#x3001;MySQL &#x4E0B;&#x8F7D;&#x4E0E;&#x5B89;&#x88C5;"></a>&#x4E00;&#x3001;MySQL &#x4E0B;&#x8F7D;&#x4E0E;&#x5B89;&#x88C5;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、修改-MySQL-编码为-utf8"><span class="toc-number">2.</span> <span class="toc-text"><a href="#&#x4E8C;&#x3001;&#x4FEE;&#x6539;-MySQL-&#x7F16;&#x7801;&#x4E3A;-utf8" class="headerlink" title="&#x4E8C;&#x3001;&#x4FEE;&#x6539; MySQL &#x7F16;&#x7801;&#x4E3A; utf8"></a>&#x4E8C;&#x3001;&#x4FEE;&#x6539; MySQL &#x7F16;&#x7801;&#x4E3A; utf8</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、配置-MySQL-远程连接"><span class="toc-number">3.</span> <span class="toc-text"><a href="#&#x4E09;&#x3001;&#x914D;&#x7F6E;-MySQL-&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;" class="headerlink" title="&#x4E09;&#x3001;&#x914D;&#x7F6E; MySQL &#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;"></a>&#x4E09;&#x3001;&#x914D;&#x7F6E; MySQL &#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四-参考链接"><span class="toc-number">4.</span> <span class="toc-text"><a href="#&#x56DB;-&#x53C2;&#x8003;&#x94FE;&#x63A5;" class="headerlink" title="&#x56DB;. &#x53C2;&#x8003;&#x94FE;&#x63A5;"></a>&#x56DB;. &#x53C2;&#x8003;&#x94FE;&#x63A5;</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#附录-1"><span class="toc-number">4.1.</span> <span class="toc-text"><a href="#&#x9644;&#x5F55;-1" class="headerlink" title="&#x9644;&#x5F55; 1"></a>&#x9644;&#x5F55; 1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#附录-2"><span class="toc-number">4.2.</span> <span class="toc-text"><a href="#&#x9644;&#x5F55;-2" class="headerlink" title="&#x9644;&#x5F55; 2"></a>&#x9644;&#x5F55; 2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#附录-3"><span class="toc-number">4.3.</span> <span class="toc-text"><a href="#&#x9644;&#x5F55;-3" class="headerlink" title="&#x9644;&#x5F55; 3"></a>&#x9644;&#x5F55; 3</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、MySQL-下载与安装"><span class="toc-number">1.</span> <span class="toc-text"><a href="#&#x4E00;&#x3001;MySQL-&#x4E0B;&#x8F7D;&#x4E0E;&#x5B89;&#x88C5;" class="headerlink" title="&#x4E00;&#x3001;MySQL &#x4E0B;&#x8F7D;&#x4E0E;&#x5B89;&#x88C5;"></a>&#x4E00;&#x3001;MySQL &#x4E0B;&#x8F7D;&#x4E0E;&#x5B89;&#x88C5;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、修改-MySQL-编码为-utf8"><span class="toc-number">2.</span> <span class="toc-text"><a href="#&#x4E8C;&#x3001;&#x4FEE;&#x6539;-MySQL-&#x7F16;&#x7801;&#x4E3A;-utf8" class="headerlink" title="&#x4E8C;&#x3001;&#x4FEE;&#x6539; MySQL &#x7F16;&#x7801;&#x4E3A; utf8"></a>&#x4E8C;&#x3001;&#x4FEE;&#x6539; MySQL &#x7F16;&#x7801;&#x4E3A; utf8</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、配置-MySQL-远程连接"><span class="toc-number">3.</span> <span class="toc-text"><a href="#&#x4E09;&#x3001;&#x914D;&#x7F6E;-MySQL-&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;" class="headerlink" title="&#x4E09;&#x3001;&#x914D;&#x7F6E; MySQL &#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;"></a>&#x4E09;&#x3001;&#x914D;&#x7F6E; MySQL &#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、文章参考"><span class="toc-number">4.</span> <span class="toc-text"><a href="#&#x56DB;&#x3001;&#x6587;&#x7AE0;&#x53C2;&#x8003;" class="headerlink" title="&#x56DB;&#x3001;&#x6587;&#x7AE0;&#x53C2;&#x8003;"></a>&#x56DB;&#x3001;&#x6587;&#x7AE0;&#x53C2;&#x8003;</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#附录-1"><span class="toc-number">4.1.</span> <span class="toc-text"><a href="#&#x9644;&#x5F55;-1" class="headerlink" title="&#x9644;&#x5F55; 1"></a>&#x9644;&#x5F55; 1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#附录-2"><span class="toc-number">4.2.</span> <span class="toc-text"><a href="#&#x9644;&#x5F55;-2" class="headerlink" title="&#x9644;&#x5F55; 2"></a>&#x9644;&#x5F55; 2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#附录-3"><span class="toc-number">4.3.</span> <span class="toc-text"><a href="#&#x9644;&#x5F55;-3" class="headerlink" title="&#x9644;&#x5F55; 3"></a>&#x9644;&#x5F55; 3</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -736,11 +736,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
               </li>
              
               <li class="article-tag-list-item">
