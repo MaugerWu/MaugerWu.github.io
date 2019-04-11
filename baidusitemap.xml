@@ -4,6 +4,71 @@
 
     
   <url>
+    <loc>https://wumaozheng.com/2018/windows-word-commands.html</loc>
+    <lastmod>2018-12-17T08:05:40.675Z</lastmod>
+    <data>
+        <display>
+        <title>Winsows&Word常用快捷键</title>
+        <pubTime>2018-09-28T15:08:00.000Z</pubTime>
+        
+        <tag>Windows</tag>
+         
+        <tag>Word</tag>
+         
+        <tag>快捷键</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wumaozheng.com/2018/ubuntu16.04-config-80port.html</loc>
+    <lastmod>2018-12-12T20:18:25.690Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04配置Tomcat访问80端口</title>
+        <pubTime>2018-11-16T15:08:00.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Ubuntu</tag>
+         
+        <tag>Tomcat</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wumaozheng.com/2018/ubuntu16.04-install-jdk8-tomcat7.html</loc>
+    <lastmod>2018-12-10T03:32:47.872Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04安装JDK与Tomcat</title>
+        <pubTime>2018-11-15T12:08:00.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Ubuntu</tag>
+         
+        <tag>Tomcat</tag>
+         
+        <tag>JDK</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://wumaozheng.com/2018/ubuntu16.04-install-mysql.html</loc>
     <lastmod>2018-12-05T16:57:00.877Z</lastmod>
     <data>
@@ -37,50 +102,6 @@
         <tag>Ubuntu</tag>
          
         <tag>Maven</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wumaozheng.com/2018/ubuntu16.04-install-jdk8-tomcat7.html</loc>
-    <lastmod>2018-12-05T16:53:31.568Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04安装JDK与Tomcat</title>
-        <pubTime>2018-11-15T12:08:00.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Ubuntu</tag>
-         
-        <tag>Tomcat</tag>
-         
-        <tag>JDK</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wumaozheng.com/2018/ubuntu16.04-config-80port.html</loc>
-    <lastmod>2018-12-05T16:53:26.073Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04配置Tomcat访问80端口</title>
-        <pubTime>2018-11-16T15:08:00.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Ubuntu</tag>
-         
-        <tag>Tomcat</tag>
          
          
            
@@ -125,27 +146,6 @@
         <tag>Markdown</tag>
          
         <tag>Editor</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wumaozheng.com/2018/windows-word-commands.html</loc>
-    <lastmod>2018-10-15T19:13:38.189Z</lastmod>
-    <data>
-        <display>
-        <title>Winsows&Word常用快捷键</title>
-        <pubTime>2018-09-28T15:08:00.000Z</pubTime>
-        
-        <tag>Windows</tag>
-         
-        <tag>Word</tag>
-         
-        <tag>快捷键</tag>
          
          
            
