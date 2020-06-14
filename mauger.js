@@ -11,4 +11,9 @@ $(function() {
 	$(obj).attr("target","_blank")
 	
 	$('.article-entry ul').attr("style", "margin-left: 20px;")
+	
+	// 畅言去广告
+	$('.module-cmt-footer').attr("style", "display:none !important;");
+	$('#feedAv').attr("style", "display:none !important;");
+	$('#pop_ad').attr("style", "display:none !important;");
 });
