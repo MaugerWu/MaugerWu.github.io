@@ -5,14 +5,14 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="https://wumaozheng.com">
+  <link rel="dns-prefetch" href="https://maugerwu.github.io">
   <title>深入 Java 单例模式 | Mauger`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="&amp;emsp;&amp;emsp;在 GoF 的23种设计模式中，单例模式是比较简单的一种。然而，有时候越是简单的东西越容易出现问题。下面就单例设计模式详细的探讨一下。 &amp;emsp;&amp;emsp;所谓单例模式，简单来说，就是在整个应用中保证只有一个类的实例存在。就像是 Java Web 中的 application，也就是提供了一个全局变量，用处相当广泛，比如：保存全局数据，实现全局性的操作等。">
 <meta name="keywords" content="Java,设计模式">
 <meta property="og:type" content="article">
 <meta property="og:title" content="深入 Java 单例模式">
-<meta property="og:url" content="https://wumaozheng.com/2018/Singleton-Pattern.html">
+<meta property="og:url" content="https://maugerwu.github.io/2018/Singleton-Pattern.html">
 <meta property="og:site_name" content="Mauger`s Blog">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;在 GoF 的23种设计模式中，单例模式是比较简单的一种。然而，有时候越是简单的东西越容易出现问题。下面就单例设计模式详细的探讨一下。 &amp;emsp;&amp;emsp;所谓单例模式，简单来说，就是在整个应用中保证只有一个类的实例存在。就像是 Java Web 中的 application，也就是提供了一个全局变量，用处相当广泛，比如：保存全局数据，实现全局性的操作等。">
 <meta property="og:image" content="https://image.wumaozheng.com/blog/article/singleton.jpg">
@@ -62,7 +62,7 @@ var _hmt = _hmt || [];
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="https://image.wumaozheng.com/blog/avatar/avatar3.jpg" class="js-avatar">
+			<img src="https://maugerwu.github.io/avatar3.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a class="font-color" href="/">Mauger</a></h1>
@@ -106,7 +106,7 @@ var _hmt = _hmt || [];
 		        
 					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/mauger/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
-					<a class="weixin" target="_blank" href="https://wumaozheng.com/add_weixin.jpg" title="weixin"><i class="icon-weixin"></i></a>
+					<a class="weixin" target="_blank" href="https://maugerwu.github.io/add_weixin.jpg" title="weixin"><i class="icon-weixin"></i></a>
 		        
 					<a class="mail" target="_blank" href="mailto:wumz993@gmail.com" title="mail"><i class="icon-mail"></i></a>
 		        
@@ -128,7 +128,7 @@ var _hmt = _hmt || [];
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="https://image.wumaozheng.com/blog/avatar/avatar3.jpg" class="js-avatar">
+				<img src="https://maugerwu.github.io/avatar3.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Mauger</h1>
@@ -155,7 +155,7 @@ var _hmt = _hmt || [];
 			        
 						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/mauger/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
-						<a class="weixin" target="_blank" href="https://wumaozheng.com/add_weixin.jpg" title="weixin"><i class="icon-weixin"></i></a>
+						<a class="weixin" target="_blank" href="https://maugerwu.github.io/add_weixin.jpg" title="weixin"><i class="icon-weixin"></i></a>
 			        
 						<a class="mail" target="_blank" href="mailto:wumz993@gmail.com" title="mail"><i class="icon-mail"></i></a>
 			        
@@ -351,7 +351,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://wumaozheng.com/2018/Singleton-Pattern.html" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://maugerwu.github.io/2018/Singleton-Pattern.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -442,7 +442,7 @@ var _hmt = _hmt || [];
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018-2020 <a href="https://wumaozheng.com" style="text-decoration: none;">Mauger</a> 粤ICP备18020137号-1
+    		&copy; 2018-2021 <a href="https://wumaozheng.com" style="text-decoration: none;">Mauger</a> 粤ICP备18020137号-1
     	</div>
 		<div style="float: left; padding-left: 10%;">
 			<span id="busuanzi_container_site_uv" style="display: inline;"> 
@@ -560,19 +560,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">JavaEE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">NBA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">JavaEE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">NBA</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -585,6 +585,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">流量统计</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -604,15 +608,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Clone</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">DataType</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Notes</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Thinking</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -637,14 +645,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Editor</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Notes</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Thinking</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -742,7 +742,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             </li>
           
             <li class="search-li">
-              <a href="https://coding.net/u/Mauger" target="_blank" class="search-title"><i class="icon"></i>Coding</a>
+              <a href="https://mauger.coding.net/user" target="_blank" class="search-title"><i class="icon"></i>Coding</a>
             </li>
           
             <li class="search-li">
