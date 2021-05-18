@@ -5,9 +5,9 @@
   <subtitle>越努力，越幸运！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://wumaozheng.com/"/>
+  <link href="https://maugerwu.github.io/"/>
   <updated>2018-12-05T16:54:03.482Z</updated>
-  <id>https://wumaozheng.com/</id>
+  <id>https://maugerwu.github.io/</id>
   
   <author>
     <name>Mauger</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Ubuntu16.04安装Maven</title>
-    <link href="https://wumaozheng.com/2018/ubuntu16.04-install-maven.html"/>
-    <id>https://wumaozheng.com/2018/ubuntu16.04-install-maven.html</id>
+    <link href="https://maugerwu.github.io/2018/ubuntu16.04-install-maven.html"/>
+    <id>https://maugerwu.github.io/2018/ubuntu16.04-install-maven.html</id>
     <published>2018-11-25T13:08:00.000Z</published>
     <updated>2018-12-05T16:54:03.482Z</updated>
     
@@ -38,18 +38,18 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://wumaozheng.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://maugerwu.github.io/tags/Linux/"/>
     
-      <category term="Ubuntu" scheme="https://wumaozheng.com/tags/Ubuntu/"/>
+      <category term="Ubuntu" scheme="https://maugerwu.github.io/tags/Ubuntu/"/>
     
-      <category term="Maven" scheme="https://wumaozheng.com/tags/Maven/"/>
+      <category term="Maven" scheme="https://maugerwu.github.io/tags/Maven/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu16.04安装MySQL</title>
-    <link href="https://wumaozheng.com/2018/ubuntu16.04-install-mysql.html"/>
-    <id>https://wumaozheng.com/2018/ubuntu16.04-install-mysql.html</id>
+    <link href="https://maugerwu.github.io/2018/ubuntu16.04-install-mysql.html"/>
+    <id>https://maugerwu.github.io/2018/ubuntu16.04-install-mysql.html</id>
     <published>2018-11-17T18:08:00.000Z</published>
     <updated>2018-12-05T16:57:00.877Z</updated>
     
@@ -67,22 +67,22 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://wumaozheng.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://maugerwu.github.io/tags/Linux/"/>
     
-      <category term="Ubuntu" scheme="https://wumaozheng.com/tags/Ubuntu/"/>
+      <category term="Ubuntu" scheme="https://maugerwu.github.io/tags/Ubuntu/"/>
     
-      <category term="MySQL" scheme="https://wumaozheng.com/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://maugerwu.github.io/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu16.04配置Tomcat访问80端口</title>
-    <link href="https://wumaozheng.com/2018/ubuntu16.04-config-80port.html"/>
-    <id>https://wumaozheng.com/2018/ubuntu16.04-config-80port.html</id>
+    <link href="https://maugerwu.github.io/2018/ubuntu16.04-config-80port.html"/>
+    <id>https://maugerwu.github.io/2018/ubuntu16.04-config-80port.html</id>
     <published>2018-11-16T15:08:00.000Z</published>
     <updated>2018-12-12T20:18:25.690Z</updated>
     
-    <content type="html"><![CDATA[<p>&emsp;&emsp;本篇教程在示例步骤中使用了以下版本的软件。操作时，请您以实际软件版本为准。</p><ul><li>操作系统：<code>Ubuntu 16.04.3 LTS</code></li><li>JDK 版本：<code>JDK 1.8.0_65</code></li><li>Tomcat 版本：<code>Apache Tomcat 7.0.47</code></li></ul><p>&emsp;&emsp;使用阿里云服务器 ECS Ubuntu 16.04 环境部署 Java Web 应用，在配置 Tomcat 服务时发现 <code>80</code> 端口无法被监听，导致无法通过外网进行正常访问。在 Linux 中对<code>非root用户</code>只能使用 <code>1024</code> 及以上的端口号，所以 <code>80</code> 端口对非 root 用户为禁用状态。第一种解决方法：使用 <code>root</code> 用户去配置并启动 Tomcat。这里讲的是第二种解决方法：使用 <code>iptables</code> 的转发功能，将 80 端口消息转发给 8080 端口。<br><a id="more"></a></p><h3 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h3><ol><li>查看系统是否安装防火墙：<code># whereis iptables</code></li><li>若已安装则返回：<code>iptables: /sbin/iptables /etc/iptables.rules /usr/share/iptables /usr/share/man/man8/iptables.8.gz</code></li><li>反之，安装防火墙：<code># apt-get install iptables</code></li><li>查看防火墙信息：<code># iptables -L -n</code></li></ol><h3 id="二、配置防火墙访问控制规则"><a href="#二、配置防火墙访问控制规则" class="headerlink" title="二、配置防火墙访问控制规则"></a>二、配置防火墙访问控制规则</h3><ol><li>创建 iptables.rules 文件：<code># vi /etc/iptables.rules</code></li><li>按 <code>i</code> 进入编辑模式，添加以下规则<a href="#point1">（参见附录 1）</a></li><li>使防火墙规则生效：<code># iptables-restore &lt; /etc/iptables.rules</code></li><li>配置防火墙规则开机启动<ul><li>创建 <code>iptables</code> 文件：<code># vi /etc/network/if-pre-up.d/iptables</code></li><li>添加以下内容：</li><li><code>!/bin/bash</code></li><li><code>iptables-restore &lt; /etc/iptables.rules</code></li></ul></li><li>为 <code>iptables</code> 文件添加执行权限<ul><li><code># chmod +x /etc/network/if-pre-up.d/iptables</code></li></ul></li><li>查看规则是否生效<a href="#point2">（参见附录 2）</a></li></ol><h3 id="三、新增转发规则"><a href="#三、新增转发规则" class="headerlink" title="三、新增转发规则"></a>三、新增转发规则</h3><ul><li>将 80 端口转发至 8080 端口<ul><li><code># iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080</code> </li></ul></li><li>查看 80 端口相关的转发规则<ul><li><code># iptables -t nat -L -n  | grep 80</code></li><li>返回：<code>REDIRECT   tcp  --  0.0.0.0/0    0.0.0.0/0       tcp dpt:80 redir ports 8080</code></li></ul></li><li>配置 Tomcat 服务端口为 8080<ul><li>找到 Tomcat 安装目录下的 <code>../conf/server.xml</code> 配置文件并且打开编辑如下内容，改为 8080 端口即可。</li><li><code>&lt;Connector port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot;</code></li></ul></li><li>重启 Tomcat 服务：<code># service tomcat restart</code>，试一下应该就可以进行正常访问 80 端口了。</li></ul><h3 id="四、删除转发规则"><a href="#四、删除转发规则" class="headerlink" title="四、删除转发规则"></a>四、删除转发规则</h3><ol><li>将转发规则以数字序号排列显示<ul><li><code># iptables -t nat -L -n --line-numbers</code></li><li><code>Chain PREROUTING (policy ACCEPT)</code></li><li><code>num  target     prot opt source               destination</code>         </li><li><code>1    REDIRECT   tcp  --  0.0.0.0/0            0.0.0.0/0            tcp dpt:80 redir ports 8080</code></li></ul></li><li>删除 8080 端口对于的转发规则<ul><li><code># iptables -t nat -D PREROUTING 1</code> </li></ul></li></ol><h3 id="五、相关问题"><a href="#五、相关问题" class="headerlink" title="五、相关问题"></a>五、相关问题</h3><p>&emsp;&emsp;上述配置完成后，即可使用 IP 地址（或域名）+ 应用程序页面访问路径。如需直接使用 IP 地址（或域名）访问应用程序默认页面，应另外配置。<a href="https://wumaozheng.com/2018/ubuntu16.04-install-jdk8-tomcat7.html#3-2-%E5%AE%89%E8%A3%85-Apache-Tomcat">（参见：Tomcat 的安装与配置）</a></p><p>&emsp;&emsp;另外，若参照上述配置时使用的是通过 <code>域名</code> 进行访问，则需要进行域名备案，同时需要指定访问的应用。当然可以暂且使用 <code>域名:8080</code> 进行访问，或是使用 <code>https://域名</code> 进行访问。否则无法正常访问 Web 应用，会出现下面的 <code>TestPage184</code> 页面。</p><p><img src="https://image.wumaozheng.com/blog/article/TestPage184.jpg" alt=""></p><h3 id="六、文章参考"><a href="#六、文章参考" class="headerlink" title="六、文章参考"></a>六、文章参考</h3><ul><li><a href="https://blog.csdn.net/xh_257/article/details/81982320" target="_blank" rel="noopener">Ubuntu 如何配置 Tomcat 访问 80 端口 - xh_257</a></li></ul><p><span id="point1"></span></p><h3 id="附录-1"><a href="#附录-1" class="headerlink" title="附录 1"></a>附录 1</h3><ul><li>配置防火墙访问控制规则：</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">*filter</span><br><span class="line">:INPUT DROP [0:0]</span><br><span class="line">:FORWARD ACCEPT [0:0]</span><br><span class="line">:OUTPUT ACCEPT [0:0]</span><br><span class="line">:syn-flood - [0:0]</span><br><span class="line">-A INPUT -i lo -j ACCEPT</span><br><span class="line">-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m state --state NEW -m tcp --dport 22 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m state --state NEW -m tcp --dport 8080 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m state --state NEW -m tcp --dport 8443 -j ACCEPT</span><br><span class="line">-A INPUT -p icmp -m limit --limit 100/sec --limit-burst 100 -j ACCEPT</span><br><span class="line">-A INPUT -p icmp -m limit --limit 1/s --limit-burst 10 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,ACK SYN -j syn-flood</span><br><span class="line">-A INPUT -j REJECT --reject-with icmp-host-prohibited</span><br><span class="line">-A syn-flood -p tcp -m limit --limit 3/sec --limit-burst 6 -j RETURN</span><br><span class="line">-A syn-flood -j REJECT --reject-with icmp-port-unreachable</span><br><span class="line">COMMIT</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">22   端口为 SSH 默认端口 </span><br><span class="line">80   端口为 HTTP 默认端口 </span><br><span class="line">443  端口为 HTTPS 默认端口 </span><br><span class="line">8080 端口为 Tomcat 默认的 HTTP 端口 </span><br><span class="line">8443 端口为 Tomcat 默认的 HTTPS 端口</span><br></pre></td></tr></table></figure><p><span id="point2"></span></p><h3 id="附录-2"><a href="#附录-2" class="headerlink" title="附录 2"></a>附录 2</h3><ul><li>查看防火墙规则是否生效：<code># iptables -L -n</code></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">Chain INPUT (policy DROP)</span><br><span class="line">target     prot opt source               destination         </span><br><span class="line">ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           </span><br><span class="line">ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0            state RELATED,ESTABLISHED</span><br><span class="line">ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            state NEW tcp dpt:22</span><br><span class="line">ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            state NEW tcp dpt:80</span><br><span class="line">ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            state NEW tcp dpt:443</span><br><span class="line">ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            state NEW tcp dpt:8080</span><br><span class="line">ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            state NEW tcp dpt:8443</span><br><span class="line">ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0            limit: avg 100/sec burst 100</span><br><span class="line">ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0            limit: avg 1/sec burst 10</span><br><span class="line">syn-flood  tcp  --  0.0.0.0/0            0.0.0.0/0            tcp flags:0x17/0x02</span><br><span class="line">REJECT     all  --  0.0.0.0/0            0.0.0.0/0            reject-with icmp-host-prohibited</span><br><span class="line"></span><br><span class="line">Chain FORWARD (policy ACCEPT)</span><br><span class="line">target     prot opt source               destination         </span><br><span class="line"></span><br><span class="line">Chain OUTPUT (policy ACCEPT)</span><br><span class="line">target     prot opt source               destination         </span><br><span class="line"></span><br><span class="line">Chain syn-flood (1 references)</span><br><span class="line">target     prot opt source               destination         </span><br><span class="line">RETURN     tcp  --  0.0.0.0/0            0.0.0.0/0            limit: avg 3/sec burst 6</span><br><span class="line">REJECT     all  --  0.0.0.0/0            0.0.0.0/0            reject-with icmp-port-unreachable</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p>&emsp;&emsp;本篇教程在示例步骤中使用了以下版本的软件。操作时，请您以实际软件版本为准。</p><ul><li>操作系统：<code>Ubuntu 16.04.3 LTS</code></li><li>JDK 版本：<code>JDK 1.8.0_65</code></li><li>Tomcat 版本：<code>Apache Tomcat 7.0.47</code></li></ul><p>&emsp;&emsp;使用阿里云服务器 ECS Ubuntu 16.04 环境部署 Java Web 应用，在配置 Tomcat 服务时发现 <code>80</code> 端口无法被监听，导致无法通过外网进行正常访问。在 Linux 中对<code>非root用户</code>只能使用 <code>1024</code> 及以上的端口号，所以 <code>80</code> 端口对非 root 用户为禁用状态。第一种解决方法：使用 <code>root</code> 用户去配置并启动 Tomcat。这里讲的是第二种解决方法：使用 <code>iptables</code> 的转发功能，将 80 端口消息转发给 8080 端口。<br><a id="more"></a></p><h3 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h3><ol><li>查看系统是否安装防火墙：<code># whereis iptables</code></li><li>若已安装则返回：<code>iptables: /sbin/iptables /etc/iptables.rules /usr/share/iptables /usr/share/man/man8/iptables.8.gz</code></li><li>反之，安装防火墙：<code># apt-get install iptables</code></li><li>查看防火墙信息：<code># iptables -L -n</code></li></ol><h3 id="二、配置防火墙访问控制规则"><a href="#二、配置防火墙访问控制规则" class="headerlink" title="二、配置防火墙访问控制规则"></a>二、配置防火墙访问控制规则</h3><ol><li>创建 iptables.rules 文件：<code># vi /etc/iptables.rules</code></li><li>按 <code>i</code> 进入编辑模式，添加以下规则<a href="#point1">（参见附录 1）</a></li><li>使防火墙规则生效：<code># iptables-restore &lt; /etc/iptables.rules</code></li><li>配置防火墙规则开机启动<ul><li>创建 <code>iptables</code> 文件：<code># vi /etc/network/if-pre-up.d/iptables</code></li><li>添加以下内容：</li><li><code>!/bin/bash</code></li><li><code>iptables-restore &lt; /etc/iptables.rules</code></li></ul></li><li>为 <code>iptables</code> 文件添加执行权限<ul><li><code># chmod +x /etc/network/if-pre-up.d/iptables</code></li></ul></li><li>查看规则是否生效<a href="#point2">（参见附录 2）</a></li></ol><h3 id="三、新增转发规则"><a href="#三、新增转发规则" class="headerlink" title="三、新增转发规则"></a>三、新增转发规则</h3><ul><li>将 80 端口转发至 8080 端口<ul><li><code># iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080</code> </li></ul></li><li>查看 80 端口相关的转发规则<ul><li><code># iptables -t nat -L -n  | grep 80</code></li><li>返回：<code>REDIRECT   tcp  --  0.0.0.0/0    0.0.0.0/0       tcp dpt:80 redir ports 8080</code></li></ul></li><li>配置 Tomcat 服务端口为 8080<ul><li>找到 Tomcat 安装目录下的 <code>../conf/server.xml</code> 配置文件并且打开编辑如下内容，改为 8080 端口即可。</li><li><code>&lt;Connector port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot;</code></li></ul></li><li>重启 Tomcat 服务：<code># service tomcat restart</code>，试一下应该就可以进行正常访问 80 端口了。</li></ul><h3 id="四、删除转发规则"><a href="#四、删除转发规则" class="headerlink" title="四、删除转发规则"></a>四、删除转发规则</h3><ol><li>将转发规则以数字序号排列显示<ul><li><code># iptables -t nat -L -n --line-numbers</code></li><li><code>Chain PREROUTING (policy ACCEPT)</code></li><li><code>num  target     prot opt source               destination</code>         </li><li><code>1    REDIRECT   tcp  --  0.0.0.0/0            0.0.0.0/0            tcp dpt:80 redir ports 8080</code></li></ul></li><li>删除 8080 端口对于的转发规则<ul><li><code># iptables -t nat -D PREROUTING 1</code> </li></ul></li></ol><h3 id="五、相关问题"><a href="#五、相关问题" class="headerlink" title="五、相关问题"></a>五、相关问题</h3><p>&emsp;&emsp;上述配置完成后，即可使用 IP 地址（或域名）+ 应用程序页面访问路径。如需直接使用 IP 地址（或域名）访问应用程序默认页面，应另外配置。<a href="https://wumaozheng.com/2018/ubuntu16.04-install-jdk8-tomcat7.html#3-2-%E5%AE%89%E8%A3%85-Apache-Tomcat" target="_blank" rel="noopener">（参见：Tomcat 的安装与配置）</a></p><p>&emsp;&emsp;另外，若参照上述配置时使用的是通过 <code>域名</code> 进行访问，则需要进行域名备案，同时需要指定访问的应用。当然可以暂且使用 <code>域名:8080</code> 进行访问，或是使用 <code>https://域名</code> 进行访问。否则无法正常访问 Web 应用，会出现下面的 <code>TestPage184</code> 页面。</p><p><img src="https://image.wumaozheng.com/blog/article/TestPage184.jpg" alt=""></p><h3 id="六、文章参考"><a href="#六、文章参考" class="headerlink" title="六、文章参考"></a>六、文章参考</h3><ul><li><a href="https://blog.csdn.net/xh_257/article/details/81982320" target="_blank" rel="noopener">Ubuntu 如何配置 Tomcat 访问 80 端口 - xh_257</a></li></ul><p><span id="point1"></span></p><h3 id="附录-1"><a href="#附录-1" class="headerlink" title="附录 1"></a>附录 1</h3><ul><li>配置防火墙访问控制规则：</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">*filter</span><br><span class="line">:INPUT DROP [0:0]</span><br><span class="line">:FORWARD ACCEPT [0:0]</span><br><span class="line">:OUTPUT ACCEPT [0:0]</span><br><span class="line">:syn-flood - [0:0]</span><br><span class="line">-A INPUT -i lo -j ACCEPT</span><br><span class="line">-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m state --state NEW -m tcp --dport 22 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m state --state NEW -m tcp --dport 8080 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m state --state NEW -m tcp --dport 8443 -j ACCEPT</span><br><span class="line">-A INPUT -p icmp -m limit --limit 100/sec --limit-burst 100 -j ACCEPT</span><br><span class="line">-A INPUT -p icmp -m limit --limit 1/s --limit-burst 10 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,ACK SYN -j syn-flood</span><br><span class="line">-A INPUT -j REJECT --reject-with icmp-host-prohibited</span><br><span class="line">-A syn-flood -p tcp -m limit --limit 3/sec --limit-burst 6 -j RETURN</span><br><span class="line">-A syn-flood -j REJECT --reject-with icmp-port-unreachable</span><br><span class="line">COMMIT</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">22   端口为 SSH 默认端口 </span><br><span class="line">80   端口为 HTTP 默认端口 </span><br><span class="line">443  端口为 HTTPS 默认端口 </span><br><span class="line">8080 端口为 Tomcat 默认的 HTTP 端口 </span><br><span class="line">8443 端口为 Tomcat 默认的 HTTPS 端口</span><br></pre></td></tr></table></figure><p><span id="point2"></span></p><h3 id="附录-2"><a href="#附录-2" class="headerlink" title="附录 2"></a>附录 2</h3><ul><li>查看防火墙规则是否生效：<code># iptables -L -n</code></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">Chain INPUT (policy DROP)</span><br><span class="line">target     prot opt source               destination         </span><br><span class="line">ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           </span><br><span class="line">ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0            state RELATED,ESTABLISHED</span><br><span class="line">ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            state NEW tcp dpt:22</span><br><span class="line">ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            state NEW tcp dpt:80</span><br><span class="line">ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            state NEW tcp dpt:443</span><br><span class="line">ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            state NEW tcp dpt:8080</span><br><span class="line">ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            state NEW tcp dpt:8443</span><br><span class="line">ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0            limit: avg 100/sec burst 100</span><br><span class="line">ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0            limit: avg 1/sec burst 10</span><br><span class="line">syn-flood  tcp  --  0.0.0.0/0            0.0.0.0/0            tcp flags:0x17/0x02</span><br><span class="line">REJECT     all  --  0.0.0.0/0            0.0.0.0/0            reject-with icmp-host-prohibited</span><br><span class="line"></span><br><span class="line">Chain FORWARD (policy ACCEPT)</span><br><span class="line">target     prot opt source               destination         </span><br><span class="line"></span><br><span class="line">Chain OUTPUT (policy ACCEPT)</span><br><span class="line">target     prot opt source               destination         </span><br><span class="line"></span><br><span class="line">Chain syn-flood (1 references)</span><br><span class="line">target     prot opt source               destination         </span><br><span class="line">RETURN     tcp  --  0.0.0.0/0            0.0.0.0/0            limit: avg 3/sec burst 6</span><br><span class="line">REJECT     all  --  0.0.0.0/0            0.0.0.0/0            reject-with icmp-port-unreachable</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -97,18 +97,18 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://wumaozheng.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://maugerwu.github.io/tags/Linux/"/>
     
-      <category term="Ubuntu" scheme="https://wumaozheng.com/tags/Ubuntu/"/>
+      <category term="Ubuntu" scheme="https://maugerwu.github.io/tags/Ubuntu/"/>
     
-      <category term="Tomcat" scheme="https://wumaozheng.com/tags/Tomcat/"/>
+      <category term="Tomcat" scheme="https://maugerwu.github.io/tags/Tomcat/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu16.04安装JDK与Tomcat</title>
-    <link href="https://wumaozheng.com/2018/ubuntu16.04-install-jdk8-tomcat7.html"/>
-    <id>https://wumaozheng.com/2018/ubuntu16.04-install-jdk8-tomcat7.html</id>
+    <link href="https://maugerwu.github.io/2018/ubuntu16.04-install-jdk8-tomcat7.html"/>
+    <id>https://maugerwu.github.io/2018/ubuntu16.04-install-jdk8-tomcat7.html</id>
     <published>2018-11-15T12:08:00.000Z</published>
     <updated>2018-12-10T03:32:47.872Z</updated>
     
@@ -126,20 +126,20 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://wumaozheng.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://maugerwu.github.io/tags/Linux/"/>
     
-      <category term="Ubuntu" scheme="https://wumaozheng.com/tags/Ubuntu/"/>
+      <category term="Ubuntu" scheme="https://maugerwu.github.io/tags/Ubuntu/"/>
     
-      <category term="JDK" scheme="https://wumaozheng.com/tags/JDK/"/>
+      <category term="JDK" scheme="https://maugerwu.github.io/tags/JDK/"/>
     
-      <category term="Tomcat" scheme="https://wumaozheng.com/tags/Tomcat/"/>
+      <category term="Tomcat" scheme="https://maugerwu.github.io/tags/Tomcat/"/>
     
   </entry>
   
   <entry>
     <title>WinSCP简介与安装使用</title>
-    <link href="https://wumaozheng.com/2018/WinSCP.html"/>
-    <id>https://wumaozheng.com/2018/WinSCP.html</id>
+    <link href="https://maugerwu.github.io/2018/WinSCP.html"/>
+    <id>https://maugerwu.github.io/2018/WinSCP.html</id>
     <published>2018-10-27T17:08:00.000Z</published>
     <updated>2018-11-28T14:01:34.650Z</updated>
     
@@ -152,20 +152,20 @@
     </summary>
     
     
-      <category term="Windows" scheme="https://wumaozheng.com/tags/Windows/"/>
+      <category term="Windows" scheme="https://maugerwu.github.io/tags/Windows/"/>
     
-      <category term="SSH" scheme="https://wumaozheng.com/tags/SSH/"/>
+      <category term="SSH" scheme="https://maugerwu.github.io/tags/SSH/"/>
     
-      <category term="WinSCP" scheme="https://wumaozheng.com/tags/WinSCP/"/>
+      <category term="WinSCP" scheme="https://maugerwu.github.io/tags/WinSCP/"/>
     
-      <category term="Tools" scheme="https://wumaozheng.com/tags/Tools/"/>
+      <category term="Tools" scheme="https://maugerwu.github.io/tags/Tools/"/>
     
   </entry>
   
   <entry>
     <title>Winsows&amp;Word常用快捷键</title>
-    <link href="https://wumaozheng.com/2018/windows-word-commands.html"/>
-    <id>https://wumaozheng.com/2018/windows-word-commands.html</id>
+    <link href="https://maugerwu.github.io/2018/windows-word-commands.html"/>
+    <id>https://maugerwu.github.io/2018/windows-word-commands.html</id>
     <published>2018-09-28T15:08:00.000Z</published>
     <updated>2018-12-17T08:05:40.675Z</updated>
     
@@ -179,18 +179,18 @@
     </summary>
     
     
-      <category term="Windows" scheme="https://wumaozheng.com/tags/Windows/"/>
+      <category term="Windows" scheme="https://maugerwu.github.io/tags/Windows/"/>
     
-      <category term="Word" scheme="https://wumaozheng.com/tags/Word/"/>
+      <category term="Word" scheme="https://maugerwu.github.io/tags/Word/"/>
     
-      <category term="快捷键" scheme="https://wumaozheng.com/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+      <category term="快捷键" scheme="https://maugerwu.github.io/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     
   </entry>
   
   <entry>
     <title>JavaEE 规范</title>
-    <link href="https://wumaozheng.com/2018/JavaEE-Specification.html"/>
-    <id>https://wumaozheng.com/2018/JavaEE-Specification.html</id>
+    <link href="https://maugerwu.github.io/2018/JavaEE-Specification.html"/>
+    <id>https://maugerwu.github.io/2018/JavaEE-Specification.html</id>
     <published>2018-07-24T15:01:05.000Z</published>
     <updated>2018-09-18T12:23:25.249Z</updated>
     
@@ -206,14 +206,14 @@
     </summary>
     
     
-      <category term="JavaEE" scheme="https://wumaozheng.com/tags/JavaEE/"/>
+      <category term="JavaEE" scheme="https://maugerwu.github.io/tags/JavaEE/"/>
     
   </entry>
   
   <entry>
     <title>Legends Never Die</title>
-    <link href="https://wumaozheng.com/2018/music-Legends-Never-Die.html"/>
-    <id>https://wumaozheng.com/2018/music-Legends-Never-Die.html</id>
+    <link href="https://maugerwu.github.io/2018/music-Legends-Never-Die.html"/>
+    <id>https://maugerwu.github.io/2018/music-Legends-Never-Die.html</id>
     <published>2018-06-22T15:08:25.000Z</published>
     <updated>2018-10-15T18:48:19.078Z</updated>
     
@@ -226,16 +226,16 @@
     </summary>
     
     
-      <category term="Music" scheme="https://wumaozheng.com/tags/Music/"/>
+      <category term="Music" scheme="https://maugerwu.github.io/tags/Music/"/>
     
-      <category term="Freetime" scheme="https://wumaozheng.com/tags/Freetime/"/>
+      <category term="Freetime" scheme="https://maugerwu.github.io/tags/Freetime/"/>
     
   </entry>
   
   <entry>
     <title>Java 中的 clone() 方法</title>
-    <link href="https://wumaozheng.com/2018/clone.html"/>
-    <id>https://wumaozheng.com/2018/clone.html</id>
+    <link href="https://maugerwu.github.io/2018/clone.html"/>
+    <id>https://maugerwu.github.io/2018/clone.html</id>
     <published>2018-04-25T15:23:05.000Z</published>
     <updated>2018-09-18T12:22:46.526Z</updated>
     
@@ -249,18 +249,18 @@
     </summary>
     
     
-      <category term="Java" scheme="https://wumaozheng.com/tags/Java/"/>
+      <category term="Java" scheme="https://maugerwu.github.io/tags/Java/"/>
     
-      <category term="Clone" scheme="https://wumaozheng.com/tags/Clone/"/>
+      <category term="Clone" scheme="https://maugerwu.github.io/tags/Clone/"/>
     
-      <category term="DataType" scheme="https://wumaozheng.com/tags/DataType/"/>
+      <category term="DataType" scheme="https://maugerwu.github.io/tags/DataType/"/>
     
   </entry>
   
   <entry>
     <title>深入 Java 单例模式</title>
-    <link href="https://wumaozheng.com/2018/Singleton-Pattern.html"/>
-    <id>https://wumaozheng.com/2018/Singleton-Pattern.html</id>
+    <link href="https://maugerwu.github.io/2018/Singleton-Pattern.html"/>
+    <id>https://maugerwu.github.io/2018/Singleton-Pattern.html</id>
     <published>2018-04-18T12:58:05.000Z</published>
     <updated>2018-09-18T12:26:11.187Z</updated>
     
@@ -275,16 +275,16 @@
     </summary>
     
     
-      <category term="Java" scheme="https://wumaozheng.com/tags/Java/"/>
+      <category term="Java" scheme="https://maugerwu.github.io/tags/Java/"/>
     
-      <category term="设计模式" scheme="https://wumaozheng.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+      <category term="设计模式" scheme="https://maugerwu.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>23种设计模式总览</title>
-    <link href="https://wumaozheng.com/2018/Design-Pattern-Introduction.html"/>
-    <id>https://wumaozheng.com/2018/Design-Pattern-Introduction.html</id>
+    <link href="https://maugerwu.github.io/2018/Design-Pattern-Introduction.html"/>
+    <id>https://maugerwu.github.io/2018/Design-Pattern-Introduction.html</id>
     <published>2018-04-17T12:33:05.000Z</published>
     <updated>2018-09-18T12:25:47.462Z</updated>
     
@@ -298,16 +298,16 @@
     </summary>
     
     
-      <category term="Java" scheme="https://wumaozheng.com/tags/Java/"/>
+      <category term="Java" scheme="https://maugerwu.github.io/tags/Java/"/>
     
-      <category term="设计模式" scheme="https://wumaozheng.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+      <category term="设计模式" scheme="https://maugerwu.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>Music-For-NBA</title>
-    <link href="https://wumaozheng.com/2018/Music-For-NBA.html"/>
-    <id>https://wumaozheng.com/2018/Music-For-NBA.html</id>
+    <link href="https://maugerwu.github.io/2018/Music-For-NBA.html"/>
+    <id>https://maugerwu.github.io/2018/Music-For-NBA.html</id>
     <published>2018-03-14T08:15:25.000Z</published>
     <updated>2018-05-15T14:46:08.743Z</updated>
     
@@ -328,18 +328,18 @@
     </summary>
     
     
-      <category term="NBA" scheme="https://wumaozheng.com/tags/NBA/"/>
+      <category term="NBA" scheme="https://maugerwu.github.io/tags/NBA/"/>
     
-      <category term="Music" scheme="https://wumaozheng.com/tags/Music/"/>
+      <category term="Music" scheme="https://maugerwu.github.io/tags/Music/"/>
     
-      <category term="Freetime" scheme="https://wumaozheng.com/tags/Freetime/"/>
+      <category term="Freetime" scheme="https://maugerwu.github.io/tags/Freetime/"/>
     
   </entry>
   
   <entry>
     <title>Mybatis3.4-知识小结</title>
-    <link href="https://wumaozheng.com/2018/mybatis3.4-technology-insider.html"/>
-    <id>https://wumaozheng.com/2018/mybatis3.4-technology-insider.html</id>
+    <link href="https://maugerwu.github.io/2018/mybatis3.4-technology-insider.html"/>
+    <id>https://maugerwu.github.io/2018/mybatis3.4-technology-insider.html</id>
     <published>2018-03-05T06:58:45.000Z</published>
     <updated>2018-09-18T12:38:32.277Z</updated>
     
@@ -353,16 +353,16 @@
     </summary>
     
     
-      <category term="Mybatis" scheme="https://wumaozheng.com/tags/Mybatis/"/>
+      <category term="Mybatis" scheme="https://maugerwu.github.io/tags/Mybatis/"/>
     
-      <category term="Q/A" scheme="https://wumaozheng.com/tags/Q-A/"/>
+      <category term="Q/A" scheme="https://maugerwu.github.io/tags/Q-A/"/>
     
   </entry>
   
   <entry>
     <title>历史首人—詹姆斯30K+8K+8K里程碑</title>
-    <link href="https://wumaozheng.com/2018/LeBron-James-20180228.html"/>
-    <id>https://wumaozheng.com/2018/LeBron-James-20180228.html</id>
+    <link href="https://maugerwu.github.io/2018/LeBron-James-20180228.html"/>
+    <id>https://maugerwu.github.io/2018/LeBron-James-20180228.html</id>
     <published>2018-02-28T00:25:40.000Z</published>
     <updated>2018-09-18T12:43:28.188Z</updated>
     
@@ -376,64 +376,64 @@
     </summary>
     
     
-      <category term="NBA" scheme="https://wumaozheng.com/tags/NBA/"/>
+      <category term="NBA" scheme="https://maugerwu.github.io/tags/NBA/"/>
     
   </entry>
   
   <entry>
     <title>网站SEO优化</title>
-    <link href="https://wumaozheng.com/2018/sitemap-seo.html"/>
-    <id>https://wumaozheng.com/2018/sitemap-seo.html</id>
+    <link href="https://maugerwu.github.io/2018/sitemap-seo.html"/>
+    <id>https://maugerwu.github.io/2018/sitemap-seo.html</id>
     <published>2018-02-27T14:48:45.000Z</published>
     <updated>2018-09-18T12:46:31.659Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://image.wumaozheng.com/blog/article/SEO.jpg" alt="SEO" title="Search Engine Optimization"></p><p>&emsp;&emsp;从上一篇随笔<a href="https://wumaozheng.com/2018/baidu-analysis.html">《网站流量统计分析》</a>了解到自己的博客网站访问量是少之又少啊！于是想到使用<code>SEO</code>优化一下。SEO：Search Engine Optimization，中文意译为“搜索引擎优化”。<code>SEO</code>是指通过站内优化比如网站结构调整、网站内容建设、网站代码优化等以及站外优化。</p><a id="more"></a><h3 id="一、搜索引擎优化"><a href="#一、搜索引擎优化" class="headerlink" title="一、搜索引擎优化"></a>一、搜索引擎优化</h3><h4 id="1-内部优化"><a href="#1-内部优化" class="headerlink" title="1. 内部优化"></a>1. 内部优化</h4><p>　　（1）META标签优化：TITLE，KEYWORDS，DESCRIPTION等的优化<br>　　（2）内部链接优化：包括相关性链接（Tag标签），锚文本链接，各导航链接，及图片链接<br>　　（3）网站内容更新：每天保持站内的更新（主要是文章的更新等）</p><h4 id="2-外部优化"><a href="#2-外部优化" class="headerlink" title="2. 外部优化"></a>2. 外部优化</h4><p>　　（1）外部链接：博客、论坛、B2B、新闻、分类信息、贴吧、知道、百科、相关信息网等尽量保持链接的多样性<br>　　（2）外链运营：每天添加一定数量的外部链接，使关键词排名稳定提升<br>　　（3）外链选择：与一些和你网站相关性比较高，整体质量比较好的网站交换友情链接，巩固稳定关键词排名</p><h4 id="3-让百度收录你的站点"><a href="#3-让百度收录你的站点" class="headerlink" title="3. 让百度收录你的站点"></a>3. 让百度收录你的站点</h4><p>&emsp;&emsp;在搜索引擎中输入<code>site:你的域名</code>，如输入：<code>site:wumaozheng.com</code>，如果提示“很抱歉，没有找到与 <code>wumaozheng.com</code> 相关的网页”，就是说明我们的网站并没有被百度收录。我们可以直接点击下面的<code>网址提交</code>来提交我们的网站。<br>&emsp;&emsp;首先登录到 <a href="zhanzhang.baidu.com">百度站长平台</a>， 只要有百度旗下的账号就可以登录，登录成功之后在站点管理中点击添加网站然后输入你的站点地址，建议输入的网站以<code>www</code>开头的，例如：<code>www.wumaozheng.com</code>，不要输入<code>github.io</code>的网址，因为<code>Github</code>是不允许百度的<code>spider</code>爬取其上面的内容的，所以如果想让你的站点被百度收录，只能使用自己购买的域名。在选择完网站的类型之后需要验证网站的所有权，验证网站所有权的方式有三种：<code>文件验证</code>、<code>html标签验证</code>和<code>cname解析</code>验证，我使用的是<code>cname解析</code>验证，只需要在你的域名管理中添加一条解析即可。</p><h4 id="4-生成网站地图"><a href="#4-生成网站地图" class="headerlink" title="4. 生成网站地图"></a>4. 生成网站地图</h4><p>&emsp;&emsp;使用<code>npm</code>自动生成网站的<code>sitemap</code>，然后将生成的<code>sitemap</code>提交到百度和其他搜索引擎（Google、360等），执行命令如下：</p><blockquote><p>npm install hexo-generator-sitemap –save<br>npm install hexo-generator-baidu-sitemap –save</p></blockquote><p>或者：</p><blockquote><p>npm i hexo-generator-sitemap hexo-generator-baidu-sitemap -S</p></blockquote><p>&emsp;&emsp;<code>SEO</code>搜索引擎优化认为，网站的最佳结构是用户从首页点击三次就可以到达任何一个页面，但是我们使用 Hexo 编译的站点打开文章的 URL 是：<code>sitename/year/mounth/day/title/</code>四层的结构，这样的 URL 结构很不利于 SEO，爬虫就会经常爬不到我们的文章，于是，我们可以将 URL 直接改成<code>sitename/title</code>的形式，并且<code>title</code>最好是用英文，在根目录的配置文件下修改<code>permalink</code>如下：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">url: http://wumaozheng.com</span><br><span class="line">root: /</span><br><span class="line"># permalink: :year/:month/:day/:title/</span><br><span class="line">permalink: :title.html</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure></p><p>&emsp;&emsp;重新部署博客，执行完之后就会在网站根目录生成<code>sitemap.xml</code>文件和<code>baidusitemap.xml</code>文件，可以通过 <a href="http://wumaozheng.com/sitemap.xml">http://wumaozheng.com/sitemap.xml</a> 进行访问查看。</p><blockquote><p>$ hexo g -d   // 若你也使用 Hexo，重新部署博客</p></blockquote><h4 id="5-向百度提交链接"><a href="#5-向百度提交链接" class="headerlink" title="5. 向百度提交链接"></a>5. 向百度提交链接</h4><p>&emsp;&emsp;<a href="https://ziyuan.baidu.com/linksubmit/index" target="_blank" rel="noopener">链接提交</a> 的方式分为<code>自动提交</code>和<code>手动提交</code>，<code>自动提交</code>又分为<em>主动推送</em>、<em>自动推送</em>和<em>sitemap</em>：</p><ul><li><code>主动推送</code>：最为快速的提交方式，推荐您将站点当天新产出链接立即通过此方式推送给百度，以保证新链接可以及时被百度收录。</li><li><code>自动推送</code>：最为便捷的提交方式，请将自动推送的JS代码部署在站点的每一个页面源代码中，部署代码的页面在每次被浏览时，链接会被自动推送给百度。可以与主动推送配合使用。</li><li><code>sitemap</code>：您可以定期将网站链接放到sitemap中，然后将sitemap提交给百度。百度会周期性的抓取检查您提交的sitemap，对其中的链接进行处理，但收录速度慢于主动推送。</li><li><code>手动提交</code>：一次性提交链接给百度，可以使用此种方式。</li></ul><p>&emsp;&emsp;我所使用的是<code>sitemap</code>方式提交，直接将<code>www.wumaozheng.com/sitemap.xml</code>、<code>www.wumaozheng.com/baidusitemap.xml</code>两条记录提交到百度收录即可。</p><h3 id="二、参考文章"><a href="#二、参考文章" class="headerlink" title="二、参考文章"></a>二、参考文章</h3><ul><li>sunshine小小倩 - <a href="https://juejin.im/post/590b451a0ce46300588c43a0" target="_blank" rel="noopener">《Hexo高阶教程》</a> - 掘金</li><li>博客 - <a href="cherryblog.site/">cherryblog.site</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://image.wumaozheng.com/blog/article/SEO.jpg" alt="SEO" title="Search Engine Optimization"></p><p>&emsp;&emsp;从上一篇随笔<a href="https://wumaozheng.com/2018/baidu-analysis.html" target="_blank" rel="noopener">《网站流量统计分析》</a>了解到自己的博客网站访问量是少之又少啊！于是想到使用<code>SEO</code>优化一下。SEO：Search Engine Optimization，中文意译为“搜索引擎优化”。<code>SEO</code>是指通过站内优化比如网站结构调整、网站内容建设、网站代码优化等以及站外优化。</p><a id="more"></a><h3 id="一、搜索引擎优化"><a href="#一、搜索引擎优化" class="headerlink" title="一、搜索引擎优化"></a>一、搜索引擎优化</h3><h4 id="1-内部优化"><a href="#1-内部优化" class="headerlink" title="1. 内部优化"></a>1. 内部优化</h4><p>　　（1）META标签优化：TITLE，KEYWORDS，DESCRIPTION等的优化<br>　　（2）内部链接优化：包括相关性链接（Tag标签），锚文本链接，各导航链接，及图片链接<br>　　（3）网站内容更新：每天保持站内的更新（主要是文章的更新等）</p><h4 id="2-外部优化"><a href="#2-外部优化" class="headerlink" title="2. 外部优化"></a>2. 外部优化</h4><p>　　（1）外部链接：博客、论坛、B2B、新闻、分类信息、贴吧、知道、百科、相关信息网等尽量保持链接的多样性<br>　　（2）外链运营：每天添加一定数量的外部链接，使关键词排名稳定提升<br>　　（3）外链选择：与一些和你网站相关性比较高，整体质量比较好的网站交换友情链接，巩固稳定关键词排名</p><h4 id="3-让百度收录你的站点"><a href="#3-让百度收录你的站点" class="headerlink" title="3. 让百度收录你的站点"></a>3. 让百度收录你的站点</h4><p>&emsp;&emsp;在搜索引擎中输入<code>site:你的域名</code>，如输入：<code>site:wumaozheng.com</code>，如果提示“很抱歉，没有找到与 <code>wumaozheng.com</code> 相关的网页”，就是说明我们的网站并没有被百度收录。我们可以直接点击下面的<code>网址提交</code>来提交我们的网站。<br>&emsp;&emsp;首先登录到 <a href="zhanzhang.baidu.com">百度站长平台</a>， 只要有百度旗下的账号就可以登录，登录成功之后在站点管理中点击添加网站然后输入你的站点地址，建议输入的网站以<code>www</code>开头的，例如：<code>www.wumaozheng.com</code>，不要输入<code>github.io</code>的网址，因为<code>Github</code>是不允许百度的<code>spider</code>爬取其上面的内容的，所以如果想让你的站点被百度收录，只能使用自己购买的域名。在选择完网站的类型之后需要验证网站的所有权，验证网站所有权的方式有三种：<code>文件验证</code>、<code>html标签验证</code>和<code>cname解析</code>验证，我使用的是<code>cname解析</code>验证，只需要在你的域名管理中添加一条解析即可。</p><h4 id="4-生成网站地图"><a href="#4-生成网站地图" class="headerlink" title="4. 生成网站地图"></a>4. 生成网站地图</h4><p>&emsp;&emsp;使用<code>npm</code>自动生成网站的<code>sitemap</code>，然后将生成的<code>sitemap</code>提交到百度和其他搜索引擎（Google、360等），执行命令如下：</p><blockquote><p>npm install hexo-generator-sitemap –save<br>npm install hexo-generator-baidu-sitemap –save</p></blockquote><p>或者：</p><blockquote><p>npm i hexo-generator-sitemap hexo-generator-baidu-sitemap -S</p></blockquote><p>&emsp;&emsp;<code>SEO</code>搜索引擎优化认为，网站的最佳结构是用户从首页点击三次就可以到达任何一个页面，但是我们使用 Hexo 编译的站点打开文章的 URL 是：<code>sitename/year/mounth/day/title/</code>四层的结构，这样的 URL 结构很不利于 SEO，爬虫就会经常爬不到我们的文章，于是，我们可以将 URL 直接改成<code>sitename/title</code>的形式，并且<code>title</code>最好是用英文，在根目录的配置文件下修改<code>permalink</code>如下：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">url: http://wumaozheng.com</span><br><span class="line">root: /</span><br><span class="line"># permalink: :year/:month/:day/:title/</span><br><span class="line">permalink: :title.html</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure></p><p>&emsp;&emsp;重新部署博客，执行完之后就会在网站根目录生成<code>sitemap.xml</code>文件和<code>baidusitemap.xml</code>文件，可以通过 <a href="http://wumaozheng.com/sitemap.xml" target="_blank" rel="noopener">http://wumaozheng.com/sitemap.xml</a> 进行访问查看。</p><blockquote><p>$ hexo g -d   // 若你也使用 Hexo，重新部署博客</p></blockquote><h4 id="5-向百度提交链接"><a href="#5-向百度提交链接" class="headerlink" title="5. 向百度提交链接"></a>5. 向百度提交链接</h4><p>&emsp;&emsp;<a href="https://ziyuan.baidu.com/linksubmit/index" target="_blank" rel="noopener">链接提交</a> 的方式分为<code>自动提交</code>和<code>手动提交</code>，<code>自动提交</code>又分为<em>主动推送</em>、<em>自动推送</em>和<em>sitemap</em>：</p><ul><li><code>主动推送</code>：最为快速的提交方式，推荐您将站点当天新产出链接立即通过此方式推送给百度，以保证新链接可以及时被百度收录。</li><li><code>自动推送</code>：最为便捷的提交方式，请将自动推送的JS代码部署在站点的每一个页面源代码中，部署代码的页面在每次被浏览时，链接会被自动推送给百度。可以与主动推送配合使用。</li><li><code>sitemap</code>：您可以定期将网站链接放到sitemap中，然后将sitemap提交给百度。百度会周期性的抓取检查您提交的sitemap，对其中的链接进行处理，但收录速度慢于主动推送。</li><li><code>手动提交</code>：一次性提交链接给百度，可以使用此种方式。</li></ul><p>&emsp;&emsp;我所使用的是<code>sitemap</code>方式提交，直接将<code>www.wumaozheng.com/sitemap.xml</code>、<code>www.wumaozheng.com/baidusitemap.xml</code>两条记录提交到百度收录即可。</p><h3 id="二、参考文章"><a href="#二、参考文章" class="headerlink" title="二、参考文章"></a>二、参考文章</h3><ul><li>sunshine小小倩 - <a href="https://juejin.im/post/590b451a0ce46300588c43a0" target="_blank" rel="noopener">《Hexo高阶教程》</a> - 掘金</li><li>博客 - <a href="cherryblog.site/">cherryblog.site</a></li></ul>]]></content>
     
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;https://image.wumaozheng.com/blog/article/SEO.jpg&quot; alt=&quot;SEO&quot; title=&quot;Search Engine Optimization&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&amp;emsp;&amp;emsp;从上一篇随笔&lt;a href=&quot;https://wumaozheng.com/2018/baidu-analysis.html&quot;&gt;《网站流量统计分析》&lt;/a&gt;了解到自己的博客网站访问量是少之又少啊！于是想到使用&lt;code&gt;SEO&lt;/code&gt;优化一下。SEO：Search Engine Optimization，中文意译为“搜索引擎优化”。&lt;code&gt;SEO&lt;/code&gt;是指通过站内优化比如网站结构调整、网站内容建设、网站代码优化等以及站外优化。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;从上一篇随笔&lt;a href=&quot;https://wumaozheng.com/2018/baidu-analysis.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《网站流量统计分析》&lt;/a&gt;了解到自己的博客网站访问量是少之又少啊！于是想到使用&lt;code&gt;SEO&lt;/code&gt;优化一下。SEO：Search Engine Optimization，中文意译为“搜索引擎优化”。&lt;code&gt;SEO&lt;/code&gt;是指通过站内优化比如网站结构调整、网站内容建设、网站代码优化等以及站外优化。&lt;/p&gt;
     
     </summary>
     
     
-      <category term="Hexo" scheme="https://wumaozheng.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://maugerwu.github.io/tags/Hexo/"/>
     
-      <category term="Blog" scheme="https://wumaozheng.com/tags/Blog/"/>
+      <category term="Blog" scheme="https://maugerwu.github.io/tags/Blog/"/>
     
-      <category term="SEO" scheme="https://wumaozheng.com/tags/SEO/"/>
+      <category term="SEO" scheme="https://maugerwu.github.io/tags/SEO/"/>
     
   </entry>
   
   <entry>
     <title>网站流量统计分析</title>
-    <link href="https://wumaozheng.com/2018/baidu-analysis.html"/>
-    <id>https://wumaozheng.com/2018/baidu-analysis.html</id>
+    <link href="https://maugerwu.github.io/2018/baidu-analysis.html"/>
+    <id>https://maugerwu.github.io/2018/baidu-analysis.html</id>
     <published>2018-02-25T15:35:15.000Z</published>
     <updated>2018-09-18T12:46:57.098Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://image.wumaozheng.com/blog/article/analysis.jpg" alt="Statistics&amp;Analysis" title="Website Traffic Statistics And Analysis"></p><p>&emsp;&emsp;前段时间搭建了自己的博客网站 <a href="http://wumaozheng.com/">Mauger`s Blog</a>，于是开始在上面写一些随笔，记录自己在平时开发过程中踩到的坑和总结的一些小知识点。同时也希望能与同行朋友们一起交流讨论，那么到底有没有人访问过我的博客呢？</p><a id="more"></a><h3 id="一、统计网站访问量"><a href="#一、统计网站访问量" class="headerlink" title="一、统计网站访问量"></a>一、统计网站访问量</h3><h4 id="1-代码获取"><a href="#1-代码获取" class="headerlink" title="1. 代码获取"></a>1. 代码获取</h4><p>&emsp;&emsp;带着疑问我找到了 <a href="https://tongji.baidu.com/web/25190285/homepage/index" target="_blank" rel="noopener">百度统计</a>、<a href="http://www.cnzz.com/o_index.php" target="_blank" rel="noopener">CNZZ</a> 和 <a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">不蒜子</a>，最终我结合<code>百度统计</code>和<code>不蒜子</code>一同使用。使用百度统计是因为其功能强大全面、使用方便，但是不能实时地在博客网站中展示；使用不蒜子是因为其能够在博客中实时地去展示、使用方便，能够统计文章阅读量、总的访客人数和总的访问次数，且可以自定义样式。<br>&emsp;&emsp;首先需要 <a href="https://u.baidu.com/ucweb/?module=Reguser&amp;controller=reg&amp;action=index&amp;appid=12&amp;nexturl=https%3A%2F%2Ftongji.baidu.com%2Fweb%2Fwelcome%2Flogin%3FloginDialog%3D1" target="_blank" rel="noopener">注册站长账号</a>，接着添加自己购买的网站域名，点击 <a href="https://tongji.baidu.com/sc-web/25190285/home/site/getjs?siteId=11721708" target="_blank" rel="noopener">代码获取</a> 后可以看到如下代码：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"><span class="keyword">var</span> _hmt = _hmt || [];</span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> hm = <span class="built_in">document</span>.createElement(<span class="string">"script"</span>);</span><br><span class="line">  hm.src = <span class="string">"https://hm.baidu.com/hm.js?XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span>;</span><br><span class="line">  <span class="keyword">var</span> s = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"script"</span>)[<span class="number">0</span>]; </span><br><span class="line">  s.parentNode.insertBefore(hm, s);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure><h4 id="2-代码安装"><a href="#2-代码安装" class="headerlink" title="2. 代码安装"></a>2. 代码安装</h4><ul><li>请将代码添加到网站全部页面的标签前。</li><li>建议在header.htm类似的页头模板页面中安装，以达到一处安装，全站皆有的效果。</li><li>如需在JS文件中调用统计分析代码，请直接去掉以下代码首尾的<code>&lt;script type=&quot;text/javascript&quot;&gt;</code>与<code>&lt;/script&gt;</code>后，放入JS文件中即可。</li></ul><h4 id="3-安装“不蒜子”"><a href="#3-安装“不蒜子”" class="headerlink" title="3. 安装“不蒜子”"></a>3. 安装“不蒜子”</h4><p>&emsp;&emsp;由于使用<code>百度统计</code>需要登陆到后台才能查看统计的数据分析，不能够实时的为我所用，且无法在博客网站中展示，所以在这里我用到了<code>不蒜子</code>。不蒜子与百度统计、谷歌分析等有区别：不蒜子可直接将访问次数显示在您在网页上（也可不显示）；对于已经上线一段时间的网站，不蒜子允许您初始化首次数据。<br>&emsp;&emsp;<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">不蒜子</a> 可以给任何类型的个人站点使用，如果你是用的<code>HEXO</code>，打开<code>themes/</code>你的主题<code>/layout/_partial/footer.ejs</code>添加上述脚本即可，当然你也可以添加到<code>header</code>中。要使用不蒜子必须在页面中引入<code>busuanzi.js</code>，目前最新版如下：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure><h4 id="4-显示站点总访问量"><a href="#4-显示站点总访问量" class="headerlink" title="4. 显示站点总访问量"></a>4. 显示站点总访问量</h4><p>&emsp;&emsp;要显示站点总访问量，复制以下代码添加到你需要显示的位置。有两种算法可选：</p><ul><li><p>算法a：pv的方式，单个用户连续点击n篇文章，记录n次访问量。</p><figure class="highlight htmlbars"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;span id="busuanzi_container_site_pv"&gt;</span><br><span class="line">    本站总访问量&lt;span id="busuanzi_value_site_pv"&gt;&lt;/span&gt;次</span><br><span class="line">&lt;/span&gt;</span><br></pre></td></tr></table></figure></li><li><p>算法b：uv的方式，单个用户连续点击n篇文章，只记录1次访客数。</p><figure class="highlight htmlbars"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;span id="busuanzi_container_site_uv"&gt;</span><br><span class="line">  本站访客数&lt;span id="busuanzi_value_site_uv"&gt;&lt;/span&gt;人次</span><br><span class="line">&lt;/span&gt;</span><br></pre></td></tr></table></figure></li></ul><h3 id="二、参考文章"><a href="#二、参考文章" class="headerlink" title="二、参考文章"></a>二、参考文章</h3><ul><li><a href="https://jingyan.baidu.com/article/db55b609d5b8554ba20a2f7a.html" target="_blank" rel="noopener">《如何使用百度统计代码》</a></li><li>不如 - <a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">《不蒜子》</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://image.wumaozheng.com/blog/article/analysis.jpg" alt="Statistics&amp;Analysis" title="Website Traffic Statistics And Analysis"></p><p>&emsp;&emsp;前段时间搭建了自己的博客网站 <a href="http://wumaozheng.com/" target="_blank" rel="noopener">Mauger`s Blog</a>，于是开始在上面写一些随笔，记录自己在平时开发过程中踩到的坑和总结的一些小知识点。同时也希望能与同行朋友们一起交流讨论，那么到底有没有人访问过我的博客呢？</p><a id="more"></a><h3 id="一、统计网站访问量"><a href="#一、统计网站访问量" class="headerlink" title="一、统计网站访问量"></a>一、统计网站访问量</h3><h4 id="1-代码获取"><a href="#1-代码获取" class="headerlink" title="1. 代码获取"></a>1. 代码获取</h4><p>&emsp;&emsp;带着疑问我找到了 <a href="https://tongji.baidu.com/web/25190285/homepage/index" target="_blank" rel="noopener">百度统计</a>、<a href="http://www.cnzz.com/o_index.php" target="_blank" rel="noopener">CNZZ</a> 和 <a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">不蒜子</a>，最终我结合<code>百度统计</code>和<code>不蒜子</code>一同使用。使用百度统计是因为其功能强大全面、使用方便，但是不能实时地在博客网站中展示；使用不蒜子是因为其能够在博客中实时地去展示、使用方便，能够统计文章阅读量、总的访客人数和总的访问次数，且可以自定义样式。<br>&emsp;&emsp;首先需要 <a href="https://u.baidu.com/ucweb/?module=Reguser&amp;controller=reg&amp;action=index&amp;appid=12&amp;nexturl=https%3A%2F%2Ftongji.baidu.com%2Fweb%2Fwelcome%2Flogin%3FloginDialog%3D1" target="_blank" rel="noopener">注册站长账号</a>，接着添加自己购买的网站域名，点击 <a href="https://tongji.baidu.com/sc-web/25190285/home/site/getjs?siteId=11721708" target="_blank" rel="noopener">代码获取</a> 后可以看到如下代码：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"><span class="keyword">var</span> _hmt = _hmt || [];</span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> hm = <span class="built_in">document</span>.createElement(<span class="string">"script"</span>);</span><br><span class="line">  hm.src = <span class="string">"https://hm.baidu.com/hm.js?XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span>;</span><br><span class="line">  <span class="keyword">var</span> s = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"script"</span>)[<span class="number">0</span>]; </span><br><span class="line">  s.parentNode.insertBefore(hm, s);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure><h4 id="2-代码安装"><a href="#2-代码安装" class="headerlink" title="2. 代码安装"></a>2. 代码安装</h4><ul><li>请将代码添加到网站全部页面的标签前。</li><li>建议在header.htm类似的页头模板页面中安装，以达到一处安装，全站皆有的效果。</li><li>如需在JS文件中调用统计分析代码，请直接去掉以下代码首尾的<code>&lt;script type=&quot;text/javascript&quot;&gt;</code>与<code>&lt;/script&gt;</code>后，放入JS文件中即可。</li></ul><h4 id="3-安装“不蒜子”"><a href="#3-安装“不蒜子”" class="headerlink" title="3. 安装“不蒜子”"></a>3. 安装“不蒜子”</h4><p>&emsp;&emsp;由于使用<code>百度统计</code>需要登陆到后台才能查看统计的数据分析，不能够实时的为我所用，且无法在博客网站中展示，所以在这里我用到了<code>不蒜子</code>。不蒜子与百度统计、谷歌分析等有区别：不蒜子可直接将访问次数显示在您在网页上（也可不显示）；对于已经上线一段时间的网站，不蒜子允许您初始化首次数据。<br>&emsp;&emsp;<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">不蒜子</a> 可以给任何类型的个人站点使用，如果你是用的<code>HEXO</code>，打开<code>themes/</code>你的主题<code>/layout/_partial/footer.ejs</code>添加上述脚本即可，当然你也可以添加到<code>header</code>中。要使用不蒜子必须在页面中引入<code>busuanzi.js</code>，目前最新版如下：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure><h4 id="4-显示站点总访问量"><a href="#4-显示站点总访问量" class="headerlink" title="4. 显示站点总访问量"></a>4. 显示站点总访问量</h4><p>&emsp;&emsp;要显示站点总访问量，复制以下代码添加到你需要显示的位置。有两种算法可选：</p><ul><li><p>算法a：pv的方式，单个用户连续点击n篇文章，记录n次访问量。</p><figure class="highlight htmlbars"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;span id="busuanzi_container_site_pv"&gt;</span><br><span class="line">    本站总访问量&lt;span id="busuanzi_value_site_pv"&gt;&lt;/span&gt;次</span><br><span class="line">&lt;/span&gt;</span><br></pre></td></tr></table></figure></li><li><p>算法b：uv的方式，单个用户连续点击n篇文章，只记录1次访客数。</p><figure class="highlight htmlbars"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;span id="busuanzi_container_site_uv"&gt;</span><br><span class="line">  本站访客数&lt;span id="busuanzi_value_site_uv"&gt;&lt;/span&gt;人次</span><br><span class="line">&lt;/span&gt;</span><br></pre></td></tr></table></figure></li></ul><h3 id="二、参考文章"><a href="#二、参考文章" class="headerlink" title="二、参考文章"></a>二、参考文章</h3><ul><li><a href="https://jingyan.baidu.com/article/db55b609d5b8554ba20a2f7a.html" target="_blank" rel="noopener">《如何使用百度统计代码》</a></li><li>不如 - <a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">《不蒜子》</a></li></ul>]]></content>
     
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;https://image.wumaozheng.com/blog/article/analysis.jpg&quot; alt=&quot;Statistics&amp;amp;Analysis&quot; title=&quot;Website Traffic Statistics And Analysis&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&amp;emsp;&amp;emsp;前段时间搭建了自己的博客网站 &lt;a href=&quot;http://wumaozheng.com/&quot;&gt;Mauger`s Blog&lt;/a&gt;，于是开始在上面写一些随笔，记录自己在平时开发过程中踩到的坑和总结的一些小知识点。同时也希望能与同行朋友们一起交流讨论，那么到底有没有人访问过我的博客呢？&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;前段时间搭建了自己的博客网站 &lt;a href=&quot;http://wumaozheng.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Mauger`s Blog&lt;/a&gt;，于是开始在上面写一些随笔，记录自己在平时开发过程中踩到的坑和总结的一些小知识点。同时也希望能与同行朋友们一起交流讨论，那么到底有没有人访问过我的博客呢？&lt;/p&gt;
     
     </summary>
     
     
-      <category term="Hexo" scheme="https://wumaozheng.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://maugerwu.github.io/tags/Hexo/"/>
     
-      <category term="Blog" scheme="https://wumaozheng.com/tags/Blog/"/>
+      <category term="Blog" scheme="https://maugerwu.github.io/tags/Blog/"/>
     
-      <category term="流量统计" scheme="https://wumaozheng.com/tags/%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1/"/>
+      <category term="流量统计" scheme="https://maugerwu.github.io/tags/%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1/"/>
     
   </entry>
   
   <entry>
     <title>NBA2018全明星赛</title>
-    <link href="https://wumaozheng.com/2018/LeBron-James-20180219.html"/>
-    <id>https://wumaozheng.com/2018/LeBron-James-20180219.html</id>
+    <link href="https://maugerwu.github.io/2018/LeBron-James-20180219.html"/>
+    <id>https://maugerwu.github.io/2018/LeBron-James-20180219.html</id>
     <published>2018-02-19T01:00:00.000Z</published>
     <updated>2018-09-18T12:51:55.833Z</updated>
     
@@ -448,14 +448,14 @@
     </summary>
     
     
-      <category term="NBA" scheme="https://wumaozheng.com/tags/NBA/"/>
+      <category term="NBA" scheme="https://maugerwu.github.io/tags/NBA/"/>
     
   </entry>
   
   <entry>
     <title>詹皇三双后仰绝杀森林狼</title>
-    <link href="https://wumaozheng.com/2018/LeBron-James-20180209.html"/>
-    <id>https://wumaozheng.com/2018/LeBron-James-20180209.html</id>
+    <link href="https://maugerwu.github.io/2018/LeBron-James-20180209.html"/>
+    <id>https://maugerwu.github.io/2018/LeBron-James-20180209.html</id>
     <published>2018-02-08T06:37:25.000Z</published>
     <updated>2018-04-18T13:55:42.143Z</updated>
     
@@ -470,14 +470,14 @@
     </summary>
     
     
-      <category term="NBA" scheme="https://wumaozheng.com/tags/NBA/"/>
+      <category term="NBA" scheme="https://maugerwu.github.io/tags/NBA/"/>
     
   </entry>
   
   <entry>
     <title>Music-成都</title>
-    <link href="https://wumaozheng.com/2018/music-chengdu.html"/>
-    <id>https://wumaozheng.com/2018/music-chengdu.html</id>
+    <link href="https://maugerwu.github.io/2018/music-chengdu.html"/>
+    <id>https://maugerwu.github.io/2018/music-chengdu.html</id>
     <published>2018-01-29T15:30:25.000Z</published>
     <updated>2019-05-08T14:59:46.654Z</updated>
     
@@ -490,16 +490,16 @@
     </summary>
     
     
-      <category term="Music" scheme="https://wumaozheng.com/tags/Music/"/>
+      <category term="Music" scheme="https://maugerwu.github.io/tags/Music/"/>
     
-      <category term="Freetime" scheme="https://wumaozheng.com/tags/Freetime/"/>
+      <category term="Freetime" scheme="https://maugerwu.github.io/tags/Freetime/"/>
     
   </entry>
   
   <entry>
     <title>Music-广东十年爱情故事</title>
-    <link href="https://wumaozheng.com/2018/music-gdsnaqgs.html"/>
-    <id>https://wumaozheng.com/2018/music-gdsnaqgs.html</id>
+    <link href="https://maugerwu.github.io/2018/music-gdsnaqgs.html"/>
+    <id>https://maugerwu.github.io/2018/music-gdsnaqgs.html</id>
     <published>2018-01-27T15:45:25.000Z</published>
     <updated>2018-01-29T05:55:20.989Z</updated>
     
@@ -512,9 +512,9 @@
     </summary>
     
     
-      <category term="Music" scheme="https://wumaozheng.com/tags/Music/"/>
+      <category term="Music" scheme="https://maugerwu.github.io/tags/Music/"/>
     
-      <category term="Freetime" scheme="https://wumaozheng.com/tags/Freetime/"/>
+      <category term="Freetime" scheme="https://maugerwu.github.io/tags/Freetime/"/>
     
   </entry>
   

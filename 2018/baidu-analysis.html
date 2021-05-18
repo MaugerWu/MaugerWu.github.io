@@ -5,14 +5,14 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="https://wumaozheng.com">
+  <link rel="dns-prefetch" href="https://maugerwu.github.io">
   <title>网站流量统计分析 | Mauger`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="&amp;emsp;&amp;emsp;前段时间搭建了自己的博客网站 Mauger`s Blog，于是开始在上面写一些随笔，记录自己在平时开发过程中踩到的坑和总结的一些小知识点。同时也希望能与同行朋友们一起交流讨论，那么到底有没有人访问过我的博客呢？">
 <meta name="keywords" content="Hexo,Blog,流量统计">
 <meta property="og:type" content="article">
 <meta property="og:title" content="网站流量统计分析">
-<meta property="og:url" content="https://wumaozheng.com/2018/baidu-analysis.html">
+<meta property="og:url" content="https://maugerwu.github.io/2018/baidu-analysis.html">
 <meta property="og:site_name" content="Mauger`s Blog">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;前段时间搭建了自己的博客网站 Mauger`s Blog，于是开始在上面写一些随笔，记录自己在平时开发过程中踩到的坑和总结的一些小知识点。同时也希望能与同行朋友们一起交流讨论，那么到底有没有人访问过我的博客呢？">
 <meta property="og:image" content="https://image.wumaozheng.com/blog/article/analysis.jpg">
@@ -62,7 +62,7 @@ var _hmt = _hmt || [];
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="https://image.wumaozheng.com/blog/avatar/avatar3.jpg" class="js-avatar">
+			<img src="https://maugerwu.github.io/avatar3.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a class="font-color" href="/">Mauger</a></h1>
@@ -106,7 +106,7 @@ var _hmt = _hmt || [];
 		        
 					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/mauger/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
-					<a class="weixin" target="_blank" href="https://wumaozheng.com/add_weixin.jpg" title="weixin"><i class="icon-weixin"></i></a>
+					<a class="weixin" target="_blank" href="https://maugerwu.github.io/add_weixin.jpg" title="weixin"><i class="icon-weixin"></i></a>
 		        
 					<a class="mail" target="_blank" href="mailto:wumz993@gmail.com" title="mail"><i class="icon-mail"></i></a>
 		        
@@ -128,7 +128,7 @@ var _hmt = _hmt || [];
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="https://image.wumaozheng.com/blog/avatar/avatar3.jpg" class="js-avatar">
+				<img src="https://maugerwu.github.io/avatar3.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Mauger</h1>
@@ -155,7 +155,7 @@ var _hmt = _hmt || [];
 			        
 						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/mauger/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
-						<a class="weixin" target="_blank" href="https://wumaozheng.com/add_weixin.jpg" title="weixin"><i class="icon-weixin"></i></a>
+						<a class="weixin" target="_blank" href="https://maugerwu.github.io/add_weixin.jpg" title="weixin"><i class="icon-weixin"></i></a>
 			        
 						<a class="mail" target="_blank" href="mailto:wumz993@gmail.com" title="mail"><i class="icon-mail"></i></a>
 			        
@@ -210,7 +210,7 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="https://image.wumaozheng.com/blog/article/analysis.jpg" alt="Statistics&amp;Analysis" title="Website Traffic Statistics And Analysis"></p>
-<p>&emsp;&emsp;前段时间搭建了自己的博客网站 <a href="http://wumaozheng.com/">Mauger`s Blog</a>，于是开始在上面写一些随笔，记录自己在平时开发过程中踩到的坑和总结的一些小知识点。同时也希望能与同行朋友们一起交流讨论，那么到底有没有人访问过我的博客呢？</p>
+<p>&emsp;&emsp;前段时间搭建了自己的博客网站 <a href="http://wumaozheng.com/" target="_blank" rel="noopener">Mauger`s Blog</a>，于是开始在上面写一些随笔，记录自己在平时开发过程中踩到的坑和总结的一些小知识点。同时也希望能与同行朋友们一起交流讨论，那么到底有没有人访问过我的博客呢？</p>
 <a id="more"></a>
 <h3 id="一、统计网站访问量"><a href="#一、统计网站访问量" class="headerlink" title="一、统计网站访问量"></a>一、统计网站访问量</h3><h4 id="1-代码获取"><a href="#1-代码获取" class="headerlink" title="1. 代码获取"></a>1. 代码获取</h4><p>&emsp;&emsp;带着疑问我找到了 <a href="https://tongji.baidu.com/web/25190285/homepage/index" target="_blank" rel="noopener">百度统计</a>、<a href="http://www.cnzz.com/o_index.php" target="_blank" rel="noopener">CNZZ</a> 和 <a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">不蒜子</a>，最终我结合<code>百度统计</code>和<code>不蒜子</code>一同使用。使用百度统计是因为其功能强大全面、使用方便，但是不能实时地在博客网站中展示；使用不蒜子是因为其能够在博客中实时地去展示、使用方便，能够统计文章阅读量、总的访客人数和总的访问次数，且可以自定义样式。<br>&emsp;&emsp;首先需要 <a href="https://u.baidu.com/ucweb/?module=Reguser&amp;controller=reg&amp;action=index&amp;appid=12&amp;nexturl=https%3A%2F%2Ftongji.baidu.com%2Fweb%2Fwelcome%2Flogin%3FloginDialog%3D1" target="_blank" rel="noopener">注册站长账号</a>，接着添加自己购买的网站域名，点击 <a href="https://tongji.baidu.com/sc-web/25190285/home/site/getjs?siteId=11721708" target="_blank" rel="noopener">代码获取</a> 后可以看到如下代码：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"><span class="keyword">var</span> _hmt = _hmt || [];</span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> hm = <span class="built_in">document</span>.createElement(<span class="string">"script"</span>);</span><br><span class="line">  hm.src = <span class="string">"https://hm.baidu.com/hm.js?XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span>;</span><br><span class="line">  <span class="keyword">var</span> s = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"script"</span>)[<span class="number">0</span>]; </span><br><span class="line">  s.parentNode.insertBefore(hm, s);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
@@ -343,7 +343,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://wumaozheng.com/2018/baidu-analysis.html" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://maugerwu.github.io/2018/baidu-analysis.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -421,7 +421,7 @@ var _hmt = _hmt || [];
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018-2020 <a href="https://wumaozheng.com" style="text-decoration: none;">Mauger</a> 粤ICP备18020137号-1
+    		&copy; 2018-2021 <a href="https://wumaozheng.com" style="text-decoration: none;">Mauger</a> 粤ICP备18020137号-1
     	</div>
 		<div style="float: left; padding-left: 10%;">
 			<span id="busuanzi_container_site_uv" style="display: inline;"> 
@@ -539,19 +539,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">JavaEE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">NBA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">JavaEE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">NBA</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -564,6 +564,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">流量统计</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -583,15 +587,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Clone</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">DataType</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Notes</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Thinking</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -616,14 +624,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Editor</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Notes</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Thinking</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -721,7 +721,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             </li>
           
             <li class="search-li">
-              <a href="https://coding.net/u/Mauger" target="_blank" class="search-title"><i class="icon"></i>Coding</a>
+              <a href="https://mauger.coding.net/user" target="_blank" class="search-title"><i class="icon"></i>Coding</a>
             </li>
           
             <li class="search-li">

@@ -5,14 +5,14 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="https://wumaozheng.com">
+  <link rel="dns-prefetch" href="https://maugerwu.github.io">
   <title>Ubuntu16.04配置Tomcat访问80端口 | Mauger`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="&amp;emsp;&amp;emsp;本篇教程在示例步骤中使用了以下版本的软件。操作时，请您以实际软件版本为准。  操作系统：Ubuntu 16.04.3 LTS JDK 版本：JDK 1.8.0_65 Tomcat 版本：Apache Tomcat 7.0.47  &amp;emsp;&amp;emsp;使用阿里云服务器 ECS Ubuntu 16.04 环境部署 Java Web 应用，在配置 Tomcat 服务时发现 8">
 <meta name="keywords" content="Linux,Ubuntu,Tomcat">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu16.04配置Tomcat访问80端口">
-<meta property="og:url" content="https://wumaozheng.com/2018/ubuntu16.04-config-80port.html">
+<meta property="og:url" content="https://maugerwu.github.io/2018/ubuntu16.04-config-80port.html">
 <meta property="og:site_name" content="Mauger`s Blog">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;本篇教程在示例步骤中使用了以下版本的软件。操作时，请您以实际软件版本为准。  操作系统：Ubuntu 16.04.3 LTS JDK 版本：JDK 1.8.0_65 Tomcat 版本：Apache Tomcat 7.0.47  &amp;emsp;&amp;emsp;使用阿里云服务器 ECS Ubuntu 16.04 环境部署 Java Web 应用，在配置 Tomcat 服务时发现 8">
 <meta property="og:image" content="https://image.wumaozheng.com/blog/article/TestPage184.jpg">
@@ -62,7 +62,7 @@ var _hmt = _hmt || [];
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="https://image.wumaozheng.com/blog/avatar/avatar3.jpg" class="js-avatar">
+			<img src="https://maugerwu.github.io/avatar3.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a class="font-color" href="/">Mauger</a></h1>
@@ -106,7 +106,7 @@ var _hmt = _hmt || [];
 		        
 					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/mauger/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
-					<a class="weixin" target="_blank" href="https://wumaozheng.com/add_weixin.jpg" title="weixin"><i class="icon-weixin"></i></a>
+					<a class="weixin" target="_blank" href="https://maugerwu.github.io/add_weixin.jpg" title="weixin"><i class="icon-weixin"></i></a>
 		        
 					<a class="mail" target="_blank" href="mailto:wumz993@gmail.com" title="mail"><i class="icon-mail"></i></a>
 		        
@@ -128,7 +128,7 @@ var _hmt = _hmt || [];
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="https://image.wumaozheng.com/blog/avatar/avatar3.jpg" class="js-avatar">
+				<img src="https://maugerwu.github.io/avatar3.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Mauger</h1>
@@ -155,7 +155,7 @@ var _hmt = _hmt || [];
 			        
 						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/mauger/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
-						<a class="weixin" target="_blank" href="https://wumaozheng.com/add_weixin.jpg" title="weixin"><i class="icon-weixin"></i></a>
+						<a class="weixin" target="_blank" href="https://maugerwu.github.io/add_weixin.jpg" title="weixin"><i class="icon-weixin"></i></a>
 			        
 						<a class="mail" target="_blank" href="mailto:wumz993@gmail.com" title="mail"><i class="icon-mail"></i></a>
 			        
@@ -269,7 +269,7 @@ var _hmt = _hmt || [];
 </ul>
 </li>
 </ol>
-<h3 id="五、相关问题"><a href="#五、相关问题" class="headerlink" title="五、相关问题"></a>五、相关问题</h3><p>&emsp;&emsp;上述配置完成后，即可使用 IP 地址（或域名）+ 应用程序页面访问路径。如需直接使用 IP 地址（或域名）访问应用程序默认页面，应另外配置。<a href="https://wumaozheng.com/2018/ubuntu16.04-install-jdk8-tomcat7.html#3-2-%E5%AE%89%E8%A3%85-Apache-Tomcat">（参见：Tomcat 的安装与配置）</a></p>
+<h3 id="五、相关问题"><a href="#五、相关问题" class="headerlink" title="五、相关问题"></a>五、相关问题</h3><p>&emsp;&emsp;上述配置完成后，即可使用 IP 地址（或域名）+ 应用程序页面访问路径。如需直接使用 IP 地址（或域名）访问应用程序默认页面，应另外配置。<a href="https://wumaozheng.com/2018/ubuntu16.04-install-jdk8-tomcat7.html#3-2-%E5%AE%89%E8%A3%85-Apache-Tomcat" target="_blank" rel="noopener">（参见：Tomcat 的安装与配置）</a></p>
 <p>&emsp;&emsp;另外，若参照上述配置时使用的是通过 <code>域名</code> 进行访问，则需要进行域名备案，同时需要指定访问的应用。当然可以暂且使用 <code>域名:8080</code> 进行访问，或是使用 <code>https://域名</code> 进行访问。否则无法正常访问 Web 应用，会出现下面的 <code>TestPage184</code> 页面。</p>
 <p><img src="https://image.wumaozheng.com/blog/article/TestPage184.jpg" alt=""></p>
 <h3 id="六、文章参考"><a href="#六、文章参考" class="headerlink" title="六、文章参考"></a>六、文章参考</h3><ul>
@@ -394,7 +394,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://wumaozheng.com/2018/ubuntu16.04-config-80port.html" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://maugerwu.github.io/2018/ubuntu16.04-config-80port.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -485,7 +485,7 @@ var _hmt = _hmt || [];
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018-2020 <a href="https://wumaozheng.com" style="text-decoration: none;">Mauger</a> 粤ICP备18020137号-1
+    		&copy; 2018-2021 <a href="https://wumaozheng.com" style="text-decoration: none;">Mauger</a> 粤ICP备18020137号-1
     	</div>
 		<div style="float: left; padding-left: 10%;">
 			<span id="busuanzi_container_site_uv" style="display: inline;"> 
@@ -603,19 +603,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">JavaEE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">NBA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">JavaEE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">NBA</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -628,6 +628,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">流量统计</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -647,15 +651,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Clone</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">DataType</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Notes</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Thinking</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -680,14 +688,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Editor</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Notes</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Thinking</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -785,7 +785,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             </li>
           
             <li class="search-li">
-              <a href="https://coding.net/u/Mauger" target="_blank" class="search-title"><i class="icon"></i>Coding</a>
+              <a href="https://mauger.coding.net/user" target="_blank" class="search-title"><i class="icon"></i>Coding</a>
             </li>
           
             <li class="search-li">
