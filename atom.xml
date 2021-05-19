@@ -130,9 +130,9 @@
     
       <category term="Ubuntu" scheme="https://maugerwu.github.io/tags/Ubuntu/"/>
     
-      <category term="JDK" scheme="https://maugerwu.github.io/tags/JDK/"/>
-    
       <category term="Tomcat" scheme="https://maugerwu.github.io/tags/Tomcat/"/>
+    
+      <category term="JDK" scheme="https://maugerwu.github.io/tags/JDK/"/>
     
   </entry>
   
